@@ -1,7 +1,13 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
 .section {
   height: 100vh;
 }
 .middle {
   text-align: center;
   padding-top: 33vh;
+}
+.is-as{
+  background-color: #154ee3ff !important;
 }
