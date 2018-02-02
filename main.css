@@ -8,6 +8,10 @@ body {
   text-align: center;
   padding-top: 33vh;
 }
-.is-as{
+.is-as {
   background-color: #154ee3ff !important;
+}
+.as-title {
+  font-weight: 800;
+  font-size: 4rem;
 }
