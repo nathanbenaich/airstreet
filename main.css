@@ -1,3 +1,6 @@
+html {
+  background-color: #154ee3ff !important;
+}
 body {
   font-family: 'PT Sans', sans-serif;
 }
@@ -13,5 +16,6 @@ body {
 }
 .as-title {
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-bottom: 30px !important;
 }
