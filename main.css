@@ -1,5 +1,5 @@
 html {
-  background-color: #154ee3ff !important;
+  background-color: #010061ff !important;
 }
 body {
   font-family: 'PT Sans', sans-serif;
@@ -12,7 +12,7 @@ body {
   padding-top: 33vh;
 }
 .is-as {
-  background-color: #154ee3ff !important;
+  background-color: #010061ff !important;
 }
 .as-title {
   font-weight: 800;
@@ -20,11 +20,11 @@ body {
   margin-bottom: 30px !important;
 }
 .footer1 {
- background-color: #154ee3ff !important;
+ background-color: #010061ff !important;
  padding: 13.37px 0;
 }
 .footer2 {
- background-color: #154ee3ff !important;
+ background-color: #010061ff !important;
  padding: 10px 10px;
  font-size: 0.8rem;
 }
