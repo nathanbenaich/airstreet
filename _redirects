@@ -1,0 +1,8 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://airstreet.vc/* https://www.airstreet.com/:splat 301!
+https://www.airstreet.vc/* https://www.airstreet.com/:splat 301!
+
+# Redirect default Netlify subdomain to primary domain
+https://optimistic-jones-547d5b.netlify.com/* https://www.airstreet.com/:splat 301!
