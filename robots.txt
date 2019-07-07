@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Disallow: https://www.airstreet.com/risks.html
+Disallow: /risks
+
 Sitemap: https://www.airstreet.com/sitemap.xml
