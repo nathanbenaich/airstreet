@@ -33,3 +33,11 @@ body {
  padding: 10px 10px;
  font-size: 0.65rem;
 }
+.card {
+background-color: #010061ff !important;
+box-shadow: none;
+box-sizing: 256px 256px;
+}
+.image {
+max-width: 100%; width: auto;
+}
