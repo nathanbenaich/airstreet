@@ -41,3 +41,6 @@ box-sizing: 256px 256px;
 .image {
 max-width: 100%; width: auto;
 }
+.subtitle {
+font-size: 1.15rem;
+}
