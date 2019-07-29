@@ -44,3 +44,9 @@ max-width: 100%; width: auto;
 .subtitle {
 font-size: 1.15rem;
 }
+.logo-container {
+	margin-bottom: 9px;
+}
+.logo {
+	width: 210px !important;
+}
