@@ -50,3 +50,6 @@ font-size: 1.15rem;
 .logo {
 	width: 210px !important;
 }
+.li {
+  list-style-position: outside;
+}
