@@ -1,0 +1,49 @@
+html {
+  background-color: #010061ff !important;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+.section {
+  height: 100vh;
+}
+.middle {
+  text-align: center;
+  padding-top: 33vh;
+}
+.is-as {
+  background-color: #010061ff !important;
+}
+.as-title {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 30px !important;
+}
+.footer1 {
+ background-color: #010061ff !important;
+ padding: 13.37px 0;
+}
+.footer2 {
+ background-color: #010061ff !important;
+ padding: 10px 10px;
+ font-size: 0.8rem;
+}
+.footer3 {
+ background-color: #010061ff !important;
+ padding: 10px 10px;
+ font-size: 0.65rem;
+}
+.card {
+background-color: #010061ff !important;
+box-shadow: none;
+box-sizing: 256px 256px;
+}
+.image {
+max-width: 100%; width: auto;
+}
+.subtitle {
+font-size: 1.15rem;
+}
+.logo {
+	width: 210px !important;
+}
