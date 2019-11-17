@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+        <script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type" : "Corporation",
+          "name" : "Air Street Capital",
+          "logo" : "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
+          "description": "Venture capital for artificial intelligence startups for consumer and enterprise",
+          "address" : {
+            "@type" : "PostalAddress",
+            "addressLocality" : "London",
+            "addressCountry" : "United Kingdom"
+          },
+           "founder": {
+            "@type": "Person",
+            "name": ["Nathan Benaich", "Victoria Rege", "Luc Vincent", "Phil Keslin", "Gaile Gordon", "Gabriel Dulac-Arnold", "Julien Cornebise", "Jan Erik Solem"]
+          },  
+          "url" : "http://www.airstreet.com/",
+          "knowsAbout" : ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital"],
+          "legalName" : "Air Street Capital LLP",
+          "slogan" : "Venture capital for artificial intelligence startups for consumer and enterprise"
+        }
+        </script>
     <meta charset="UTF-8">
-    <title>Nathan Benaich, Air Street Capital</title>
+    <title>Air Street Capital blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
-    <meta name="description" content="Homepage of Nathan Benaich, Founder of Air Street Capital and RAAIS.">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta name="description" content="Air Street Capital is a venture capital firm investing in AI-first technology and life science companies.">
     <meta name="keywords" content="venture capital, investing, technology, VC, investment, funding, point nine capital, air street capital, artificial intelligence, machine learning, deep learning, intelligent systems, research, startups, life science, biology, chemistry, biotechnology, computer vision, natural language processing, SaaS, early-stage startup, VC funding">
     <link rel="icon" href="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAVtAAAAJDYzNTBjMDFjLWE4Y2ItNDI2NC04ZmE3LTRiZWJiZWNhOWJkNA.jpg" type="image/jpg" sizes="32x32">
-    <meta name="author" content="Nathan Benaich">
+    <meta name="author" content="Air Street Capital">
     <!-- Twitter and LinkedIn share card to update each time -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@airstreetcap" />
-    <meta name="twitter:creator" content="@nathanbenaich" />
-    <meta property="og:url" content="https://www.nathanbenaich.com/blog/3-business-personas-in-machine-learning" />
+    <meta name="twitter:creator" content="@airstreetcap" />
+    <meta property="og:url" content="https://www.airstreet.com/blog/3-business-personas-in-machine-learning" />
     <meta property="og:title" content="3 business personas in ML" />
     <meta property="og:description" content="I will describe three business personas that I have observed as well as their common challenges, technology stacks, talent requirements and organisational structure. The goal here is to help you define your starting position such that you can make informed decisions as the steps in your ML journey." />
     <meta property="og:image" content="https://www.airstreet.com/logo.png/">
     <meta property="og:type" content="article" />
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41373361-2"></script>
+<!-- Google Analytics -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-41373361-2');
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-41373361-6', 'auto');
+ga('send', 'pageview');
 </script>
-
+<script async src='//www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
 
 <!-- Google schema -->
 <script type="application/ld+json">
@@ -71,22 +93,27 @@
 
   <body>
 
-    <section class="page-header">
-      <h1 class="project-name">Nathan Benaich, PhD</h1>
-      <h2 class="project-tagline">Air Street Capital</h2>
-      <a href="https://www.nathanbenaich.com/" class="btn">Home</a>
-      <a href="https://www.nathanbenaich.com/blog" class="btn">Blog</a>
-      <a href="http://newsletter.airstreet.com/" class="btn">AI Newsletter</a>
-      <a href="https://www.airstreet.com/" class="btn">Air Street Capital</a>
-      <a href="https://www.raais.co/" class="btn">RAAIS</a>
-      <!-- <a href="http://nathanbenaich.github.io/investments.html" class="btn">Investments</a> -->
+<section class="page-header">
+      <h1 class="project-name"><b>Air Street Capital blog</b></h1>
+      <h2 class="project-tagline">The AI-first playbook</h2>
+              </h2>
+              <div>
+              <a href="https://www.airstreet.com/about" class="button is-white is-outlined"> 👾 What we do</a>
+              <a href="http://newsletter.airstreet.com/" class="button is-white is-outlined"> ✉️ AI Newsletter</a>
+              <a href="https://raais.co/" class="button is-white is-outlined"> 💥 RAAIS</a>
+              <a href="https://www.airstreet.com/portfolio" class="button is-white is-outlined"> 🌱 Portfolio</a>
+              <a href="https://www.stateof.ai/" class="button is-white is-outlined"> 📖 State of AI</a>
+              <a href="https://www.airstreet.com/blog" class="button is-white is-outlined"> 📝 Blog</a>
+              </div>            
+        
+
     </section>
 
     <section class="main-content">
 <h2>
 <a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Blog post: 3 business personas in ML, their challenges and opportunities</h2>
 
-<p><i>Date published: 22nd October 2019.</i></p>
+<p><i>Published by Nathan Benaich on 22nd October 2019.</i></p>
 
 <h3>Introduction</h3>
 <p>As machine learning (ML) grows in popularity amongst large technology companies and startups, businesses of all kinds are taking notice and asking themselves how they can follow suit. There are many resources that help codify the discovery of real-world use cases where it makes technical and commercial sense to use an ML-based solution. For example, inspired by the popular startup business model canvas, the <a href="https://www.louisdorard.com/machine-learning-canvas">ML Canvas</a> does a great job at structuring this discovery process.</p> 
@@ -153,27 +180,11 @@
 <p>Special thanks to <a href="https://uk.linkedin.com/in/hendrik-brackmann-b2b5477a">Hendrik Brackmann</a> and <a href="https://muellerfreitag.com">Moritz Müller-Freitag</a> for critical review and input on this piece.</p>
 
 
-----
-
-<p>For more, follow me on <a href="http://twitter.com/nathanbenaich">@nathanbenaich</a> or sign up to my <a href="http://newsletter.airstreet.com/">newsletter</a>.</p>
-<p>Learn more about Air Street Capital <a href="https://www.airstreet.com">here</a>.</p>
-
       <footer class="site-footer">
-        <span class="site-footer-credits">Copyright 2019 Nathan Benaich. All rights reserved. This is a work in progress from a code tinkerer :)
+        <span class="site-footer-credits">
+          &copy; 2019 Air Street Capital LLP, all rights reserved. 
+          <p>Air Street Capital LLP (OC424177) is an Appointed Representative (AR) of Met Facilities LLP, which is authorized and regulated by the Financial Conduct Authority (FRN 587084). <a href="https://www.airstreet.com/risks"><u>Information about risks.</u></a></p>
       </footer>
-
     </section>
-
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-41373361-2");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
   </body>
 </html>
