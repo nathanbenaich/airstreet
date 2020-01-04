@@ -3,7 +3,7 @@
 For more, head over to:
 
 ## Air Street Capital: www.airstreet.com
-A venture capital firm focused on AI-first technology companies.
+Air Street Capital is a purpose-built partnership for founders creating AI-first technology and life science companies. We're a team of experienced investors, engineering leaders, entrepreneurs and AI researchers from the World's most innovative technology companies and research institutions.
 
 ## Research and Applied AI Summit: www.raas.co
 The Research and Applied AI Summit (RAAIS) brings together entrepreneurs and researchers who accelerate the science and applications of AI technology for the common good. Our next annual event is on 26 June 2020. 
