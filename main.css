@@ -45,5 +45,16 @@ max-width: 100%; width: auto;
 font-size: 1.15rem;
 }
 .logo {
-	width: 210px !important;
+width: 210px !important;
+}
+.name {
+padding-top: 0.3rem;
+font-size: 1.15rem;
+font-weight: 1rem;
+color: #000000; 
+}
+.role {
+font-size: 1rem;
+font-weight: 1rem;
+color: #000000; 
 }
