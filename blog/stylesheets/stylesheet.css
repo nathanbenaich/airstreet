@@ -312,8 +312,14 @@ html {
   display: table-cell;
 }
 
+.container-figure {
+  max-width: 1050px;
+  background-color: #FFFFFF !important;
+}
+
 .container {
   max-width: 1050px;
+  background-color: #010061ff !important;
 }
 
 .figure-container {
@@ -341,13 +347,14 @@ max-width: 100%; width: auto;
 width: 210px !important;
 }
 
-.card {
-background-color: #010061ff !important;
+.card-figure {
+background-color: #FFFFFF !important;
 box-shadow: none;
 }
 
-.container {
+.card {
 background-color: #010061ff !important;
+box-shadow: none;
 }
 
 .hero-body {
