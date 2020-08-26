@@ -63,6 +63,7 @@ a {
   background-color: #010061ff !important;
   background-image: linear-gradient(120deg, #010061ff, #010061ff); }
 
+
 @media screen and (min-width: 64em) {
   .page-header {
     padding: 3rem 6rem; } }
@@ -96,7 +97,7 @@ a {
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-weight: normal;
-  opacity: 0.7; }
+  color: #FFFFFF; }
 
 @media screen and (min-width: 64em) {
   .project-tagline {
@@ -331,4 +332,24 @@ html {
 
 .subtitle-as-subtitle {
   color: #fff;
+}
+
+.image {
+max-width: 100%; width: auto;
+}
+.logo {
+width: 210px !important;
+}
+
+.card {
+background-color: #010061ff !important;
+box-shadow: none;
+}
+
+.container {
+background-color: #010061ff !important;
+}
+
+.hero-body {
+  padding: 0rem 1.5rem;
 }
