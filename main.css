@@ -76,6 +76,12 @@ font-size: 1.2rem;
   max-width: 230px;
   margin: auto;
 }
+.tile.is-parent-homepage {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 550px;
+  margin: auto;
+}
 .box {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -98,6 +104,7 @@ iframe {
 .button {
   margin-top: 4px;
   font-size: 1.05rem;
+  padding-top: 8px;
 }
 .copy {
   font-size: 1.1rem;
