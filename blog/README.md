@@ -17,3 +17,6 @@ A vibrant community of AI practitioners from large technology companies, startup
 
 ## AI Newsletter: http://newsletter.airstreet.com
 A market intelligence newsletter followed by 12k subscribers. It covers AI in the technology industry, research lab and venture capital market.
+
+## State of AI Report: www.stateof.ai
+The State of AI Report analyses the most interesting developments in AI. We aim to trigger an informed conversation about the state of AI and its implication for the future. The Report is produced by AI investors Nathan Benaich and Ian Hogarth.
