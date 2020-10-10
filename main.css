@@ -54,26 +54,30 @@ font-weight: 1rem;
 color: #000000; 
 }
 .role {
-font-size: 1rem;
+font-size: 1.05rem;
 font-weight: 1rem;
-color: #000000; 
+color: #000000;
 }
+.bio {
+font-size: .95rem;
+color: #404040;
+} 
 .box2 {
 background-color: #010061ff;
 box-shadow: #010061ff;
 }
 h3 {
-font-size: 1.15rem;
+font-size: 1.2rem;
 }
 .tile.is-parent {
-	padding-left: 8px;
-	padding-right: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .box {
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
-	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 .report {
   position: relative;
@@ -90,4 +94,8 @@ iframe {
 }
 .button {
   margin-top: 3px;
+  font-size: 1.05rem;
+}
+.copy {
+  font-size: 1.1rem;
 }
