@@ -363,3 +363,28 @@ box-shadow: none;
 .button {
   margin-top: 3px;
 }
+.button-2 {
+  background-color: #161E59;
+  color: #ffffff;
+  border-color: #ffffff;
+  font-size: 1em;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  display: inline-flex;
+  height: 2.25em;
+  line-height: 1.5;
+  padding-bottom: calc(.375em - 1px);
+  padding-top: calc(.375em - 1px);
+  position: relative;
+  vertical-align: top;
+  user-select: none;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-left: .75em;
+  padding-right: .75em;
+  text-align: center;
+  white-space: nowrap;
+}
