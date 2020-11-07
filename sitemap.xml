@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>https://www.airstreet.com/team</loc>
-</url>
-<url>
   <loc>https://www.airstreet.com/portfolio</loc>
 </url>
 <url>
-  <loc>https://www.airstreet.com/focus</loc>
+  <loc>https://www.airstreet.com/team</loc>
+</url>
+<url>
+  <loc>https://www.airstreet.com/blog</loc>
+</url>
+<url>
+  <loc>https://www.newsletter.airstreet.com/</loc>
+</url>
+<url>
+  <loc>https://www.stateof.ai/</loc>
 </url>
 <url>
   <loc>https://www.airstreet.com/risks</loc>
-</url>
-<url>
-  <loc>https://www.airstreet.com/community</loc>
-</url>
-<url>
-  <loc>https://www.airstreet.com/content</loc>
 </url>
 <url>
   <loc>https://www.airstreet.com/</loc>
