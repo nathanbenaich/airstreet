@@ -106,6 +106,13 @@ iframe {
   font-size: 1.05rem;
   padding-top: 8px;
 }
-.copy {
+.ernie {
   font-size: 1.1rem;
+  padding-left: 1rem;
+  list-style-position: outside;
+  list-style-type: disc;
+}
+.bold {
+  font-weight: bold;
+  text-decoration-line: underline;
 }
