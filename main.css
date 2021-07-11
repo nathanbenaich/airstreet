@@ -153,14 +153,12 @@ div.portfolio ul li a {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 div.portfolio ul li a {
     font-weight: bold;
 }
-=======
+
 
 /* Container holding the image and the text */
->>>>>>> parent of fc829e4 (Purify css)
 
 .container {
     position: relative;
