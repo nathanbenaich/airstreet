@@ -111,6 +111,10 @@ div.header-buttons a {
     text-decoration-line: none
 }
 
+div.portfolio ul li a {
+    font-weight: bold;
+}
+
 .container {
     position: relative;
     text-align: center;
