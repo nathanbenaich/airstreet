@@ -145,3 +145,24 @@ div.header-buttons a {
 div.portfolio ul li a {
     font-weight: bold;
 }
+
+
+/* Container holding the image and the text */
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 24px;
+}
+
+
+/* Centered text */
+
+.centered {
+    font-size: 1.15rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
