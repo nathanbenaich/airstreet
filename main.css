@@ -103,6 +103,13 @@ h3 {
     padding-top: 10px
 }
 
+ul {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
 a {
     text-decoration-line: underline
 }
