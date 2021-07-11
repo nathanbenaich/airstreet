@@ -1,138 +1,82 @@
 html {
-    background-color: #010061ff !important;
+    background-color: #010061ff!important
 }
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif
 }
 
 .section {
-    height: 100vh;
+    height: 100vh
 }
 
 .middle {
     text-align: center;
-    padding-top: 33vh;
+    padding-top: 33vh
 }
 
 .is-as {
-    background-color: #010061ff !important;
+    background-color: #010061ff!important
 }
 
 .as-title {
     font-weight: 800;
     font-size: 3rem;
-    margin-bottom: 30px !important;
+    margin-bottom: 30px!important
 }
 
 .footer1 {
-    background-color: #010061ff !important;
-    padding: 13.37px 0;
+    background-color: #010061ff!important;
+    padding: 13.37px 0
 }
 
 .footer2 {
-    background-color: #010061ff !important;
+    background-color: #010061ff!important;
     padding: 10px 10px;
-    font-size: 0.8rem;
+    font-size: .8rem
 }
 
 .footer3 {
-    background-color: #010061ff !important;
+    background-color: #010061ff!important;
     padding: 10px 10px;
-    font-size: 0.8rem;
+    font-size: .8rem
 }
 
 .card {
-    background-color: #010061ff !important;
+    background-color: #010061ff!important;
     box-shadow: none;
-    box-sizing: 256px 256px;
+    box-sizing: 256px 256px
 }
 
 .image {
     max-width: 100%;
-    width: auto;
-}
-
-.subtitle {
-    font-size: 1.15rem;
+    width: auto
 }
 
 .logo {
-    width: 210px !important;
+    width: 210px!important
 }
 
 .name {
-    padding-top: 0.3rem;
+    padding-top: .3rem;
     font-size: 1.15rem;
     font-weight: 1rem;
-    color: #000000;
-    font-size-adjust: 100%;
-}
-
-.role {
-    font-size: 1.05rem;
-    font-weight: 1rem;
-    color: #000000;
-}
-
-.bio {
-    font-size: .95rem;
-    color: #404040;
-}
-
-.box2 {
-    background-color: #010061ff;
-    box-shadow: #010061ff;
+    color: #000;
+    font-size-adjust: 100%
 }
 
 h3 {
-    font-size: 1.2rem;
-}
-
-.tile.is-parent {
-    padding-left: 5px;
-    padding-right: 5px;
-    max-width: 230px;
-    margin: auto;
-}
-
-.tile.is-parent-homepage {
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 550px;
-    margin: auto;
-}
-
-.box {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.report {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-    margin-top: 30px;
-}
-
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    font-size: 1.2rem
 }
 
 .button {
     margin-top: 4px;
     font-size: 1.05rem;
-    padding-top: 8px;
+    padding-top: 8px
 }
 
 .copy {
-    font-size: 1.1rem;
+    font-size: 1.1rem
 }
 
 .container {
