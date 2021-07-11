@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-        <script type="application/ld+json">
+
+<head>
+    <script type="application/ld+json">
         {
-          "@context" : "http://schema.org",
-          "@type" : "Corporation",
-          "name" : "Air Street Capital",
-          "logo" : "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
-          "description": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies",
-          "address" : {
-            "@type" : "PostalAddress",
-            "addressLocality" : "London",
-            "addressCountry" : "United Kingdom"
-          },
-           "founder": {
-            "@type": "Person",
-            "name": ["Nathan Benaich", "Victoria Rege", "Luc Vincent", "Phil Keslin", "Gaile Gordon", "Gabriel Dulac-Arnold", "Julien Cornebise", "Jan Erik Solem"]
-          },  
-          "url" : "http://www.airstreet.com/",
-          "knowsAbout" : ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital"],
-          "legalName" : "Air Street Capital LLP",
-          "slogan" : "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies"
+            "@context": "http://schema.org",
+            "@type": "Corporation",
+            "name": "Air Street Capital",
+            "logo": "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
+            "description": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressCountry": "United Kingdom"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": ["Nathan Benaich", "Victoria Rege", "Luc Vincent", "Phil Keslin", "Gaile Gordon", "Gabriel Dulac-Arnold", "Julien Cornebise", "Jan Erik Solem"]
+            },
+            "url": "http://www.airstreet.com/",
+            "knowsAbout": ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital"],
+            "legalName": "Air Street Capital LLP",
+            "slogan": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies"
         }
-        </script>
+    </script>
     <meta charset="UTF-8">
     <title>Air Street Capital blog: 10 talks on building AI-first products and new AI research</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,8 +31,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -57,279 +58,300 @@
     <meta property="og:image" content="https://www.airstreet.com/blog/raais-2020.png/">
     <meta property="og:type" content="article" />
 
-<!-- Google Analytics -->
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-41373361-6', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-<!-- End Google Analytics -->
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-41373361-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
 
-<!-- Google schema -->
-<script type="application/ld+json">
+    <!-- Google schema -->
+    <script type="application/ld+json">
         {
-          "@context" : "http://schema.org",
-          "@type" : "Person",
-          "name" : "Nathan Benaich",
-             "affiliation" : {
-            "@type" : "Corporation",
-            "name" : "Air Street Capital"
-          },
-             "alumniOf" : {
-            "@type" : "Corporation",
-            "name" : "Point Nine Capital"
-          },
-             "colleagues" : {
-            "@type" : "Person",
-            "name" : ["Luc Vincent", "Phil Keslin", "Gabriel Dulac-Arnold", "Jan Erik Solem", "Gaile Gordon", "Victoria Rege", "Julien Cornebise", "Christoph Janz"]
-          },
-          "hasOccupation" : {
-            "@type" : "Occupation",
-            "description" : "Venture capital investor"
-          },
-          "knowsAbout" : ["State of AI Report 2019", "artificial intelligence", "deep learning", "machine learning", "reinforcement learning", "supervised learning", "startups", "venture capital", "State of AI", "State of AI Report", "State of AI Report 2018", "investing", "early stage investing", "SaaS", "software-as-a-service"],
-          "description" : "Nathan Benaich is the Founder of Air Street Capital, a venture capital firm investing in startups using artificial intelligence to build products for consumers and enterprises",
-          "url" : "https://www.nathanbenaich.com"
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Nathan Benaich",
+            "affiliation": {
+                "@type": "Corporation",
+                "name": "Air Street Capital"
+            },
+            "alumniOf": {
+                "@type": "Corporation",
+                "name": "Point Nine Capital"
+            },
+            "colleagues": {
+                "@type": "Person",
+                "name": ["Luc Vincent", "Phil Keslin", "Gabriel Dulac-Arnold", "Jan Erik Solem", "Gaile Gordon", "Victoria Rege", "Julien Cornebise", "Christoph Janz"]
+            },
+            "hasOccupation": {
+                "@type": "Occupation",
+                "description": "Venture capital investor"
+            },
+            "knowsAbout": ["State of AI Report 2019", "artificial intelligence", "deep learning", "machine learning", "reinforcement learning", "supervised learning", "startups", "venture capital", "State of AI", "State of AI Report", "State of AI Report 2018", "investing", "early stage investing", "SaaS", "software-as-a-service"],
+            "description": "Nathan Benaich is the Founder of Air Street Capital, a venture capital firm investing in startups using artificial intelligence to build products for consumers and enterprises",
+            "url": "https://www.nathanbenaich.com"
         }
-        </script>
+    </script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-<section class="page-header">
-      <div class="hero-body">
-          <div class="container has-text-centered">
-              <div class='card equal-height logo-container'>
-                <div class='card-image'>
-                  <nav class="level">
-                    <div class="level-item has-text-centered">
-                      <figure class='image'>
-                        <img class="logo" src='logo-v2.png'>
-                      </figure>
+    <section class="page-header">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class='card equal-height logo-container'>
+                    <div class='card-image'>
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <div class="container">
+                                    <a href="/">
+                                        <img class="logo" alt="Air Street logo" src='logo.png'>
+                                    </a>
+                                    <div class="project-tagline">Welcome to our blog, <b>Word on Air Street</b>.</div>
+                                </div>
+                            </div>
                     </div>
-                  </nav> 
+                    </nav>
                 </div>
             </div>
-          </div>
         </div>
-      <!-- <h1 class="project-name"><b>Air Street Capital blog</b></h1> -->
-      <h2 class="project-tagline">The AI-first playbook</h2>
-              </h2>
-              <div>
-                    <a href="https://www.airstreet.com/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
-                    <a href="https://www.airstreet.com/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
-                    <a href="https://www.airstreet.com/team" class="button is-white is-outlined"> 👋 Team</a>
-                    <a href="https://newsletter.airstreet.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
-                    <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
-                    <a href="https://www.airstreet.com/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
-              </div>            
-        
+        </div>
+        <!-- <h1 class="project-name"><b>Air Street Capital blog</b></h1> -->
+        <h2 class="project-tagline">The AI-first playbook</h2>
+        </h2>
+        <div>
+            <a href="/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
+            <a href="/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
+            <a href="/team" class="button is-white is-outlined"> 👋 Team</a>
+            <a href="https://newsletter.airstreet.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
+            <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
+            <a href="/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
+        </div>
+
 
     </section>
 
     <section class="main-content">
-<h2>
-<a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>10 talks on building AI-first products and new AI research</h2>
+        <h2>
+            <a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>10 talks on building AI-first products and new AI research</h2>
 
-<p><i>Published by Nathan Benaich. These talks were recorded live at <a href="https://www.raais.co">RAAIS 2020</a>.</i></p>
+        <p><i>Published by Nathan Benaich. These talks were recorded live at <a href="https://www.raais.co">RAAIS 2020</a>.</i></p>
 
-              <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/raais-2020/&text=10+talks+on+building+AI-first+products+and+new+AI+research+by+%40nathanbenaich+at+%40airstreet" target="_blank">
-              <span class="icon">
+        <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/raais-2020/&text=10+talks+on+building+AI-first+products+and+new+AI+research+by+%40nathanbenaich+at+%40airstreet"
+            target="_blank">
+            <span class="icon">
                 <i class="fab fa-twitter"></i>
               </span>
-              </a>
+        </a>
 
-              <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/raais-2020/&title=10+talks+on+building+AI-first+products+and+new+AI+research+by+%40nathanbenaich+at+%40airstreet" target="_blank">
-              <span class="icon">
+        <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/raais-2020/&title=10+talks+on+building+AI-first+products+and+new+AI+research+by+%40nathanbenaich+at+%40airstreet"
+            target="_blank">
+            <span class="icon">
                 <i class="fab fa-linkedin"></i>
               </span>
-              </a>
+        </a>
 
-<h3>Introducing RAAIS</h3>
+        <h3>Introducing RAAIS</h3>
 
-<p>We founded The Research and Applied AI Summit (RAAIS) in 2015 to bring together entrepreneurs and researchers who accelerate the science and applications of AI technology for the common good. The key goal of the Summit is to catalyze best practice sharing, new relationships across disciplines, and help the most ambitious AI practitioners showcase their work to their peers.</p>
+        <p>We founded The Research and Applied AI Summit (RAAIS) in 2015 to bring together entrepreneurs and researchers who accelerate the science and applications of AI technology for the common good. The key goal of the Summit is to catalyze best practice
+            sharing, new relationships across disciplines, and help the most ambitious AI practitioners showcase their work to their peers.</p>
 
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/C9WN24px4PA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/C9WN24px4PA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>The frontiers of AI compute: Cerebras Systems</h3>
+        <h3>The frontiers of AI compute: Cerebras Systems</h3>
 
-<p><a href="https://raais.co/speakers-2020-andy-hock-cerebras">Andy Hock</a> is Head of Product at Cerebras Systems, a computer systems company focused on AI. He is responsible for the requirements and product strategy for Cerebras’ AI hardware, software, ML research, marketing.</p>
+        <p><a href="https://raais.co/speakers-2020-andy-hock-cerebras">Andy Hock</a> is Head of Product at Cerebras Systems, a computer systems company focused on AI. He is responsible for the requirements and product strategy for Cerebras’ AI hardware,
+            software, ML research, marketing.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/8YYpTr6H0BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8YYpTr6H0BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Decoding the biology of human nutrition with PREDICT: ZOE</h3>
+        <h3>Decoding the biology of human nutrition with PREDICT: ZOE</h3>
 
-<p><a href="https://raais.co/speakers-2020-sarah-berry-kings-college-london-zoe">Sarah Berry</a> is a Senior Lecturer in the Department of Nutritional Sciences at King’s College London and Head of Nutrition Science at ZOE, the London-based AI-first nutritional science startup behind the PREDICT study, which is the world’s largest ongoing nutritional research project of its kind.</p>
+        <p><a href="https://raais.co/speakers-2020-sarah-berry-kings-college-london-zoe">Sarah Berry</a> is a Senior Lecturer in the Department of Nutritional Sciences at King’s College London and Head of Nutrition Science at ZOE, the London-based AI-first
+            nutritional science startup behind the PREDICT study, which is the world’s largest ongoing nutritional research project of its kind.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/1ZMg0c6zGPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZMg0c6zGPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>A deep learning approach to anbitiotics discovery: Broad Institute</h3>
+        <h3>A deep learning approach to anbitiotics discovery: Broad Institute</h3>
 
-<p><a href="https://raais.co/speakers-2020-jonathan-stokes-mit">Jonathan Stokes</a> is a Banting Fellow under the supervision of James Collins at MIT. His research applies a combination of chemical biology and machine learning to develop novel antibacterial therapies with expanded capabilities over conventional antibiotics.</p>
+        <p><a href="https://raais.co/speakers-2020-jonathan-stokes-mit">Jonathan Stokes</a> is a Banting Fellow under the supervision of James Collins at MIT. His research applies a combination of chemical biology and machine learning to develop novel antibacterial
+            therapies with expanded capabilities over conventional antibiotics.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/vobGZqL2S38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vobGZqL2S38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Transforming healthcare with AI: Moorfields Eye Hospital</h3>
+        <h3>Transforming healthcare with AI: Moorfields Eye Hospital</h3>
 
-<p><a href="https://raais.co/speakers-2020-pearse-keane-moorfields">Pearse Keane</a> is a consultant ophthalmologist at Moorfields Eye Hospital and an associate professor at UCL Institute of Ophthalmology.</p>
+        <p><a href="https://raais.co/speakers-2020-pearse-keane-moorfields">Pearse Keane</a> is a consultant ophthalmologist at Moorfields Eye Hospital and an associate professor at UCL Institute of Ophthalmology.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/OkekpuK9UxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OkekpuK9UxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Compute-designed organisms: University of Vermont</h3>
+        <h3>Compute-designed organisms: University of Vermont</h3>
 
-<p><a href="https://raais.co/speakers-2020-josh-bongard-vermont">Josh Bongard</a> is the Veinott Professor of Computer Science at the University of Vermont and the director of the Morphology, Evolution & Cognition Laboratory.</p>
+        <p><a href="https://raais.co/speakers-2020-josh-bongard-vermont">Josh Bongard</a> is the Veinott Professor of Computer Science at the University of Vermont and the director of the Morphology, Evolution & Cognition Laboratory.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/tQ7i5DPwByo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tQ7i5DPwByo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Insights from deep representations for ML systems: Google Brain</h3>
+        <h3>Insights from deep representations for ML systems: Google Brain</h3>
 
-<p><a href="https://raais.co/speakers-2020-maithra-raghu-google-brain">Maithra Raghu</a> is a Research Scientist at Google Brain. Her research centers on developing quantitative techniques to gain insights into deep learning representations and using these insights to inform AI system design and collaboration with human experts in medicine.</p>
+        <p><a href="https://raais.co/speakers-2020-maithra-raghu-google-brain">Maithra Raghu</a> is a Research Scientist at Google Brain. Her research centers on developing quantitative techniques to gain insights into deep learning representations and using
+            these insights to inform AI system design and collaboration with human experts in medicine.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/_oG1wThTVfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_oG1wThTVfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Robustness certification for deep learning: DeepMind</h3>
+        <h3>Robustness certification for deep learning: DeepMind</h3>
 
-<p><a href="https://raais.co/speakers-2020-krishnamurthy-dvijotham-deepmind">Dj Dvijotham</a> is a senior research scientist at DeepMind who works on these problems. His research focus is on building robust and verifiable AI systems that can be trusted to behave reasonably even under adversarial circumstances.</p>
+        <p><a href="https://raais.co/speakers-2020-krishnamurthy-dvijotham-deepmind">Dj Dvijotham</a> is a senior research scientist at DeepMind who works on these problems. His research focus is on building robust and verifiable AI systems that can be trusted
+            to behave reasonably even under adversarial circumstances.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/wT58_0V1-c4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wT58_0V1-c4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Why AI fairness must be automated: Oxford University</h3>
+        <h3>Why AI fairness must be automated: Oxford University</h3>
 
-<p><a href="https://raais.co/speakers-2020-sandra-wachter-oxford">Sandra Wachter</a> is an Associate Professor and Senior Research Fellow in Law and Ethics of AI, Big Data, and robotics as well as Internet Regulation at the Oxford Internet Institute at the University of Oxford and a Fellow at the Alan Turing Institute in London. <a href="https://raais.co/speakers-2020-chris-russell-turing-surrey-oxford">Chris Russell</a> is a Group Leader in Safe and Ethical AI at the Alan Turing Institute, and a Reader in Computer Vision and Machine Learning at the University of Surrey. <a href="https://raais.co/speakers-2020-brent-mittelstadt-oxford">Brent Mittelstadt</a> is a Senior Research Fellow and British Academy Postdoctoral Fellow in data ethics at the Oxford Internet Institute, a Turing Fellow at the Alan Turing Institute, and a member of the UK National Statistician’s Data Ethics Advisory Committee.</p>
+        <p><a href="https://raais.co/speakers-2020-sandra-wachter-oxford">Sandra Wachter</a> is an Associate Professor and Senior Research Fellow in Law and Ethics of AI, Big Data, and robotics as well as Internet Regulation at the Oxford Internet Institute
+            at the University of Oxford and a Fellow at the Alan Turing Institute in London. <a href="https://raais.co/speakers-2020-chris-russell-turing-surrey-oxford">Chris Russell</a> is a Group Leader in Safe and Ethical AI at the Alan Turing Institute,
+            and a Reader in Computer Vision and Machine Learning at the University of Surrey. <a href="https://raais.co/speakers-2020-brent-mittelstadt-oxford">Brent Mittelstadt</a> is a Senior Research Fellow and British Academy Postdoctoral Fellow in
+            data ethics at the Oxford Internet Institute, a Turing Fellow at the Alan Turing Institute, and a member of the UK National Statistician’s Data Ethics Advisory Committee.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZDJJEYp7Ca0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDJJEYp7Ca0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Autonomous driving: Lyft Level 5</h3>
+        <h3>Autonomous driving: Lyft Level 5</h3>
 
-<p><a href="https://raais.co/speakers-2020-sacha-arnoud-lyft">Sacha Arnoud</a> is the Senior Director of Engineering at Lyft Level 5, the division of Lyft that is responsible for developing consumer-facing self-driving vehicles for the Lyft ride-hailing service.</p>
+        <p><a href="https://raais.co/speakers-2020-sacha-arnoud-lyft">Sacha Arnoud</a> is the Senior Director of Engineering at Lyft Level 5, the division of Lyft that is responsible for developing consumer-facing self-driving vehicles for the Lyft ride-hailing
+            service.
+        </p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/Oh6-F2lPK5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Oh6-F2lPK5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<h3>Homomorphic encryption for deep learning: Zama</h3>
+        <h3>Homomorphic encryption for deep learning: Zama</h3>
 
-<p><a href="https://raais.co/speakers-2020-pascal-paillier-zama">Pascal Paillier</a> is a homomorphic encryption expert and the CTO of Zama, a Paris-based startup that builds open-source software tools enabling developers to easily deploy secure deep learning applications powered with homomorphic encryption.</p>
+        <p><a href="https://raais.co/speakers-2020-pascal-paillier-zama">Pascal Paillier</a> is a homomorphic encryption expert and the CTO of Zama, a Paris-based startup that builds open-source software tools enabling developers to easily deploy secure
+            deep learning applications powered with homomorphic encryption.</p>
 
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/2WVi-p1koS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/2WVi-p1koS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </nav> 
-    </div>
-  </div>
-</div>
 
-<br>
-<p><i>Thanks to our RAAIS 2020 speakers!</i></p>
+        <br>
+        <p><i>Thanks to our RAAIS 2020 speakers!</i></p>
 
 
-      <footer class="site-footer">
-        <span class="site-footer-credits">
+        <footer class="site-footer">
+            <span class="site-footer-credits">
           &copy; 2021 Air Street Capital LLP, all rights reserved. 
           <p>Air Street Capital LLP (OC424177) (FRN 805476) is an Appointed Representative (AR) of Met Facilities LLP, which is authorized and regulated by the Financial Conduct Authority (FRN 587084). <a href="https://www.twitter.com/airstreet"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/"><u>LinkedIn</u></a> | <a href="https://www.airstreet.com/risks"><u>Information about risks</u></a></p>
       </footer>

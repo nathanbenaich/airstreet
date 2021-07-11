@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-        <script type="application/ld+json">
+
+<head>
+    <script type="application/ld+json">
         {
-          "@context" : "http://schema.org",
-          "@type" : "Corporation",
-          "name" : "Air Street Capital",
-          "logo" : "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
-          "description": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies",
-          "address" : {
-            "@type" : "PostalAddress",
-            "addressLocality" : "London",
-            "addressCountry" : "United Kingdom"
-          },
-           "founder": {
-            "@type": "Person",
-            "name": ["Nathan Benaich", "Victoria Rege", "Luc Vincent", "Phil Keslin", "Gaile Gordon", "Gabriel Dulac-Arnold", "Julien Cornebise", "Jan Erik Solem"]
-          },  
-          "url" : "http://www.airstreet.com/",
-          "knowsAbout" : ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital"],
-          "legalName" : "Air Street Capital LLP",
-          "slogan" : "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies"
+            "@context": "http://schema.org",
+            "@type": "Corporation",
+            "name": "Air Street Capital",
+            "logo": "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
+            "description": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressCountry": "United Kingdom"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": ["Nathan Benaich", "Victoria Rege", "Luc Vincent", "Phil Keslin", "Gaile Gordon", "Gabriel Dulac-Arnold", "Julien Cornebise", "Jan Erik Solem"]
+            },
+            "url": "http://www.airstreet.com/",
+            "knowsAbout": ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital"],
+            "legalName": "Air Street Capital LLP",
+            "slogan": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies"
         }
-        </script>
+    </script>
     <meta charset="UTF-8">
     <title>Air Street Capital blog: Rewriting the European spinout playbook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,8 +31,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -62,302 +63,465 @@
     <!-- Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
-<!-- Google Analytics -->
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-41373361-6', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-<!-- End Google Analytics -->
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-41373361-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
 
-<!-- Google schema -->
-<script type="application/ld+json">
+    <!-- Google schema -->
+    <script type="application/ld+json">
         {
-          "@context" : "http://schema.org",
-          "@type" : "Person",
-          "name" : "Nathan Benaich",
-             "affiliation" : {
-            "@type" : "Corporation",
-            "name" : "Air Street Capital"
-          },
-             "alumniOf" : {
-            "@type" : "Corporation",
-            "name" : "Point Nine Capital"
-          },
-             "colleagues" : {
-            "@type" : "Person",
-            "name" : ["Luc Vincent", "Phil Keslin", "Gabriel Dulac-Arnold", "Jan Erik Solem", "Gaile Gordon", "Victoria Rege", "Julien Cornebise", "Christoph Janz"]
-          },
-          "hasOccupation" : {
-            "@type" : "Occupation",
-            "description" : "Venture capital investor"
-          },
-          "knowsAbout" : ["State of AI Report 2019", "artificial intelligence", "deep learning", "machine learning", "reinforcement learning", "supervised learning", "startups", "venture capital", "State of AI", "State of AI Report", "State of AI Report 2018", "investing", "early stage investing", "SaaS", "software-as-a-service"],
-          "description" : "Nathan Benaich is the Founder of Air Street Capital, a venture capital firm investing in startups using artificial intelligence to build products for consumers and enterprises",
-          "url" : "https://www.nathanbenaich.com"
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Nathan Benaich",
+            "affiliation": {
+                "@type": "Corporation",
+                "name": "Air Street Capital"
+            },
+            "alumniOf": {
+                "@type": "Corporation",
+                "name": "Point Nine Capital"
+            },
+            "colleagues": {
+                "@type": "Person",
+                "name": ["Luc Vincent", "Phil Keslin", "Gabriel Dulac-Arnold", "Jan Erik Solem", "Gaile Gordon", "Victoria Rege", "Julien Cornebise", "Christoph Janz"]
+            },
+            "hasOccupation": {
+                "@type": "Occupation",
+                "description": "Venture capital investor"
+            },
+            "knowsAbout": ["State of AI Report 2019", "artificial intelligence", "deep learning", "machine learning", "reinforcement learning", "supervised learning", "startups", "venture capital", "State of AI", "State of AI Report", "State of AI Report 2018", "investing", "early stage investing", "SaaS", "software-as-a-service"],
+            "description": "Nathan Benaich is the Founder of Air Street Capital, a venture capital firm investing in startups using artificial intelligence to build products for consumers and enterprises",
+            "url": "https://www.nathanbenaich.com"
         }
-        </script>
+    </script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-<section class="page-header">
-      <div class="hero-body">
-          <div class="container has-text-centered">
-              <div class='card equal-height logo-container'>
-                <div class='card-image'>
-                  <nav class="level">
-                    <div class="level-item has-text-centered">
-                      <figure class='image'>
-                        <img class="logo" src='logo-v2.png'>
-                      </figure>
+    <section class="page-header">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class='card equal-height logo-container'>
+                    <div class='card-image'>
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <div class="container">
+                                    <a href="/">
+                                        <img class="logo" alt="Air Street logo" src='logo.png'>
+                                    </a>
+                                    <div class="project-tagline">Welcome to our blog, <b>Word on Air Street</b>.</div>
+                                </div>
+                            </div>
                     </div>
-                  </nav> 
+                    </nav>
                 </div>
             </div>
-          </div>
         </div>
-      <!-- <h1 class="project-name"><b>Air Street Capital blog</b></h1> -->
-      <h2 class="project-tagline">The AI-first playbook</h2>
-              </h2>
-              <div>
-                    <a href="https://www.airstreet.com/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
-                    <a href="https://www.airstreet.com/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
-                    <a href="https://www.airstreet.com/team" class="button is-white is-outlined"> 👋 Team</a>
-                    <a href="https://newsletter.airstreet.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
-                    <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
-                    <a href="https://www.airstreet.com/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
-              </div>            
-        
+        </div>
+        <!-- <h1 class="project-name"><b>Air Street Capital blog</b></h1> -->
+        <h2 class="project-tagline">The AI-first playbook</h2>
+        </h2>
+        <div>
+            <a href="/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
+            <a href="/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
+            <a href="/team" class="button is-white is-outlined"> 👋 Team</a>
+            <a href="https://newsletter.airstreet.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
+            <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
+            <a href="/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
+        </div>
+
 
     </section>
 
     <section class="main-content">
-<h2>
-<a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rewriting the European spinout playbook</h2>
+        <h2>
+            <a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rewriting the European spinout playbook</h2>
 
-<p><i>Published by Nathan Benaich. This essay is an expanded version of an oped published in the Financial Times on 10th May 2021.</i></p>
+        <p><i>Published by Nathan Benaich. This essay is an expanded version of an oped published in the Financial Times on 10th May 2021.</i></p>
 
-<p><b>Are you a spinout founder? Please consider sharing your deal terms in <a href="https://www.spinout.fyi">Spinout.fyi</a>, the open database of spinout deal terms.</b></p>
+        <p><b>Are you a spinout founder? Please consider sharing your deal terms in <a href="https://www.spinout.fyi">Spinout.fyi</a>, the open database of spinout deal terms.</b></p>
 
 
-              <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/spinouts/&text=Rewriting+the+European+spinout+playbook+by+%40nathanbenaich+of+%40airstreet" target="_blank">
-              <span class="icon">
+        <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/spinouts/&text=Rewriting+the+European+spinout+playbook+by+%40nathanbenaich+of+%40airstreet" target="_blank">
+            <span class="icon">
                 <i class="fab fa-twitter"></i>
               </span>
-              </a>
+        </a>
 
-              <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/spinouts/&title=Rewriting+the+European+spinout+playbook+by+%40nathanbenaich+of+%40airstreet" target="_blank">
-              <span class="icon">
+        <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/spinouts/&title=Rewriting+the+European+spinout+playbook+by+%40nathanbenaich+of+%40airstreet"
+            target="_blank">
+            <span class="icon">
                 <i class="fab fa-linkedin"></i>
               </span>
-              </a>
-
-
-<h3>Introduction</h3>
-
-<p>The European technology ecosystem has flourished markedly in the last decade. Along with its world-leading universities for science and technology, Europe has the potential to be the most attractive place for spinouts in the world. However, despite an acceleration in the volume of spinouts created per year, we have so far not produced nearly enough large-scale outcomes. This essay examines the factors that are holding us back, why they exist, and proposes a solution to liberate Europe’s spinout potential.</p>
-
-<p>In European universities, there is an endemic philosophy of short-term rent-seeking when it comes to commercialising intellectual property (IP) that is akin to feudalism. New founders seeking to establish a spinout are too often mired in a frustratingly complex, highly political and non-standardised negotiation with their university and associated Technology Transfer Office (TTO). The net result of these negotiations is that spinout founders part ways with too much equity, as well as hefty royalties and licensing fees, from day 1. Amongst students and professors, the spinout process is considered sufficiently painful and unfair that it deters would-be founders from pursuing their entrepreneurial ambitions altogether. Others even hack around official routes and become “sneak outs”. For founders who do manage to spin out, investors are put off from investing significant capital into these businesses because their founders do not own enough equity and the royalties add further drag coefficient that hampers growth. In summary, European spinouts are too often structurally set up to fail or sell early instead of going the distance. Today’s spinout playbook is therefore counterproductive to creating the large, impactful companies that we seek.</p>
-
-<p>The roots of this problem are both structural and cultural. The structural reason is that university TTOs, especially in the UK, operate as independent companies with the associated pressure to bring in real money. This sets TTOs up to maximise revenue generation from spinouts. There is an apparent conflict of interest here: while the university wants to promote spinouts as a means of commercialising IP, its TTOs set the terms under which the spinout has the freedom to operate. Furthermore, those universities who also have affiliated venture funds in which they are also Limited Partners present further conflicts of interest between the university, the fund, and the TTO. In contrast, US TTOs operate as offices within the university or even as philanthropic organisations with the goal of getting university technology out into the world for the benefit of society. This setup optimises for a more permissive spinout playbook, which has the added benefit of attracting the best academic entrepreneurial talent who in turn will attract the best students who together will produce the best research. With a raised profile, the university can attract more grants to fund its development, and the cycle repeats itself.</p>
-
-<p>The cultural reasons are complex. “Academia versus industry” thinking is still too common across European universities, which exacerbates the core problem of monetising the wrong customer. Historically, universities in Europe were free for students to attend. Only in recent decades have fees been introduced. Compared to the US, there is no concept of the European university as the Alma Mater, the “nourishing mother”. This means that university is essentially considered a public right. Finally, European universities have systemically underinvested in nurturing a cohesive alumni ecosystem that can be relied on for annual donations that subsidise new buildings, research, and financial aid for students. This is evidenced by significantly smaller annual donations and gifts in Europe compared to the US, despite their TTOs generating roughly comparable revenues. Taken together, Europe has given rise to a dangerous recursive loop of short-termism that hamstrings spinout entrepreneurship and further limits the willingness and resources of alumni to donate.</p>
-
-<p>We can fix this by adopting a permissive Simple Agreement to Spinout (SAS): a uniformly adopted deal specifically for spinouts whereby the TTOs receive a one-off $25,000 per in-licensed patent and a choice of either:</p>
-<li>Option 1) 1-5% common equity or 
-<li>Option 2) only in the case of very clear IP on a drug molecule/medical device, a 1% royalty on net sales (direct or sub-licensing), or 
-<li>Option 3) 1% of the exit consideration upon M&A or IPO.</li>
-<br>
-<p>Furthermore, TTOs should be tasked with maximising the number of spinouts being created using the SAS. In doing so, universities will empower more founders at the starting line, encourage more investors to finance spinouts to go the distance, and ultimately generate the wealth and gratitude needed for alumni to forward to their university with large donations. In the longer term, we should explore the creation of sovereign wealth funds that can support their domestic universities to reduce dependencies on alternative sources. Europe will flourish as a world leader in spinouts.</p>
-
-<h3>Background</h3>
-
-<p>Startups are an important engine in our economy. They create jobs, products and services that drive human progress. Of relevance to this discussion, startups working within science-rich domains including biotechnology, artificial intelligence, energy, and quantum computing, frequently find their roots in academia. Why? Universities offer a risk-tolerant environment for blue-sky research in addition to the scientific and technical education that equip students to create or find a career in startups. There are two categories of founders, each with a different relationship to their university: </p>
-
-<p><b>Alumni founders (>90% startups):</b> The vast majority of university graduates who start a business will do so after cutting their teeth in the workforce for a few years. Due to this time lag, there is little material connection between the company they start and their work or research in university. As such, the relevant Technology Transfer Office (TTO), which is responsible for catalysing the transfer of its parent university’s intellectual property (IP) into the real world and sharing in the downstream success economics through equity, licensing and royalty agreements with spinouts and/or third party companies, does not seek any financial arrangements with the startup in question. </p>
- 
-<p><b>Spinout founders (<10% startups):</b> A smaller number of students and staff will start their company while still at university, often teaming up with their faculty advisor. This spinout makes use of foundational ideas or inventions that the founders have developed through the course of their degree program or research. This IP is seen as the university’s title because it was created with their resources (namely funding, equipment, and talent). As such, the TTO steps in to participate in the financial upside of the IP developed by the spinout via equity, IP licensing and/or royalties. Spinout founders often receive a very small cut of the royalty payments that their spinout pays the TTO. </p>
-
-<h3>The problem</h3>
-
-<p>Europe has some of the best engineering departments in the world. For computer science, European universities claim 7 of the top 20 spots globally. We have also witnessed a huge maturation of the startup and venture capital ecosystem in Europe in the last decade. Risk-seeking capital invested in European companies topped $35B in 2020, minting some 115 VC-backed European unicorns in the process. However, most investors (barring those directly affiliated with universities) are turned off from investing in university spinouts because their founders do not own enough of the company, universities own too much as silent shareholders, and their royalty terms are too onerous. Put differently, spinouts have a much higher drag coefficient to reach escape velocity than regular startups.</p>
-
-<p>Now, let’s examine the spinout process from the beginning. For the aspiring spinout founder to build their business out of their university, they must answer a range of questions that most are naturally naive to. These include:</p>
-<li>Which organisations have rights over my IP, e.g. university, funding body?
-<li>Must I inform these organisations of my intentions and, if so, at what stage?
-<li>Who needs to be in the room to decide on a deal?
-<li>What are the deal terms and is there room to negotiate?
-<li>If royalties or licensing, what is “market” for upfront fees, option payments, royalty payments, milestone payments, territories covered, field of use and exclusivity versus nonexclusivity? And what are the downstream implications for the company?
-<li>If equity, what is a fair amount of equity for founders themselves and the university, or if the university academic advisor is not going to take a position in the company, what is a fair amount of equity for founders and their advisor(s)?
-<li>Furthermore, what is “market” for anti-dilution protection, pro-rata rights, board representation, veto rights?
-<li>How much time can my faculty advisor spend on the new company while retaining their job at the university? Are they allowed to take a sabbatical if they wish?
-Who can I ask for help that will have my best interests at heart?</li>
-<br>
-<p>Whereas alumni founders have the option to walk away from a deal with prospective investors that they don’t like and go someplace else, spinout founders do not have the same optionality. Generally speaking, there is only one offer that can be on the table, and that’s the one that the university TTO is willing to rubber stamp. Note that if the spinout founder doesn’t believe the deal is fair and refuses to move forward, then they basically have to return the keys or find a backdoor solution. This is essentially modern-day feudalism. Indeed, a growing number of European founders circumvent the university and TTO either by engineering around use of the IP in question or by entering into material transfer agreements with their academic supervisors that assign rights away from the university. In fact, very rarely have these sneak outs broken IP laws by doing so.</p>
-
-<h3>Conflicts of interest and rent-seeking: How to hamstring spinouts</h3>
-
-<p>Now, let’s assume a spinout founder advances to the point of discussing terms with a university TTO. Who is having this negotiation: Is it the founders as individuals or is it the spinout as an entity? For example, TTOs prefer to negotiate terms with the founders and then work together to incorporate the company together, which exacerbates the conflict of interest. The alternative path is for the founders to incorporate the company and find legal counsel who is willing to defer fees and represent the cash-strapped company before it engages with the TTO. In both cases, what do “market” terms look like? The honest answer is that there is no “market” standard because a) there is little to no concerted effort nor structural incentive to agree to a simple template across TTOs, and b) with each deal being unique by design, which whether intentional or not, this helps optimise for rent-seeking. <b>(Note: this is why we launched <a href="https://www.spinout.fyi">Spinout.fyi</a>).</b></p>
-
-<p>An important structural issue is that major TTOs in Europe, and especially in the UK, are set up as independent companies as opposed to university offices or non-profit organisations as they are in the US. This means that independent TTOs must pay for themselves by sourcing, brokering, advising, and completing licensing agreements with third parties, patent filings, and spin outs for the university they serve. This creates a situation of misaligned incentives between the independent TTO and the startup. While the TTO focuses on its short-term interests, grabbing what it can get from the get go to prove its right to exist as a business, the startup is long-term minded, often forgoing opportunities for quick revenue sources that divert its attention from the long-term prize. </p>
-
-<p>A growing trend in the UK is that of university-affiliated venture capital funds. Incumbents argue that these funds are a net positive for the spinout ecosystem because they provide much needed risk capital at the earliest of stages. Consider, however, that these venture funds often have a) the university as a Limited Partner, b) the TTO as part of its management, and c) a remit to invest into university-produced spinouts. As such, there is again a conflict of interest: the fund manages capital of the university that produces the very spinouts it invests into. So what incentive does this leave the university and TTO to rethink their spinout terms? The answer is: none. </p>
-
-<p>As a result, many European university TTOs, especially in the UK, get away with drastically higher equity ownership, licensing fees and royalties than their US peers. Generally, whereas equity take rates per university in the US range from 0 to 5% (e.g. MIT, Carnegie Mellon, Stanford, UW Madison), take rates per university in the UK range from 15% to 50% and typically land >25% with some rare exceptions. Sometimes TTO shares come with anti-dilution up to $X million of capital raised, making their starting ownership larger. Unfortunately, it is hard to pin down exact terms for each university because the terms are opaque by design. Some have tried (<a href="https://www.raeng.org.uk/publications/reports/spotlight-on-spinouts">here</a>, <a href="https://medium.com/@spchambers007/fair-shares-ad78f2d09e01">here</a>, and <a href="https://www.nature.com/articles/nbt.3159?WT.ec_id=NBT-201503">here</a>) and the data can be reverse engineered to some degree using Companies House confirmation statements in the UK.</p> 
-
-<p>Universities can make spinout economics appear less onerous than they are by reporting aggregate figures. They do this by including spinouts where the IP has been developed outside of their university (which pulls down the average ownership) or in collaboration with another university (which doesn’t account for the equity owned by the partner institution. For example, if a startup spins out using IP from Bristol and Oxford, Oxford typically owns less because they have to share with Bristol. This actually happens quite frequently.</p>
-
-<p>To add more color to to the problem of rent-seeking, here are some real-world examples of situations that I have found from founders while doing research for this essay:</p>
-<li><b>University of Bath</b>: An engineering software spinout based on the founder’s research parted with 30% of the business upon founding. 
-<li><b>Oxford (biotech)</b>: A hardware spinout founded on a graduate student’s PhD work had to give up 75% of the equity, of which 50% to Oxford and 25% to the academic advisor who was not going to contribute actively to the spinout. Following a £1.2M Seed investment led by Oxford Sciences Innovation (the university-affiliated venture fund) and a transfer of equity from the university to OSI, the investment firm owned 50% of the spinout. Note here that a private investment management business automatically owns 50% of the fruits of a publicly-funded research project. On top, the startup had to pay 6% royalties on any revenues (negotiated down from 16%) and is now a defendant in a lawsuit against OUI after contesting these terms. 
-<li><b>Oxford (software)</b>: On founding, two software spinouts based research by students/professors parted ways with a combined 30% equity to the university and OSI. Two other software spinouts parted ways with a combined 20% to the university and OSI. Another software startup that was not based on a student’s work at the university parted with 15% to the university at founding. Licensing terms are unknown. 
-<li><b>University of Dundee</b>: A biotech software spinout gave up 16% of founding equity to the university. Licensing and royalties are unknown. 
-<li><b>Imperial College London</b>: A software startup built around graduate and supervisor IP started negotiations at 50% equity and through many months of hard negotiation landed at 10% on founding.
-Queen's University Belfast: A software startup built around university research in cybersecurity networking started off with 30% founding ownership to the TTO. 
-<li><b>University College London</b>: The licensing process for a software startup built around graduate and supervisor IP took almost one year to agree.</li>
-
-<h3>Is the playbook changing at all?</h3>
-
-<p>There appears to be pockets of willingness to change, but overall, the scorecard is not great. Let’s consider two UK examples where universities appear to have the intention to do good, but where the end result is unfortunately not so positive. We’ll then consider an example of a UK university that is more permissive than the rest, and two Swiss TTOs that are marginally better than the UK average. </p> 
-
-<p><b>Imperial College London</b> originally structured their TTO, Imperial Innovations, as an independent company given exclusive access to the IP generated at Imperial. A few years later, Imperial Innovations was reborn as Touchstone Innovations and split into two entities but with the ability to pass IP between them and enable their work with other universities, raising their own funds and investing directly in startups. Touchstone Innovations was acquired by IP Group in 2017. In 2019, its Technology Transfer Operations <a href="https://www.ipgroupplc.com/~/media/Files/I/IP-Group-V2/press-releases/group-news/annual-results-2018.pdf">transferred back</a> to Imperial to run in-house in 2019. The same year Touchstone was sold to IP Group, Imperial launched a programme called “Founder’s Choice” in 2017 where a spinout could choose a) a lot of support from the TTO (“Jointly Driven Route”) or b) very little to none (“Founder Driven Route”). In principle, this is actually a terrific idea because it empowers founders who want to handle their own spinout process while offering a helping hand (for a fee) to those who need and want it. The Founder Driven Route lets founders elect how much equity to give to Imperial, which must be between 5% and 10% on founding. The catch is that Imperial’s founding equity is immune to dilution up until a certain cumulative amount of capital has been raised. Here too, the university gives founders the choice: they can set the cumulative fundraising cap between £3M and £15M. Imperial offers a template <a href="https://www.imperial.ac.uk/enterprise/staff/industry-partnerships-and-commercialisation/commercialisation/forming-a-startup/founders-choice/">capitalisation table</a> to help those interested to model what these terms mean for their equity. The encoded assumptions for round sizes and valuations in this spreadsheet are, perhaps inadvertently, significantly lower than today’s market norms - almost pre-2010 era. So, even if we decide to give Imperial 5% founding ownership and we set the anti-dilute to kick in after £3M capital raised (i.e. post-Seed round in 2021), this means that a spinout that’s raised £7.6M ($10M) carries Imperial as a 3.3% holder and the founders end up with 15.4% of the business. Working backwards using these assumptions offered by Imperial, the “Founder’s Driven Route” option gives the university an 18% effective founding ownership. So maybe the intent is not so founder-friendly after all...</p>
-
-<p><b>Queens University in Belfast</b>, recently ranked #1 in Octopus Ventures’ Entrepreneurial Impact Report, which measures the effectiveness of UK universities <i>“in terms of their production of intellectual property, creation of spinout companies, and successful exits from such spinout companies, relative to their total funding.”</i> Like other universities, their TTO does not explicitly communicate numbers around their founding ownership requirements. Instead, <a href="https://www.qub.ac.uk/Business/Commercialisation/IP-and-innovation/Inventors-guide/Considerations-for-a-spin-out-company/">their website</a> says: <i>“An equity allocation model is in place to help avoid protracted negotiations as to relative proportions of equity to be allocated between the University and its staff founders. The starting point of this model is to align it with the University’s existing 50/50 royalty share policy. In the same way that the IPR policy holds, this applies solely to the share between the University and its staff - and does not seek to constrain any equity negotiations with external parties.”</i> So, not only does the TTO tell students that a 50/50 royalty and ownership split with founders is the starting point but it also says <i>“the equity allocation does not impact on investor discussions and helps avoid skewing internal considerations as to the route to market via licence or spinout.”</i> This message is unfortunately very misleading. </p>
-
-<p>If founders split their spinout equity on anything close to aforementioned terms with a silent non-operating shareholder such as a TTO or university, professional investors will not be attracted to invest because the spinout is hamstrung from the outset. In order to go the distance and create hundreds if not billions of enterprise value, founders must be in control of their business and avoid anything that increases their drag coefficient. Founders must raise successively larger rounds of capital in private markets, have sufficient equity headroom to hire and incentivise a growing team, and still feel like owners of the company they founded, not employees of their investors. Therefore, current TTO practices, even if they are intended to improve the playbook, still do more harm than good.</p> 
-
-<p>There is one ecosystem that is more founder-friendly than the rest, especially in software, and that is <b>Cambridge University</b>. Here, it is common practice for student researchers to own the rights to their IP. If they wish to patent their inventions and start a business based on this IP, they must license it from the University for a fee. However, the University is not automatically granted shares in the spinout. Instead, the University and Cambridge Enterprise (its TTO) manage an investment fund that spinout founders may pitch to raise capital in exchange for shares. In this way, Cambridge Enterprise offers software startups a route to patenting and a route to raising their first round of investment, albeit at prices that can be below market rate if no private venture capital firms are involved. </p>
-
-<p>Finally, in Switzerland there are two major TTOs: <b>ETH Transfer</b>, which handles spinouts from ETH Zurich, and <b>Unitectra</b>, which works for the Universities of Berne, Zurich and Basel. Here, equity participation typically lands between 5-8% of share capital, sometimes with an anti-dilution clause limited to a cumulative of CHF 2-3M in funds raised. These institutions typically do not invest cash for their shares. On the royalty side, rates mostly end up around 2% of net sales but rarely breach more than 4%. Practically speaking, however, these TTOs often table much higher numbers even though they know they’ll end up coming down, which means that founders incur unnecessary time and lawyer fees. In fact, experience shows that TTOs will yield the more founders push, which means that these negotiations can go on forever.</p>
-
-<h3>The history of TTOs</h3>
-
-<p>TTOs in the US were born from the 1980s Bayh-Dole Act that was created to reinvigorate the stagnant economy of the 1970s. The Act created a mechanism for government-funded Universities to maintain ownership over their inventions, which could then be licensed back to inventors and their spinouts or to external companies. In the UK, TTOs were formed around the same time to enforce the existing institutional ownership of IP (e.g. Cambridge Enterprise in 1972 and Oxford University Innovation in 1987). Germany and the Nordics followed suit by doing away with “professor’s privilege” (i.e. ownership over one’s IP) in favor of institutional ownership by 2007. </p>
-
-<p>Over the years, a small number of deals - generally in biotech/pharma - have generated truly outsized returns for universities and their TTOs. The lighthouse case study that makes universities and their TTOs get out of bed in the morning to exercise their rights over IP (notably in the form of royalties in the life sciences) is Lyrica, an anticonvulsant drug that was discovered in 1990 by Northwestern University Professor of Chemistry, Richard Silverman. Exclusively licensed to Pfizer and released on the market in 2004, Lyrica became Pfizer’s top selling drug, grossing $4.5B revenue per year. For Northwestern, Lyrica’s blockbuster success translated into $700M in cash in 2007 upon the sale of royalty rights to Pfizer and another $700M in revenue over the years. To state the obvious here, Lyrica was licensed to a then $200B public company, not a brand new Northwestern spinout. In an astute long-term move, Northwestern’s president reinvested the $1.4B gains into the University’s endowment, which a few years later compounded to grow into the 8th largest university endowment in the US. Silverman too paid his gains forward. He put much of his personal earnings from Lyrica royalties towards the $100M Richard and Barbara Silverman Hall for Molecular Therapeutics and Diagnostics at Northwestern. </p>
-
-<p>Another bittersweet case study from the UK is Humira. This anti-inflammatory disease drug was developed by Cambridge Antibody Technology (CAT) in the mid-1990s using monoclonal antibody technology spun out by Sir Greg Winter at the MRC LMB in Cambridge. The MRC owned a 2% royalty on the sales of Humira, which was approved in 2002 and whose rights they sold for £134M by 2005. CAT was acquired in 2006 by AstraZeneca for £702M and merged with US-based MedImmune, also acquired by AstraZeneca. The twist is that CAT sold far too early: by 2016, Humira became the #1 multi-year blockbuster drug that generated $16B in sales per year. Note, however, that Humira was developed within a spinout. The drug was not licensed as such from the University. </p>
-
-<p>In both the Humira and Lyrica cases, these drugs were the result of many years (if not decades) of prior research conducted in academia. Today, however, more and more spinouts are making use of software as a core competence in the products they develop. In biology, for example, this means that the paradigm is evolving from spinning out a single drug for commercialisation into spinning out methods and platforms for the discovery of multiple drugs over time. In the software-dominant paradigm, the importance of execution and open source is far greater than in the single drug spinout paradigm. Software changes the nature of how spinouts create value and therefore means that TTOs need to adapt their means of monetisation. </p>
-
-<h3>The TAM is too damn small: Universities monetise the wrong customer</h3>
-
-<p>Now, let’s compare the annual revenues of TTOs against the other major source of revenue for universities: their endowment and annual donations. US institutions of higher education are money machines, in part because their tuition rates are higher than UK institutions, but in larger part because of the immense size of their endowments and annual donations from alumni, foundations, corporations and other sources. Institutions of higher education in the US with endowments >$1B represent a total of <a href="https://nces.ed.gov/fastfacts/display.asp?id=73#:~:text=Response%3A,the%20total%20was%20%24544%20billion.">$493B</a> whereas the combined endowments of all UK higher education comes to <a href="https://en.wikipedia.org/wiki/List_of_UK_universities_by_endowment">£16.5B</a>, both in 2019. On the donations front, US institutions pulled in <a href="https://www.case.org/resources/voluntary-support-education-key-findings-2018-19">$49.6B</a> in 2019 (<a href="https://www.case.org/resources/voluntary-support-education-key-findings-2018-19">$11.2B</a> from alumni only) compared to <a href="https://www.case.org/system/files/media/file/CASE-Ross_2020Report_2018-19.pdf">£1.3B</a> from their UK peers (<a href="https://www.theguardian.com/education/2017/may/03/annual-donations-to-uk-universities-passes-1bn-mark-for-first-time">£0.4B</a> from alumni only).</p>
-
-<p>The graph below compares the revenues of TTO and annual fundraising for three US private (Stanford, Harvard, MIT) and one US public (UW Madison) university, as well as five public UK universities (Oxford, Cambridge, UCL, Imperial, and Queen’s Belfast). Endowment sizes are added in parentheses next to the name of the university. What you can see is that US TTOs generate roughly the same amount of revenue per year as UK TTOs (both largely from royalties, not equity), but US institutions generate much more revenue from donations. On average, this sample set of US institutions make 22.5x more donation income than TTO income, compared to 6.6x for UK institutions. </p>
-
-
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <figure class='image'><img class="figure" src='spinouts-donations.png'>
-          </figure>
-        </div>
-      </nav> 
-    </div>
-  </div>
-</div>
-
-<p>In some cases, independent TTOs can focus too much on the success of their own business as opposed to the bigger picture. I was recently part of a conversation with a leading UK University TTO who remarked that their TTO was particularly successful because they generated more revenue than MIT’s TTO. While this statistic is true, it is an expression of not getting the big picture: MIT regularly receives massive donations from alumni and others that are many orders of magnitude larger than their TTOs revenue. In lieu of aggressively monetising their spinouts, the institution has almost surpassed its <a href="https://betterworld.mit.edu/mit-raises-goal-for-campaign-for-a-better-world-to-6-billion/">$6B Campaign for a Better World</a> launched in 2016. This includes large single donations such as Stephen Schwarzman’s <a href="https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015">$350M contribution</a> to the College of Computing. This is the monetisation that matters:</p>
-
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <figure class='image'><img class="figure" src='spinouts-mit.png'>
-          </figure>
-        </div>
-      </nav> 
-    </div>
-  </div>
-</div>
-
-<p>The picture that emerges is the following: Spinouts do not present a large enough recurring source of revenue for universities. The data shows that monetising IP and owning equity in the dozen or so spinouts that emerge per university each year cannot yield more than the low tens of millions of dollars of annual revenue. In investor speak, the total addressable market is too small because there are too few customers with wallets that are too small to support a university. Therefore, universities that set up their TTOs to be standalone businesses have incentivised them to monetise spinouts, which is effort spent on the <b>wrong customer</b>. </p>
-
-<h3>Alumni, alumni, alumni</h3>
-
-<p>So why is it that UK universities aren’t monetising the right customer? Having attended university in the US and in the UK, my view is that the reason is both historical and cultural. In the US, alumni are a critical part of a university. Even before you enroll as an undergraduate, US universities will open up their alumni networks (online and in person in your local city) to make you feel welcome as part of the university community. Alumni often share career opportunities with current students, attend campus to give talks and watch sports games, they put university stickers all over their car and wear paraphernalia on as many occasions as possible. Graduation ceremonies are huge events where being invited to deliver a commencement address is an honor offered to highly successful individuals. Famous commencement addresses, e.g. Bill Gates at Harvard, Steve Jobs at Stanford, Jeff Bezos at Princeton, fire up new graduates to take on the biggest challenges in the world with stories from their own journeys. These invigorating talks are watched on YouTube for years after. Being an alum of a university is a real part of someone's identity. The concept of the Alma Mater being the school from which one graduated, which in Latin translates to “nourishing mother”, describes this concept perfectly. As a result of this visceral binding between university and alumni, there is a huge willingness to donate as a way of paying the opportunity forward to future generations. </p>
-
-<p>By contrast, European and UK universities do not seem to champion the concept of the Alma Mater. There is little to no effort in building a similarly cohesive, accessible, and opportunity-rich alumni community. For example, as a student of Oxford or Cambridge (“Oxbridge”), it is almost impossible to access a database of who graduated from your College. This makes networking for opportunities really difficult. Upon passing final year exams, graduates must book their graduation date pretty much any time in the future. Many don’t even attend. Those who do are mixed with graduates from random class years as they listen to verses recited in Latin that could put you to sleep. Meanwhile, Universities enlist undergraduates to fundraise by smile and dial during academic holidays, often reaching unresponsive alumni who are otherwise not engaged. </p>
-
-<p>Furthermore, my impression is that building a US-style alumni community in the UK and Europe is made very difficult by the fact that university is considered a public right. In Europe most countries fund their own Universities and do not charge undergraduates for tuition. This creates a relationship that is very transactional. In the UK, university attendance was free until 1998 thanks to the Education Act of 1962. Afterwards, tuition was pegged to £1,000 per year, rising with inflation 2008. Today, UK university fees sit around £10,000 per year for a full-time degree. In the US, by comparison private universities cost $50-60k per year and public universities cost $10-15k for local state students. However, they offer generous financial aid packages for those in less fortunate positions. For example, the undergraduate institution I attended, Williams College, offers financial aid to 50% of its student body. Thanks to a $2.8B endowment, strong returns and donations from alumni, 85% of the aid package is a grant that the student does not need to pay back. Taken together, UK alumni do not feel indebted to their university because their attendance and education was a public right. This means little to no willingness to donate back and a resulting paltry endowment. </p>
-
-<h3>Rewriting the spinout playbook</h3>
-
-<p>Today, a lot of students, staff, and faculty end up feeling short changed (sometimes exploited) by their university. Several high-profile staff and faculty who could afford to take off and leave because of these spinout negotiations and unfair terms have done so. The most ambitious, up-and-coming entrepreneurial academics certainly take into account the “spinout friendliness” of a university when considering which one to join. However, students cannot do the same as easily. Overall, there is now significant animosity between the university and spinout founders who more often than not feel that TTOs are out to get them rather than have their backs. Further downstream, investors and acquirers also have a tough situation fixing the problems created by overly hungry TTOs. As a result, there is little to no chance that spinout founders who are dealt the short straw will ever donate anything to the university.</p>
-
-<p>We need a permissive, not punitive, environment for European spinouts that attracts the best entrepreneurial academics and students, and drives more of their companies to billion dollar status. One that appropriately rewards universities for their role in nurturing talent and cutting-edge research, but one that does not hamper the growth potential of the spinouts. </p>
-
-<p>I believe the solution is as follows:</p>
-
-<p>First, TTOs should uniformly adopt a <b>Simple Agreement to Spinout</b> (SAS) that sets a transparent standard specifically for spinouts. The SAS gives TTOs the option to select either Option 1) 1-5% common equity or Option 2) in the case of clearly identified IP over a drug molecule or medical device, 1% royalty on net sales (direct or sub-licensing based), or Option 3) 1% of the exit consideration upon M&A or IPO, in addition to a one-off $25,000 per patent that the spinout in-licenses. If the spinout does not use licensed IP for 24 months, it must return it to the University for recycling. No other fees are levied. </p>
-
-<p>Second, the goal and assessment criteria of TTOs should be recast as maximising the number of spinouts formed under the SAS with a commitment to complete the process in no more than 3 months. Further advisory or operational support for the spinout doesn’t need to come from the TTO. Instead, there are more than enough alumni entrepreneurs, VC and angel investors who today will happily donate their time in order to win the chance to work with the latest and greatest spinout. </p>
-
-<p>In this way, the SAS lets TTOs optimise for the form of payment that best aligns with the spinouts business model. For example, a biotech company spinning out one specific drug will generate value in the form of drug sales. Therefore, royalty is the most suitable form of value capture. For a software company that builds an enterprise software product using new machine learning methods, value will accrue more quickly to the equity because the company will reinvest short-term profits into growth. Therefore, an equity deal is the most suitable form of value capture. SAS terms are summarized here below: </p>
-
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <figure class='image'><img class="figure" src='spinouts-table.png'>
-          </figure>
-        </div>
-      </nav> 
-    </div>
-  </div>
-</div>
-
-<h3>Conclusion</h3>
-
-<p>I strongly believe that we need to rewrite the university spinout playbook in Europe. Not doing so means that we’re missing out on so many great founders who are deterred from building a business and we’re hampering the growth of those who do take the leap. Moreover, we lose out on entrepreneurial academics who decide not to join the ranks of a European university because of its unfriendly spinout policies. The second order effect is that we lose ambitious students who are the human capital we need to do the best research and win grants. We need to reframe the goals of TTOs so they are measured by the number of spinouts they create under the SAS framework, not by the revenue they generate from equity and royalties. In the longer run, we must transition TTOs from being independently run companies to being offices within universities or, better yet, philanthropic organisations. We need to meaningfully invest in alumni ecosystems so that successful spinout founders wish to donate to their university and pay it forward to future generations of entrepreneurs. Success breeds success. Let’s start today. </p> 
-
-<h3>Appendix</h3>
-<p>TTOs report their performance annually, which includes the annual income generated from licensing, royalties and other deals, new patents filed and granted, patents under management, and new spinouts. Here is a performance summary of 3 US and 3 UK TTOs:</p>
-
-<li><b><a href="https://www.uclb.com/wp-content/uploads/2020/03/UCLB-Annual-Report-2018-19.pdf">🇬🇧 UCL Business (UCLB)</a></b>. For 2018-19, UCLB reports £32m revenue, 33 new UK patent applications, 300 active licenses, 68 spinouts, 210 patent families, 34 drug disco projects in development. 
-
-<li><b><a href="http://web.mit.edu/tlo/documents/TLO_FY2019_Factsheet.pdf">🇺🇸 MIT’s Technology Licensing Office (TLO)</a></b>. For FY2019, the MIT TLO reports $34.8M revenue from licensing, 439 new US patent filed, 381 US patents issued, 400 international patents issued, 1,416 incoming material transfer agreements, 3,112 US patents currently active, 25 new startups (471 since 1997-2018).
-
-<li><b><a href="https://facts.stanford.edu/research/innovation/#:~:text=Technology%20Licensing,%24100%2C000%20or%20more%20in%20royalties.">🇺🇸 Stanford’s Office of Technology Licensing (OTL)</a></b>. For FY2019, Stanford OTL reports $49.3 million in gross royalty revenue from 875 technologies in gross royalty revenue from 875 technologies, with royalties ranging from $10 to $16.5M. 49 of the inventions generated $100,000 or more in royalties. Only five inventions generated $1 million or more. Stanford received equity in 30 companies, which now totals 203 companies as a result of a licensing agreement.
-
-<li><b><a href="https://annualreview2020.innovation.ox.ac.uk/wp-content/uploads/2020/10/OUI_Annual_Review_2020_A4_Download.pdf">🇬🇧 Oxford University Innovation (OUI)</a></b>. For FY2020, OUI reports £24.9M in total revenue (+37% YoY), of which £18.9M was derived from licensing and ventures, and £1M from equity realisations. From the total revenue, £16.7M was distributed to the University departments, academics and external partners. OUI has 4793 patents under management and 846 total deals.
-
-<li><b><a href="https://otd.harvard.edu/about-otd/productivity-highlights/">🇺🇸 Harvard’s Office of Technology Development (OTB)</a></b>. For FY2020, Harvard OTB reports $58.7M total revenue, 208 new patents,178 new US patents issued, 45 major licensing deals, 14 startups, and $50.3M corporate research funding. 
-
-<li><b><a href="https://www.imperial.ac.uk/enterprise/review-of-enterprising-activity-2018-2019/year/">🇬🇧 Imperial College London Enterprise Division (Enterprise)</a></b>. For 2018-19, Imperial Enterprise reported £3.4M in licensing revenue, 85 new patent filings, 63 granted patents, 332 active patent libraries (excluding those already commercialised), and just over £10m consulting revenue to external companies. Enterprise also reported 3 new spinouts and 59 new student startups that were not based on University IP.
-
-<div class="container-figure has-text-centered">
-  <div class='card-figure equal-height figure-container'>
-    <div class='card-image'>
-      <nav class="level">
-        <div class="level-item has-text-centered">
-          <figure class='image'><img class="figure" src='spinouts-table-2.png'>
-          </figure>
-        </div>
-      </nav> 
-    </div>
-  </div>
-</div>
-
-------
-
-<br>
-
-<p>This essay is an expanded version of a Financial Times oped published on 10 May 2021, <a href="https://www.ft.com/content/fd038300-f09a-4afc-9f7d-c0e3d6965243"><i>Universities in the UK and Europe have a start-up problem</i></a>.</p>
-
-<p><i>Thanks to the spinout founders, academics, investors, and TTO directors who spoke to me on background for this research.</i></p>
-
-
-      <footer class="site-footer">
-        <span class="site-footer-credits">
+        </a>
+
+
+        <h3>Introduction</h3>
+
+        <p>The European technology ecosystem has flourished markedly in the last decade. Along with its world-leading universities for science and technology, Europe has the potential to be the most attractive place for spinouts in the world. However, despite
+            an acceleration in the volume of spinouts created per year, we have so far not produced nearly enough large-scale outcomes. This essay examines the factors that are holding us back, why they exist, and proposes a solution to liberate Europe’s
+            spinout potential.</p>
+
+        <p>In European universities, there is an endemic philosophy of short-term rent-seeking when it comes to commercialising intellectual property (IP) that is akin to feudalism. New founders seeking to establish a spinout are too often mired in a frustratingly
+            complex, highly political and non-standardised negotiation with their university and associated Technology Transfer Office (TTO). The net result of these negotiations is that spinout founders part ways with too much equity, as well as hefty
+            royalties and licensing fees, from day 1. Amongst students and professors, the spinout process is considered sufficiently painful and unfair that it deters would-be founders from pursuing their entrepreneurial ambitions altogether. Others
+            even hack around official routes and become “sneak outs”. For founders who do manage to spin out, investors are put off from investing significant capital into these businesses because their founders do not own enough equity and the royalties
+            add further drag coefficient that hampers growth. In summary, European spinouts are too often structurally set up to fail or sell early instead of going the distance. Today’s spinout playbook is therefore counterproductive to creating the
+            large, impactful companies that we seek.</p>
+
+        <p>The roots of this problem are both structural and cultural. The structural reason is that university TTOs, especially in the UK, operate as independent companies with the associated pressure to bring in real money. This sets TTOs up to maximise
+            revenue generation from spinouts. There is an apparent conflict of interest here: while the university wants to promote spinouts as a means of commercialising IP, its TTOs set the terms under which the spinout has the freedom to operate. Furthermore,
+            those universities who also have affiliated venture funds in which they are also Limited Partners present further conflicts of interest between the university, the fund, and the TTO. In contrast, US TTOs operate as offices within the university
+            or even as philanthropic organisations with the goal of getting university technology out into the world for the benefit of society. This setup optimises for a more permissive spinout playbook, which has the added benefit of attracting the
+            best academic entrepreneurial talent who in turn will attract the best students who together will produce the best research. With a raised profile, the university can attract more grants to fund its development, and the cycle repeats itself.</p>
+
+        <p>The cultural reasons are complex. “Academia versus industry” thinking is still too common across European universities, which exacerbates the core problem of monetising the wrong customer. Historically, universities in Europe were free for students
+            to attend. Only in recent decades have fees been introduced. Compared to the US, there is no concept of the European university as the Alma Mater, the “nourishing mother”. This means that university is essentially considered a public right.
+            Finally, European universities have systemically underinvested in nurturing a cohesive alumni ecosystem that can be relied on for annual donations that subsidise new buildings, research, and financial aid for students. This is evidenced by
+            significantly smaller annual donations and gifts in Europe compared to the US, despite their TTOs generating roughly comparable revenues. Taken together, Europe has given rise to a dangerous recursive loop of short-termism that hamstrings
+            spinout entrepreneurship and further limits the willingness and resources of alumni to donate.</p>
+
+        <p>We can fix this by adopting a permissive Simple Agreement to Spinout (SAS): a uniformly adopted deal specifically for spinouts whereby the TTOs receive a one-off $25,000 per in-licensed patent and a choice of either:</p>
+        <li>Option 1) 1-5% common equity or
+            <li>Option 2) only in the case of very clear IP on a drug molecule/medical device, a 1% royalty on net sales (direct or sub-licensing), or
+                <li>Option 3) 1% of the exit consideration upon M&A or IPO.</li>
+                <br>
+                <p>Furthermore, TTOs should be tasked with maximising the number of spinouts being created using the SAS. In doing so, universities will empower more founders at the starting line, encourage more investors to finance spinouts to go the distance,
+                    and ultimately generate the wealth and gratitude needed for alumni to forward to their university with large donations. In the longer term, we should explore the creation of sovereign wealth funds that can support their domestic universities
+                    to reduce dependencies on alternative sources. Europe will flourish as a world leader in spinouts.</p>
+
+                <h3>Background</h3>
+
+                <p>Startups are an important engine in our economy. They create jobs, products and services that drive human progress. Of relevance to this discussion, startups working within science-rich domains including biotechnology, artificial intelligence,
+                    energy, and quantum computing, frequently find their roots in academia. Why? Universities offer a risk-tolerant environment for blue-sky research in addition to the scientific and technical education that equip students to create or
+                    find a career in startups. There are two categories of founders, each with a different relationship to their university: </p>
+
+                <p><b>Alumni founders (>90% startups):</b> The vast majority of university graduates who start a business will do so after cutting their teeth in the workforce for a few years. Due to this time lag, there is little material connection between
+                    the company they start and their work or research in university. As such, the relevant Technology Transfer Office (TTO), which is responsible for catalysing the transfer of its parent university’s intellectual property (IP) into the
+                    real world and sharing in the downstream success economics through equity, licensing and royalty agreements with spinouts and/or third party companies, does not seek any financial arrangements with the startup in question. </p>
+
+                <p><b>Spinout founders (<10% startups):</b> A smaller number of students and staff will start their company while still at university, often teaming up with their faculty advisor. This spinout makes use of foundational ideas or inventions
+                    that the founders have developed through the course of their degree program or research. This IP is seen as the university’s title because it was created with their resources (namely funding, equipment, and talent). As such, the TTO
+                    steps in to participate in the financial upside of the IP developed by the spinout via equity, IP licensing and/or royalties. Spinout founders often receive a very small cut of the royalty payments that their spinout pays the TTO.
+                </p>
+
+                <h3>The problem</h3>
+
+                <p>Europe has some of the best engineering departments in the world. For computer science, European universities claim 7 of the top 20 spots globally. We have also witnessed a huge maturation of the startup and venture capital ecosystem in
+                    Europe in the last decade. Risk-seeking capital invested in European companies topped $35B in 2020, minting some 115 VC-backed European unicorns in the process. However, most investors (barring those directly affiliated with universities)
+                    are turned off from investing in university spinouts because their founders do not own enough of the company, universities own too much as silent shareholders, and their royalty terms are too onerous. Put differently, spinouts have
+                    a much higher drag coefficient to reach escape velocity than regular startups.</p>
+
+                <p>Now, let’s examine the spinout process from the beginning. For the aspiring spinout founder to build their business out of their university, they must answer a range of questions that most are naturally naive to. These include:</p>
+                <li>Which organisations have rights over my IP, e.g. university, funding body?
+                    <li>Must I inform these organisations of my intentions and, if so, at what stage?
+                        <li>Who needs to be in the room to decide on a deal?
+                            <li>What are the deal terms and is there room to negotiate?
+                                <li>If royalties or licensing, what is “market” for upfront fees, option payments, royalty payments, milestone payments, territories covered, field of use and exclusivity versus nonexclusivity? And what are the downstream implications
+                                    for the company?
+                                    <li>If equity, what is a fair amount of equity for founders themselves and the university, or if the university academic advisor is not going to take a position in the company, what is a fair amount of equity for founders
+                                        and their advisor(s)?
+                                        <li>Furthermore, what is “market” for anti-dilution protection, pro-rata rights, board representation, veto rights?
+                                            <li>How much time can my faculty advisor spend on the new company while retaining their job at the university? Are they allowed to take a sabbatical if they wish? Who can I ask for help that will have my best interests
+                                                at heart?</li>
+                                            <br>
+                                            <p>Whereas alumni founders have the option to walk away from a deal with prospective investors that they don’t like and go someplace else, spinout founders do not have the same optionality. Generally speaking,
+                                                there is only one offer that can be on the table, and that’s the one that the university TTO is willing to rubber stamp. Note that if the spinout founder doesn’t believe the deal is fair and refuses to move
+                                                forward, then they basically have to return the keys or find a backdoor solution. This is essentially modern-day feudalism. Indeed, a growing number of European founders circumvent the university and TTO
+                                                either by engineering around use of the IP in question or by entering into material transfer agreements with their academic supervisors that assign rights away from the university. In fact, very rarely have
+                                                these sneak outs broken IP laws by doing so.</p>
+
+                                            <h3>Conflicts of interest and rent-seeking: How to hamstring spinouts</h3>
+
+                                            <p>Now, let’s assume a spinout founder advances to the point of discussing terms with a university TTO. Who is having this negotiation: Is it the founders as individuals or is it the spinout as an entity? For example,
+                                                TTOs prefer to negotiate terms with the founders and then work together to incorporate the company together, which exacerbates the conflict of interest. The alternative path is for the founders to incorporate
+                                                the company and find legal counsel who is willing to defer fees and represent the cash-strapped company before it engages with the TTO. In both cases, what do “market” terms look like? The honest answer
+                                                is that there is no “market” standard because a) there is little to no concerted effort nor structural incentive to agree to a simple template across TTOs, and b) with each deal being unique by design, which
+                                                whether intentional or not, this helps optimise for rent-seeking. <b>(Note: this is why we launched <a href="https://www.spinout.fyi">Spinout.fyi</a>).</b></p>
+
+                                            <p>An important structural issue is that major TTOs in Europe, and especially in the UK, are set up as independent companies as opposed to university offices or non-profit organisations as they are in the US. This
+                                                means that independent TTOs must pay for themselves by sourcing, brokering, advising, and completing licensing agreements with third parties, patent filings, and spin outs for the university they serve.
+                                                This creates a situation of misaligned incentives between the independent TTO and the startup. While the TTO focuses on its short-term interests, grabbing what it can get from the get go to prove its right
+                                                to exist as a business, the startup is long-term minded, often forgoing opportunities for quick revenue sources that divert its attention from the long-term prize. </p>
+
+                                            <p>A growing trend in the UK is that of university-affiliated venture capital funds. Incumbents argue that these funds are a net positive for the spinout ecosystem because they provide much needed risk capital
+                                                at the earliest of stages. Consider, however, that these venture funds often have a) the university as a Limited Partner, b) the TTO as part of its management, and c) a remit to invest into university-produced
+                                                spinouts. As such, there is again a conflict of interest: the fund manages capital of the university that produces the very spinouts it invests into. So what incentive does this leave the university and
+                                                TTO to rethink their spinout terms? The answer is: none. </p>
+
+                                            <p>As a result, many European university TTOs, especially in the UK, get away with drastically higher equity ownership, licensing fees and royalties than their US peers. Generally, whereas equity take rates per
+                                                university in the US range from 0 to 5% (e.g. MIT, Carnegie Mellon, Stanford, UW Madison), take rates per university in the UK range from 15% to 50% and typically land >25% with some rare exceptions. Sometimes
+                                                TTO shares come with anti-dilution up to $X million of capital raised, making their starting ownership larger. Unfortunately, it is hard to pin down exact terms for each university because the terms are
+                                                opaque by design. Some have tried (<a href="https://www.raeng.org.uk/publications/reports/spotlight-on-spinouts">here</a>, <a href="https://medium.com/@spchambers007/fair-shares-ad78f2d09e01">here</a>, and
+                                                <a href="https://www.nature.com/articles/nbt.3159?WT.ec_id=NBT-201503">here</a>) and the data can be reverse engineered to some degree using Companies House confirmation statements in the UK.</p>
+
+                                            <p>Universities can make spinout economics appear less onerous than they are by reporting aggregate figures. They do this by including spinouts where the IP has been developed outside of their university (which
+                                                pulls down the average ownership) or in collaboration with another university (which doesn’t account for the equity owned by the partner institution. For example, if a startup spins out using IP from Bristol
+                                                and Oxford, Oxford typically owns less because they have to share with Bristol. This actually happens quite frequently.</p>
+
+                                            <p>To add more color to to the problem of rent-seeking, here are some real-world examples of situations that I have found from founders while doing research for this essay:</p>
+                                            <li><b>University of Bath</b>: An engineering software spinout based on the founder’s research parted with 30% of the business upon founding.
+                                                <li><b>Oxford (biotech)</b>: A hardware spinout founded on a graduate student’s PhD work had to give up 75% of the equity, of which 50% to Oxford and 25% to the academic advisor who was not going to contribute
+                                                    actively to the spinout. Following a £1.2M Seed investment led by Oxford Sciences Innovation (the university-affiliated venture fund) and a transfer of equity from the university to OSI, the investment
+                                                    firm owned 50% of the spinout. Note here that a private investment management business automatically owns 50% of the fruits of a publicly-funded research project. On top, the startup had to pay 6% royalties
+                                                    on any revenues (negotiated down from 16%) and is now a defendant in a lawsuit against OUI after contesting these terms.
+                                                    <li><b>Oxford (software)</b>: On founding, two software spinouts based research by students/professors parted ways with a combined 30% equity to the university and OSI. Two other software spinouts parted
+                                                        ways with a combined 20% to the university and OSI. Another software startup that was not based on a student’s work at the university parted with 15% to the university at founding. Licensing terms
+                                                        are unknown.
+                                                        <li><b>University of Dundee</b>: A biotech software spinout gave up 16% of founding equity to the university. Licensing and royalties are unknown.
+                                                            <li><b>Imperial College London</b>: A software startup built around graduate and supervisor IP started negotiations at 50% equity and through many months of hard negotiation landed at 10% on founding.
+                                                                Queen's University Belfast: A software startup built around university research in cybersecurity networking started off with 30% founding ownership to the TTO.
+                                                                <li><b>University College London</b>: The licensing process for a software startup built around graduate and supervisor IP took almost one year to agree.</li>
+
+                                                                <h3>Is the playbook changing at all?</h3>
+
+                                                                <p>There appears to be pockets of willingness to change, but overall, the scorecard is not great. Let’s consider two UK examples where universities appear to have the intention to do good, but
+                                                                    where the end result is unfortunately not so positive. We’ll then consider an example of a UK university that is more permissive than the rest, and two Swiss TTOs that are marginally
+                                                                    better than the UK average. </p>
+
+                                                                <p><b>Imperial College London</b> originally structured their TTO, Imperial Innovations, as an independent company given exclusive access to the IP generated at Imperial. A few years later,
+                                                                    Imperial Innovations was reborn as Touchstone Innovations and split into two entities but with the ability to pass IP between them and enable their work with other universities, raising
+                                                                    their own funds and investing directly in startups. Touchstone Innovations was acquired by IP Group in 2017. In 2019, its Technology Transfer Operations <a href="https://www.ipgroupplc.com/~/media/Files/I/IP-Group-V2/press-releases/group-news/annual-results-2018.pdf">transferred back</a>                                                                    to Imperial to run in-house in 2019. The same year Touchstone was sold to IP Group, Imperial launched a programme called “Founder’s Choice” in 2017 where a spinout could choose a) a lot
+                                                                    of support from the TTO (“Jointly Driven Route”) or b) very little to none (“Founder Driven Route”). In principle, this is actually a terrific idea because it empowers founders who want
+                                                                    to handle their own spinout process while offering a helping hand (for a fee) to those who need and want it. The Founder Driven Route lets founders elect how much equity to give to Imperial,
+                                                                    which must be between 5% and 10% on founding. The catch is that Imperial’s founding equity is immune to dilution up until a certain cumulative amount of capital has been raised. Here
+                                                                    too, the university gives founders the choice: they can set the cumulative fundraising cap between £3M and £15M. Imperial offers a template <a href="https://www.imperial.ac.uk/enterprise/staff/industry-partnerships-and-commercialisation/commercialisation/forming-a-startup/founders-choice/">capitalisation table</a>                                                                    to help those interested to model what these terms mean for their equity. The encoded assumptions for round sizes and valuations in this spreadsheet are, perhaps inadvertently, significantly
+                                                                    lower than today’s market norms - almost pre-2010 era. So, even if we decide to give Imperial 5% founding ownership and we set the anti-dilute to kick in after £3M capital raised (i.e.
+                                                                    post-Seed round in 2021), this means that a spinout that’s raised £7.6M ($10M) carries Imperial as a 3.3% holder and the founders end up with 15.4% of the business. Working backwards
+                                                                    using these assumptions offered by Imperial, the “Founder’s Driven Route” option gives the university an 18% effective founding ownership. So maybe the intent is not so founder-friendly
+                                                                    after all...</p>
+
+                                                                <p><b>Queens University in Belfast</b>, recently ranked #1 in Octopus Ventures’ Entrepreneurial Impact Report, which measures the effectiveness of UK universities <i>“in terms of their production of intellectual property, creation of spinout companies, and successful exits from such spinout companies, relative to their total funding.”</i>                                                                    Like other universities, their TTO does not explicitly communicate numbers around their founding ownership requirements. Instead, <a href="https://www.qub.ac.uk/Business/Commercialisation/IP-and-innovation/Inventors-guide/Considerations-for-a-spin-out-company/">their website</a>                                                                    says: <i>“An equity allocation model is in place to help avoid protracted negotiations as to relative proportions of equity to be allocated between the University and its staff founders. The starting point of this model is to align it with the University’s existing 50/50 royalty share policy. In the same way that the IPR policy holds, this applies solely to the share between the University and its staff - and does not seek to constrain any equity negotiations with external parties.”</i>                                                                    So, not only does the TTO tell students that a 50/50 royalty and ownership split with founders is the starting point but it also says <i>“the equity allocation does not impact on investor discussions and helps avoid skewing internal considerations as to the route to market via licence or spinout.”</i>                                                                    This message is unfortunately very misleading. </p>
+
+                                                                <p>If founders split their spinout equity on anything close to aforementioned terms with a silent non-operating shareholder such as a TTO or university, professional investors will not be attracted
+                                                                    to invest because the spinout is hamstrung from the outset. In order to go the distance and create hundreds if not billions of enterprise value, founders must be in control of their business
+                                                                    and avoid anything that increases their drag coefficient. Founders must raise successively larger rounds of capital in private markets, have sufficient equity headroom to hire and incentivise
+                                                                    a growing team, and still feel like owners of the company they founded, not employees of their investors. Therefore, current TTO practices, even if they are intended to improve the playbook,
+                                                                    still do more harm than good.</p>
+
+                                                                <p>There is one ecosystem that is more founder-friendly than the rest, especially in software, and that is <b>Cambridge University</b>. Here, it is common practice for student researchers to
+                                                                    own the rights to their IP. If they wish to patent their inventions and start a business based on this IP, they must license it from the University for a fee. However, the University
+                                                                    is not automatically granted shares in the spinout. Instead, the University and Cambridge Enterprise (its TTO) manage an investment fund that spinout founders may pitch to raise capital
+                                                                    in exchange for shares. In this way, Cambridge Enterprise offers software startups a route to patenting and a route to raising their first round of investment, albeit at prices that can
+                                                                    be below market rate if no private venture capital firms are involved. </p>
+
+                                                                <p>Finally, in Switzerland there are two major TTOs: <b>ETH Transfer</b>, which handles spinouts from ETH Zurich, and <b>Unitectra</b>, which works for the Universities of Berne, Zurich and
+                                                                    Basel. Here, equity participation typically lands between 5-8% of share capital, sometimes with an anti-dilution clause limited to a cumulative of CHF 2-3M in funds raised. These institutions
+                                                                    typically do not invest cash for their shares. On the royalty side, rates mostly end up around 2% of net sales but rarely breach more than 4%. Practically speaking, however, these TTOs
+                                                                    often table much higher numbers even though they know they’ll end up coming down, which means that founders incur unnecessary time and lawyer fees. In fact, experience shows that TTOs
+                                                                    will yield the more founders push, which means that these negotiations can go on forever.</p>
+
+                                                                <h3>The history of TTOs</h3>
+
+                                                                <p>TTOs in the US were born from the 1980s Bayh-Dole Act that was created to reinvigorate the stagnant economy of the 1970s. The Act created a mechanism for government-funded Universities to
+                                                                    maintain ownership over their inventions, which could then be licensed back to inventors and their spinouts or to external companies. In the UK, TTOs were formed around the same time
+                                                                    to enforce the existing institutional ownership of IP (e.g. Cambridge Enterprise in 1972 and Oxford University Innovation in 1987). Germany and the Nordics followed suit by doing away
+                                                                    with “professor’s privilege” (i.e. ownership over one’s IP) in favor of institutional ownership by 2007. </p>
+
+                                                                <p>Over the years, a small number of deals - generally in biotech/pharma - have generated truly outsized returns for universities and their TTOs. The lighthouse case study that makes universities
+                                                                    and their TTOs get out of bed in the morning to exercise their rights over IP (notably in the form of royalties in the life sciences) is Lyrica, an anticonvulsant drug that was discovered
+                                                                    in 1990 by Northwestern University Professor of Chemistry, Richard Silverman. Exclusively licensed to Pfizer and released on the market in 2004, Lyrica became Pfizer’s top selling drug,
+                                                                    grossing $4.5B revenue per year. For Northwestern, Lyrica’s blockbuster success translated into $700M in cash in 2007 upon the sale of royalty rights to Pfizer and another $700M in revenue
+                                                                    over the years. To state the obvious here, Lyrica was licensed to a then $200B public company, not a brand new Northwestern spinout. In an astute long-term move, Northwestern’s president
+                                                                    reinvested the $1.4B gains into the University’s endowment, which a few years later compounded to grow into the 8th largest university endowment in the US. Silverman too paid his gains
+                                                                    forward. He put much of his personal earnings from Lyrica royalties towards the $100M Richard and Barbara Silverman Hall for Molecular Therapeutics and Diagnostics at Northwestern. </p>
+
+                                                                <p>Another bittersweet case study from the UK is Humira. This anti-inflammatory disease drug was developed by Cambridge Antibody Technology (CAT) in the mid-1990s using monoclonal antibody technology
+                                                                    spun out by Sir Greg Winter at the MRC LMB in Cambridge. The MRC owned a 2% royalty on the sales of Humira, which was approved in 2002 and whose rights they sold for £134M by 2005. CAT
+                                                                    was acquired in 2006 by AstraZeneca for £702M and merged with US-based MedImmune, also acquired by AstraZeneca. The twist is that CAT sold far too early: by 2016, Humira became the #1
+                                                                    multi-year blockbuster drug that generated $16B in sales per year. Note, however, that Humira was developed within a spinout. The drug was not licensed as such from the University. </p>
+
+                                                                <p>In both the Humira and Lyrica cases, these drugs were the result of many years (if not decades) of prior research conducted in academia. Today, however, more and more spinouts are making
+                                                                    use of software as a core competence in the products they develop. In biology, for example, this means that the paradigm is evolving from spinning out a single drug for commercialisation
+                                                                    into spinning out methods and platforms for the discovery of multiple drugs over time. In the software-dominant paradigm, the importance of execution and open source is far greater than
+                                                                    in the single drug spinout paradigm. Software changes the nature of how spinouts create value and therefore means that TTOs need to adapt their means of monetisation. </p>
+
+                                                                <h3>The TAM is too damn small: Universities monetise the wrong customer</h3>
+
+                                                                <p>Now, let’s compare the annual revenues of TTOs against the other major source of revenue for universities: their endowment and annual donations. US institutions of higher education are money
+                                                                    machines, in part because their tuition rates are higher than UK institutions, but in larger part because of the immense size of their endowments and annual donations from alumni, foundations,
+                                                                    corporations and other sources. Institutions of higher education in the US with endowments >$1B represent a total of <a href="https://nces.ed.gov/fastfacts/display.asp?id=73#:~:text=Response%3A,the%20total%20was%20%24544%20billion.">$493B</a>                                                                    whereas the combined endowments of all UK higher education comes to <a href="https://en.wikipedia.org/wiki/List_of_UK_universities_by_endowment">£16.5B</a>, both in 2019. On the donations
+                                                                    front, US institutions pulled in <a href="https://www.case.org/resources/voluntary-support-education-key-findings-2018-19">$49.6B</a> in 2019 (<a href="https://www.case.org/resources/voluntary-support-education-key-findings-2018-19">$11.2B</a>                                                                    from alumni only) compared to <a href="https://www.case.org/system/files/media/file/CASE-Ross_2020Report_2018-19.pdf">£1.3B</a> from their UK peers (<a href="https://www.theguardian.com/education/2017/may/03/annual-donations-to-uk-universities-passes-1bn-mark-for-first-time">£0.4B</a>                                                                    from alumni only).</p>
+
+                                                                <p>The graph below compares the revenues of TTO and annual fundraising for three US private (Stanford, Harvard, MIT) and one US public (UW Madison) university, as well as five public UK universities
+                                                                    (Oxford, Cambridge, UCL, Imperial, and Queen’s Belfast). Endowment sizes are added in parentheses next to the name of the university. What you can see is that US TTOs generate roughly
+                                                                    the same amount of revenue per year as UK TTOs (both largely from royalties, not equity), but US institutions generate much more revenue from donations. On average, this sample set of
+                                                                    US institutions make 22.5x more donation income than TTO income, compared to 6.6x for UK institutions. </p>
+
+
+                                                                <div class="container-figure has-text-centered">
+                                                                    <div class='card-figure equal-height figure-container'>
+                                                                        <div class='card-image'>
+                                                                            <nav class="level">
+                                                                                <div class="level-item has-text-centered">
+                                                                                    <figure class='image'><img class="figure" src='spinouts-donations.png'>
+                                                                                    </figure>
+                                                                                </div>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <p>In some cases, independent TTOs can focus too much on the success of their own business as opposed to the bigger picture. I was recently part of a conversation with a leading UK University
+                                                                    TTO who remarked that their TTO was particularly successful because they generated more revenue than MIT’s TTO. While this statistic is true, it is an expression of not getting the big
+                                                                    picture: MIT regularly receives massive donations from alumni and others that are many orders of magnitude larger than their TTOs revenue. In lieu of aggressively monetising their spinouts,
+                                                                    the institution has almost surpassed its <a href="https://betterworld.mit.edu/mit-raises-goal-for-campaign-for-a-better-world-to-6-billion/">$6B Campaign for a Better World</a> launched
+                                                                    in 2016. This includes large single donations such as Stephen Schwarzman’s <a href="https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015">$350M contribution</a>                                                                    to the College of Computing. This is the monetisation that matters:</p>
+
+                                                                <div class="container-figure has-text-centered">
+                                                                    <div class='card-figure equal-height figure-container'>
+                                                                        <div class='card-image'>
+                                                                            <nav class="level">
+                                                                                <div class="level-item has-text-centered">
+                                                                                    <figure class='image'><img class="figure" src='spinouts-mit.png'>
+                                                                                    </figure>
+                                                                                </div>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <p>The picture that emerges is the following: Spinouts do not present a large enough recurring source of revenue for universities. The data shows that monetising IP and owning equity in the
+                                                                    dozen or so spinouts that emerge per university each year cannot yield more than the low tens of millions of dollars of annual revenue. In investor speak, the total addressable market
+                                                                    is too small because there are too few customers with wallets that are too small to support a university. Therefore, universities that set up their TTOs to be standalone businesses have
+                                                                    incentivised them to monetise spinouts, which is effort spent on the <b>wrong customer</b>. </p>
+
+                                                                <h3>Alumni, alumni, alumni</h3>
+
+                                                                <p>So why is it that UK universities aren’t monetising the right customer? Having attended university in the US and in the UK, my view is that the reason is both historical and cultural. In
+                                                                    the US, alumni are a critical part of a university. Even before you enroll as an undergraduate, US universities will open up their alumni networks (online and in person in your local
+                                                                    city) to make you feel welcome as part of the university community. Alumni often share career opportunities with current students, attend campus to give talks and watch sports games,
+                                                                    they put university stickers all over their car and wear paraphernalia on as many occasions as possible. Graduation ceremonies are huge events where being invited to deliver a commencement
+                                                                    address is an honor offered to highly successful individuals. Famous commencement addresses, e.g. Bill Gates at Harvard, Steve Jobs at Stanford, Jeff Bezos at Princeton, fire up new graduates
+                                                                    to take on the biggest challenges in the world with stories from their own journeys. These invigorating talks are watched on YouTube for years after. Being an alum of a university is
+                                                                    a real part of someone's identity. The concept of the Alma Mater being the school from which one graduated, which in Latin translates to “nourishing mother”, describes this concept perfectly.
+                                                                    As a result of this visceral binding between university and alumni, there is a huge willingness to donate as a way of paying the opportunity forward to future generations. </p>
+
+                                                                <p>By contrast, European and UK universities do not seem to champion the concept of the Alma Mater. There is little to no effort in building a similarly cohesive, accessible, and opportunity-rich
+                                                                    alumni community. For example, as a student of Oxford or Cambridge (“Oxbridge”), it is almost impossible to access a database of who graduated from your College. This makes networking
+                                                                    for opportunities really difficult. Upon passing final year exams, graduates must book their graduation date pretty much any time in the future. Many don’t even attend. Those who do are
+                                                                    mixed with graduates from random class years as they listen to verses recited in Latin that could put you to sleep. Meanwhile, Universities enlist undergraduates to fundraise by smile
+                                                                    and dial during academic holidays, often reaching unresponsive alumni who are otherwise not engaged. </p>
+
+                                                                <p>Furthermore, my impression is that building a US-style alumni community in the UK and Europe is made very difficult by the fact that university is considered a public right. In Europe most
+                                                                    countries fund their own Universities and do not charge undergraduates for tuition. This creates a relationship that is very transactional. In the UK, university attendance was free until
+                                                                    1998 thanks to the Education Act of 1962. Afterwards, tuition was pegged to £1,000 per year, rising with inflation 2008. Today, UK university fees sit around £10,000 per year for a full-time
+                                                                    degree. In the US, by comparison private universities cost $50-60k per year and public universities cost $10-15k for local state students. However, they offer generous financial aid packages
+                                                                    for those in less fortunate positions. For example, the undergraduate institution I attended, Williams College, offers financial aid to 50% of its student body. Thanks to a $2.8B endowment,
+                                                                    strong returns and donations from alumni, 85% of the aid package is a grant that the student does not need to pay back. Taken together, UK alumni do not feel indebted to their university
+                                                                    because their attendance and education was a public right. This means little to no willingness to donate back and a resulting paltry endowment. </p>
+
+                                                                <h3>Rewriting the spinout playbook</h3>
+
+                                                                <p>Today, a lot of students, staff, and faculty end up feeling short changed (sometimes exploited) by their university. Several high-profile staff and faculty who could afford to take off and
+                                                                    leave because of these spinout negotiations and unfair terms have done so. The most ambitious, up-and-coming entrepreneurial academics certainly take into account the “spinout friendliness”
+                                                                    of a university when considering which one to join. However, students cannot do the same as easily. Overall, there is now significant animosity between the university and spinout founders
+                                                                    who more often than not feel that TTOs are out to get them rather than have their backs. Further downstream, investors and acquirers also have a tough situation fixing the problems created
+                                                                    by overly hungry TTOs. As a result, there is little to no chance that spinout founders who are dealt the short straw will ever donate anything to the university.</p>
+
+                                                                <p>We need a permissive, not punitive, environment for European spinouts that attracts the best entrepreneurial academics and students, and drives more of their companies to billion dollar status.
+                                                                    One that appropriately rewards universities for their role in nurturing talent and cutting-edge research, but one that does not hamper the growth potential of the spinouts. </p>
+
+                                                                <p>I believe the solution is as follows:</p>
+
+                                                                <p>First, TTOs should uniformly adopt a <b>Simple Agreement to Spinout</b> (SAS) that sets a transparent standard specifically for spinouts. The SAS gives TTOs the option to select either Option
+                                                                    1) 1-5% common equity or Option 2) in the case of clearly identified IP over a drug molecule or medical device, 1% royalty on net sales (direct or sub-licensing based), or Option 3) 1%
+                                                                    of the exit consideration upon M&A or IPO, in addition to a one-off $25,000 per patent that the spinout in-licenses. If the spinout does not use licensed IP for 24 months, it must return
+                                                                    it to the University for recycling. No other fees are levied. </p>
+
+                                                                <p>Second, the goal and assessment criteria of TTOs should be recast as maximising the number of spinouts formed under the SAS with a commitment to complete the process in no more than 3 months.
+                                                                    Further advisory or operational support for the spinout doesn’t need to come from the TTO. Instead, there are more than enough alumni entrepreneurs, VC and angel investors who today will
+                                                                    happily donate their time in order to win the chance to work with the latest and greatest spinout. </p>
+
+                                                                <p>In this way, the SAS lets TTOs optimise for the form of payment that best aligns with the spinouts business model. For example, a biotech company spinning out one specific drug will generate
+                                                                    value in the form of drug sales. Therefore, royalty is the most suitable form of value capture. For a software company that builds an enterprise software product using new machine learning
+                                                                    methods, value will accrue more quickly to the equity because the company will reinvest short-term profits into growth. Therefore, an equity deal is the most suitable form of value capture.
+                                                                    SAS terms are summarized here below: </p>
+
+                                                                <div class="container-figure has-text-centered">
+                                                                    <div class='card-figure equal-height figure-container'>
+                                                                        <div class='card-image'>
+                                                                            <nav class="level">
+                                                                                <div class="level-item has-text-centered">
+                                                                                    <figure class='image'><img class="figure" src='spinouts-table.png'>
+                                                                                    </figure>
+                                                                                </div>
+                                                                            </nav>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <h3>Conclusion</h3>
+
+                                                                <p>I strongly believe that we need to rewrite the university spinout playbook in Europe. Not doing so means that we’re missing out on so many great founders who are deterred from building a
+                                                                    business and we’re hampering the growth of those who do take the leap. Moreover, we lose out on entrepreneurial academics who decide not to join the ranks of a European university because
+                                                                    of its unfriendly spinout policies. The second order effect is that we lose ambitious students who are the human capital we need to do the best research and win grants. We need to reframe
+                                                                    the goals of TTOs so they are measured by the number of spinouts they create under the SAS framework, not by the revenue they generate from equity and royalties. In the longer run, we
+                                                                    must transition TTOs from being independently run companies to being offices within universities or, better yet, philanthropic organisations. We need to meaningfully invest in alumni
+                                                                    ecosystems so that successful spinout founders wish to donate to their university and pay it forward to future generations of entrepreneurs. Success breeds success. Let’s start today.
+                                                                </p>
+
+                                                                <h3>Appendix</h3>
+                                                                <p>TTOs report their performance annually, which includes the annual income generated from licensing, royalties and other deals, new patents filed and granted, patents under management, and
+                                                                    new spinouts. Here is a performance summary of 3 US and 3 UK TTOs:</p>
+
+                                                                <li><b><a href="https://www.uclb.com/wp-content/uploads/2020/03/UCLB-Annual-Report-2018-19.pdf">🇬🇧 UCL Business (UCLB)</a></b>. For 2018-19, UCLB reports £32m revenue, 33 new UK patent applications,
+                                                                    300 active licenses, 68 spinouts, 210 patent families, 34 drug disco projects in development.
+
+                                                                    <li><b><a href="http://web.mit.edu/tlo/documents/TLO_FY2019_Factsheet.pdf">🇺🇸 MIT’s Technology Licensing Office (TLO)</a></b>. For FY2019, the MIT TLO reports $34.8M revenue from licensing,
+                                                                        439 new US patent filed, 381 US patents issued, 400 international patents issued, 1,416 incoming material transfer agreements, 3,112 US patents currently active, 25 new startups (471
+                                                                        since 1997-2018).
+
+                                                                        <li><b><a href="https://facts.stanford.edu/research/innovation/#:~:text=Technology%20Licensing,%24100%2C000%20or%20more%20in%20royalties.">🇺🇸 Stanford’s Office of Technology Licensing (OTL)</a></b>.
+                                                                            For FY2019, Stanford OTL reports $49.3 million in gross royalty revenue from 875 technologies in gross royalty revenue from 875 technologies, with royalties ranging from $10 to
+                                                                            $16.5M. 49 of the inventions generated $100,000 or more in royalties. Only five inventions generated $1 million or more. Stanford received equity in 30 companies, which now totals
+                                                                            203 companies as a result of a licensing agreement.
+
+                                                                            <li><b><a href="https://annualreview2020.innovation.ox.ac.uk/wp-content/uploads/2020/10/OUI_Annual_Review_2020_A4_Download.pdf">🇬🇧 Oxford University Innovation (OUI)</a></b>. For
+                                                                                FY2020, OUI reports £24.9M in total revenue (+37% YoY), of which £18.9M was derived from licensing and ventures, and £1M from equity realisations. From the total revenue,
+                                                                                £16.7M was distributed to the University departments, academics and external partners. OUI has 4793 patents under management and 846 total deals.
+
+                                                                                <li><b><a href="https://otd.harvard.edu/about-otd/productivity-highlights/">🇺🇸 Harvard’s Office of Technology Development (OTB)</a></b>. For FY2020, Harvard OTB reports $58.7M
+                                                                                    total revenue, 208 new patents,178 new US patents issued, 45 major licensing deals, 14 startups, and $50.3M corporate research funding.
+
+                                                                                    <li><b><a href="https://www.imperial.ac.uk/enterprise/review-of-enterprising-activity-2018-2019/year/">🇬🇧 Imperial College London Enterprise Division (Enterprise)</a></b>.
+                                                                                        For 2018-19, Imperial Enterprise reported £3.4M in licensing revenue, 85 new patent filings, 63 granted patents, 332 active patent libraries (excluding those already
+                                                                                        commercialised), and just over £10m consulting revenue to external companies. Enterprise also reported 3 new spinouts and 59 new student startups that were not based
+                                                                                        on University IP.
+
+                                                                                        <div class="container-figure has-text-centered">
+                                                                                            <div class='card-figure equal-height figure-container'>
+                                                                                                <div class='card-image'>
+                                                                                                    <nav class="level">
+                                                                                                        <div class="level-item has-text-centered">
+                                                                                                            <figure class='image'><img class="figure" src='spinouts-table-2.png'>
+                                                                                                            </figure>
+                                                                                                        </div>
+                                                                                                    </nav>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        ------
+
+                                                                                        <br>
+
+                                                                                        <p>This essay is an expanded version of a Financial Times oped published on 10 May 2021, <a href="https://www.ft.com/content/fd038300-f09a-4afc-9f7d-c0e3d6965243"><i>Universities in the UK and Europe have a start-up problem</i></a>.</p>
+
+                                                                                        <p><i>Thanks to the spinout founders, academics, investors, and TTO directors who spoke to me on background for this research.</i></p>
+
+
+                                                                                        <footer class="site-footer">
+                                                                                            <span class="site-footer-credits">
           &copy; 2021 Air Street Capital LLP, all rights reserved. 
           <p>Air Street Capital LLP (OC424177) (FRN 805476) is an Appointed Representative (AR) of Met Facilities LLP, which is authorized and regulated by the Financial Conduct Authority (FRN 587084). <a href="https://www.twitter.com/airstreet"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/"><u>LinkedIn</u></a> | <a href="https://www.airstreet.com/risks"><u>Information about risks</u></a></p>
       </footer>
