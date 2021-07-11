@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-        <script type="application/ld+json">
+
+<head>
+    <script type="application/ld+json">
         {
-          "@context" : "http://schema.org",
-          "@type" : "Corporation",
-          "name" : "Air Street Capital",
-          "logo" : "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
-          "description": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies",
-          "address" : {
-            "@type" : "PostalAddress",
-            "addressLocality" : "London",
-            "addressCountry" : "United Kingdom"
-          },
-           "founder": {
-            "@type": "Person",
-            "name": ["Nathan Benaich", "Victoria Rege", "Luc Vincent", "Phil Keslin", "Gaile Gordon", "Gabriel Dulac-Arnold", "Julien Cornebise", "Jan Erik Solem"]
-          },  
-          "url" : "http://www.airstreet.com/",
-          "knowsAbout" : ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital"],
-          "legalName" : "Air Street Capital LLP",
-          "slogan" : "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies"
+            "@context": "http://schema.org",
+            "@type": "Corporation",
+            "name": "Air Street Capital",
+            "logo": "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
+            "description": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressCountry": "United Kingdom"
+            },
+            "founder": {
+                "@type": "Person",
+                "name": ["Nathan Benaich", "Victoria Rege", "Luc Vincent", "Phil Keslin", "Gaile Gordon", "Gabriel Dulac-Arnold", "Julien Cornebise", "Jan Erik Solem"]
+            },
+            "url": "http://www.airstreet.com/",
+            "knowsAbout": ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital"],
+            "legalName": "Air Street Capital LLP",
+            "slogan": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies"
         }
-        </script>
+    </script>
     <meta charset="UTF-8">
     <title>Air Street Capital blog: 3 business personas in ML</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,8 +31,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -48,12 +49,14 @@
     <meta name="twitter:site" content="@airstreet" />
     <meta name="twitter:creator" content="@airstreet" />
     <meta property="twitter:title" content="3 business personas in ML" />
-    <meta property="twitter:description" content="We describe three business personas that we have observed as well as their common challenges, technology stacks, talent requirements and organisational structure. The goal here is to help you define your starting position such that you can make informed decisions as the steps in your ML journey." />
+    <meta property="twitter:description" content="We describe three business personas that we have observed as well as their common challenges, technology stacks, talent requirements and organisational structure. The goal here is to help you define your starting position such that you can make informed decisions as the steps in your ML journey."
+    />
     <meta property="twitter:image" content="https://www.airstreet.com/blog/3-personas-in-ml-cover-sept.png">
     <!-- for linkedin -->
     <meta property="og:url" content="https://www.airstreet.com/blog/3-business-personas-in-machine-learning" />
     <meta property="og:title" content="3 business personas in ML" />
-    <meta property="og:description" content="We describe three business personas that we have observed as well as their common challenges, technology stacks, talent requirements and organisational structure. The goal here is to help you define your starting position such that you can make informed decisions as the steps in your ML journey." />
+    <meta property="og:description" content="We describe three business personas that we have observed as well as their common challenges, technology stacks, talent requirements and organisational structure. The goal here is to help you define your starting position such that you can make informed decisions as the steps in your ML journey."
+    />
     <meta property="og:image" content="https://www.airstreet.com/blog/3-personas-in-ml-cover-sept.png">
     <meta property="og:type" content="article" />
     <!-- Added to have cool social share buttons -->
@@ -62,164 +65,198 @@
     <!-- Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
-<!-- Google Analytics -->
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-41373361-6', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
-<!-- End Google Analytics -->
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-41373361-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
 
-<!-- Google schema -->
-<script type="application/ld+json">
+    <!-- Google schema -->
+    <script type="application/ld+json">
         {
-          "@context" : "http://schema.org",
-          "@type" : "Person",
-          "name" : "Nathan Benaich",
-             "affiliation" : {
-            "@type" : "Corporation",
-            "name" : "Air Street Capital"
-          },
-             "alumniOf" : {
-            "@type" : "Corporation",
-            "name" : "Point Nine Capital"
-          },
-             "colleagues" : {
-            "@type" : "Person",
-            "name" : ["Luc Vincent", "Phil Keslin", "Gabriel Dulac-Arnold", "Jan Erik Solem", "Gaile Gordon", "Victoria Rege", "Julien Cornebise", "Christoph Janz"]
-          },
-          "hasOccupation" : {
-            "@type" : "Occupation",
-            "description" : "Venture capital investor"
-          },
-          "knowsAbout" : ["State of AI Report 2019", "artificial intelligence", "deep learning", "machine learning", "reinforcement learning", "supervised learning", "startups", "venture capital", "State of AI", "State of AI Report", "State of AI Report 2018", "investing", "early stage investing", "SaaS", "software-as-a-service"],
-          "description" : "Nathan Benaich is the Founder of Air Street Capital, a venture capital firm investing in startups using artificial intelligence to build products for consumers and enterprises",
-          "url" : "https://www.nathanbenaich.com"
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Nathan Benaich",
+            "affiliation": {
+                "@type": "Corporation",
+                "name": "Air Street Capital"
+            },
+            "alumniOf": {
+                "@type": "Corporation",
+                "name": "Point Nine Capital"
+            },
+            "colleagues": {
+                "@type": "Person",
+                "name": ["Luc Vincent", "Phil Keslin", "Gabriel Dulac-Arnold", "Jan Erik Solem", "Gaile Gordon", "Victoria Rege", "Julien Cornebise", "Christoph Janz"]
+            },
+            "hasOccupation": {
+                "@type": "Occupation",
+                "description": "Venture capital investor"
+            },
+            "knowsAbout": ["State of AI Report 2019", "artificial intelligence", "deep learning", "machine learning", "reinforcement learning", "supervised learning", "startups", "venture capital", "State of AI", "State of AI Report", "State of AI Report 2018", "investing", "early stage investing", "SaaS", "software-as-a-service"],
+            "description": "Nathan Benaich is the Founder of Air Street Capital, a venture capital firm investing in startups using artificial intelligence to build products for consumers and enterprises",
+            "url": "https://www.nathanbenaich.com"
         }
-        </script>
+    </script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-<section class="page-header">
-      <div class="hero-body">
-          <div class="container has-text-centered">
-              <div class='card equal-height logo-container'>
-                <div class='card-image'>
-                  <nav class="level">
-                    <div class="level-item has-text-centered">
-                      <figure class='image'>
-                        <img class="logo" src='logo-v2.png'>
-                      </figure>
+    <section class="page-header">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class='card equal-height logo-container'>
+                    <div class='card-image'>
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <div class="container">
+                                    <a href="https://www.airstreet.com/">
+                                        <img class="logo" alt="Air Street logo" src='logo.png'>
+                                    </a>
+                                    <div class="centered">Investing in AI-first companies.</div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                  </nav> 
                 </div>
             </div>
-          </div>
         </div>
-      <!-- <h1 class="project-name"><b>Air Street Capital blog</b></h1> -->
-      <h2 class="project-tagline">The AI-first playbook</h2>
-              </h2>
-              <div>
-                    <a href="https://www.airstreet.com/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
-                    <a href="https://www.airstreet.com/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
-                    <a href="https://www.airstreet.com/team" class="button is-white is-outlined"> 👋 Team</a>
-                    <a href="https://newsletter.airstreet.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
-                    <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
-                    <a href="https://www.airstreet.com/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
+        <!-- <h1 class="project-name"><b>Air Street Capital blog</b></h1> -->
+        <h2 class="project-tagline">The AI-first playbook</h2>
+        </h2>
+        <div>
+            <a href="https://www.airstreet.com/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
+            <a href="https://www.airstreet.com/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
+            <a href="https://www.airstreet.com/team" class="button is-white is-outlined"> 👋 Team</a>
+            <a href="https://newsletter.airstreet.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
+            <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
+            <a href="https://www.airstreet.com/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
     </section>
 
     <section class="main-content">
-<h2>
-<a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>3 business personas in ML, their challenges and opportunities</h2>
+        <h2>
+            <a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>3 business personas in ML, their challenges and opportunities</h2>
 
-<p><i>Published v3 by Nathan Benaich on 6 Sept 2020. <strike>v2 (26th March 2020)</strike>, <strike>v1 (22nd October 2019)</strike>.</i></p>
+        <p><i>Published v3 by Nathan Benaich on 6 Sept 2020. <strike>v2 (26th March 2020)</strike>, <strike>v1 (22nd October 2019)</strike>.</i></p>
 
-              <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/3-business-personas-in-machine-learning/&text=3+business+personas+in+ML%2C+their+challenges+and+opportunities+by+%40nathanbenaich+at+%40airstreet" target="_blank">
-              <span class="icon">
+        <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/3-business-personas-in-machine-learning/&text=3+business+personas+in+ML%2C+their+challenges+and+opportunities+by+%40nathanbenaich+at+%40airstreet"
+            target="_blank">
+            <span class="icon">
                 <i class="fab fa-twitter"></i>
               </span>
-              </a>
+        </a>
 
-              <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/3-business-personas-in-machine-learning/&title=3+business+personas+in+ML%2C+their+challenges+and+opportunities+by+%40nathanbenaich+at+%40airstreet" target="_blank">
-              <span class="icon">
+        <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/3-business-personas-in-machine-learning/&title=3+business+personas+in+ML%2C+their+challenges+and+opportunities+by+%40nathanbenaich+at+%40airstreet"
+            target="_blank">
+            <span class="icon">
                 <i class="fab fa-linkedin"></i>
               </span>
-              </a>
+        </a>
 
-<h3>Introduction</h3>
-<p>As machine learning (ML) grows in popularity amongst large technology companies and startups, businesses of all kinds are taking notice and asking themselves how they can follow suit. There are many resources that help codify the discovery of real-world use cases where it makes technical and commercial sense to use an ML-based solution. For example, inspired by the popular startup business model canvas, the <a href="https://www.louisdorard.com/machine-learning-canvas">ML Canvas</a> does a great job at structuring this discovery process.</p> 
+        <h3>Introduction</h3>
+        <p>As machine learning (ML) grows in popularity amongst large technology companies and startups, businesses of all kinds are taking notice and asking themselves how they can follow suit. There are many resources that help codify the discovery of
+            real-world use cases where it makes technical and commercial sense to use an ML-based solution. For example, inspired by the popular startup business model canvas, the <a href="https://www.louisdorard.com/machine-learning-canvas">ML Canvas</a>            does a great job at structuring this discovery process.</p>
 
-<p>However, less has been written about the common challenges faced by specific business personas as a function of their level of expertise in ML and the maturity of their data infrastructure. From my vantage point as an investor in AI-first technology and life science companies with <a href="https://www.airstreet.com">Air Street Capital</a>, I will describe three business personas that I have observed as well as their common challenges, technology stacks, talent requirements and organisational structure. The goal here is to help you define your starting position such that you can make informed decisions as the steps in your ML journey.</p>
+        <p>However, less has been written about the common challenges faced by specific business personas as a function of their level of expertise in ML and the maturity of their data infrastructure. From my vantage point as an investor in AI-first technology
+            and life science companies with <a href="https://www.airstreet.com">Air Street Capital</a>, I will describe three business personas that I have observed as well as their common challenges, technology stacks, talent requirements and organisational
+            structure. The goal here is to help you define your starting position such that you can make informed decisions as the steps in your ML journey.</p>
 
-<h3>Three business personas</h3>
-<p>Broadly speaking, I have observed three different business personas that can be distinguished by the extent to which ML, data infrastructure and software is a core value creator today.</p>
+        <h3>Three business personas</h3>
+        <p>Broadly speaking, I have observed three different business personas that can be distinguished by the extent to which ML, data infrastructure and software is a core value creator today.</p>
 
-<h4>1. The ML-first company</h4>
-<p><u>Description:</u> This business persona is creating a product uniquely enabled by ML. For example, this could be an enterprise cybersecurity product that monitors, detects and protects against malicious network activity. The management/senior team are ML natives and have extensive experience with state-of-the-art tools (and often research code) and processes.</p>
+        <h4>1. The ML-first company</h4>
+        <p><u>Description:</u> This business persona is creating a product uniquely enabled by ML. For example, this could be an enterprise cybersecurity product that monitors, detects and protects against malicious network activity. The management/senior
+            team are ML natives and have extensive experience with state-of-the-art tools (and often research code) and processes.</p>
 
-<p><u>Technology choices:</u> Invest significantly into proprietary tooling and adopts open source as much as possible. They will depend on cloud vendors for commodity infrastructure, but will shy away from purchasing third party services that play to the lowest common denominator ML user for problems that they can solve themselves. Examples: <a href="https://syslog.ravelin.com/ravelin-technology-stack-1e957a469388">Ravelin</a>.</p>
+        <p><u>Technology choices:</u> Invest significantly into proprietary tooling and adopts open source as much as possible. They will depend on cloud vendors for commodity infrastructure, but will shy away from purchasing third party services that play
+            to the lowest common denominator ML user for problems that they can solve themselves. Examples: <a href="https://syslog.ravelin.com/ravelin-technology-stack-1e957a469388">Ravelin</a>.</p>
 
-<p><u>Common challenges:</u> Creating a resilient, reliable, scalable, fast, secure, and cost-effective technology stack. Read more on this topic in an excellent post on data science best practice <a href="https://syslog.ravelin.com/data-science-best-practices-843c9693db8">here</a>.</p>
+        <p><u>Common challenges:</u> Creating a resilient, reliable, scalable, fast, secure, and cost-effective technology stack. Read more on this topic in an excellent post on data science best practice <a href="https://syslog.ravelin.com/data-science-best-practices-843c9693db8">here</a>.</p>
 
-<p><u>Talent requirements:</u> Examples include: hiring ML Research Engineers (making R&D models fit for production), Data Engineers (Software Engineers who specialise in building tooling for manipulating large datasets), ML Engineers (training and evaluating models for production use cases), DevOps for ML (or MLOps, pushing and monitoring trained ML models in production), and Data Scientists (folks who write write queries to explore datasets, find relevant signals, and sometimes train models). Roles focused on either a) advancing state of the art in production, b) reliable, large scale ML production system engineering.</p>
+        <p><u>Talent requirements:</u> Examples include: hiring ML Research Engineers (making R&D models fit for production), Data Engineers (Software Engineers who specialise in building tooling for manipulating large datasets), ML Engineers (training and
+            evaluating models for production use cases), DevOps for ML (or MLOps, pushing and monitoring trained ML models in production), and Data Scientists (folks who write write queries to explore datasets, find relevant signals, and sometimes train
+            models). Roles focused on either a) advancing state of the art in production, b) reliable, large scale ML production system engineering.</p>
 
-<p><u>Setup of ML organisation:</u> A core ML platform team that is responsible for building a platform to make model building, training, deploying, and monitoring simple and as automated as possible. Then, several product-focused ML engineers or data scientists who are embedded in product teams. These individuals use the core ML platform to train problem-specific models, evaluate them and serve them in production.</p>
+        <p><u>Setup of ML organisation:</u> A core ML platform team that is responsible for building a platform to make model building, training, deploying, and monitoring simple and as automated as possible. Then, several product-focused ML engineers or
+            data scientists who are embedded in product teams. These individuals use the core ML platform to train problem-specific models, evaluate them and serve them in production.</p>
 
-<h4>2. The software-native company</h4>
-<p><u>Description:</u> A software company that is strategically evolving its offerings to be ML-first. This persona might be a workflow SaaS company or enterprise software business whose product essentially consists of a client-side application, server-side application infrastructure, and databases. There is no real use of ML baked into the product when it was built. 
+        <h4>2. The software-native company</h4>
+        <p><u>Description:</u> A software company that is strategically evolving its offerings to be ML-first. This persona might be a workflow SaaS company or enterprise software business whose product essentially consists of a client-side application,
+            server-side application infrastructure, and databases. There is no real use of ML baked into the product when it was built.
 
-<p><u>Technology choices:</u> This type of company will usually have the necessary business intelligence infrastructure in place (i.e. a data-warehouse) and is looking to deploy internal or hired data scientists in order to leverage their data assets. However, since the existing software architecture was typically built for a different purpose, it might be challenging to deploy models in production. They will often look towards simple to use open source tools, services offered by cloud vendors, or other SaaS companies that provide ML tooling. A focus is placed on customizability, cost, and support. For example, see <a href="https://stackshare.io/opendoor/data-science">OpenDoor</a>.</p>
+            <p><u>Technology choices:</u> This type of company will usually have the necessary business intelligence infrastructure in place (i.e. a data-warehouse) and is looking to deploy internal or hired data scientists in order to leverage their data
+                assets. However, since the existing software architecture was typically built for a different purpose, it might be challenging to deploy models in production. They will often look towards simple to use open source tools, services offered
+                by cloud vendors, or other SaaS companies that provide ML tooling. A focus is placed on customizability, cost, and support. For example, see <a href="https://stackshare.io/opendoor/data-science">OpenDoor</a>.</p>
 
-<p><u>Common challenges:</u> The challenges that the data team will face are around convincing business stakeholders of the value of ML. This persona tends to struggle knowing where and how to begin. If no one in the business has experience with ML, the challenges include defining a low-hanging and addressable problem, deciding to build or buy technology, and determining what success looks like.</p>
+            <p><u>Common challenges:</u> The challenges that the data team will face are around convincing business stakeholders of the value of ML. This persona tends to struggle knowing where and how to begin. If no one in the business has experience with
+                ML, the challenges include defining a low-hanging and addressable problem, deciding to build or buy technology, and determining what success looks like.</p>
 
-<p><u>Talent requirements:</u> While these businesses have software engineering expertise, they often do not have particular skills in ML. They might have individuals who can prototype a model using a data science notebook or who can integrate cloud available prediction APIs into a functioning demo. Should they hire new people and, if so, should these be data engineers, data scientists, or ML engineers? In many cases, one could argue that these businesses should first hire a data-focussed business person to project manage rather than going directly to hire technical talent. For more, <a href="https://thinkgrowth.org/the-startup-founders-guide-to-analytics-1d2176f20ac1">read this piece</a> on setting up analytics competencies from scratch at different stages of company growth.</p>
+            <p><u>Talent requirements:</u> While these businesses have software engineering expertise, they often do not have particular skills in ML. They might have individuals who can prototype a model using a data science notebook or who can integrate
+                cloud available prediction APIs into a functioning demo. Should they hire new people and, if so, should these be data engineers, data scientists, or ML engineers? In many cases, one could argue that these businesses should first hire a
+                data-focussed business person to project manage rather than going directly to hire technical talent. For more, <a href="https://thinkgrowth.org/the-startup-founders-guide-to-analytics-1d2176f20ac1">read this piece</a> on setting up analytics
+                competencies from scratch at different stages of company growth.</p>
 
-<p><u>Setup of ML organisation:</u> For this persona, it often makes most sense to start by pairing a group of software engineers and data scientists with a particular product organisation. The goal here is to scope, build and test new ML prototypes. If this is successful, weigh up the merits of building out an organisation as in the first persona.</p>
+            <p><u>Setup of ML organisation:</u> For this persona, it often makes most sense to start by pairing a group of software engineers and data scientists with a particular product organisation. The goal here is to scope, build and test new ML prototypes.
+                If this is successful, weigh up the merits of building out an organisation as in the first persona.</p>
 
-<h4>3. The incumbent company</h4>
-<p><u>Description:</u> This business offers software-based products or uses software to power their business but it really treats software as “old-school IT”. This persona does not see software as a core competence or a vector of differentiation against their competitors. Software is not really a value creator, but more of a means to an end.</p>
+            <h4>3. The incumbent company</h4>
+            <p><u>Description:</u> This business offers software-based products or uses software to power their business but it really treats software as “old-school IT”. This persona does not see software as a core competence or a vector of differentiation
+                against their competitors. Software is not really a value creator, but more of a means to an end.</p>
 
-<p><u>Technology choices:</u> This persona will most likely be using many legacy IT systems, will generally be early in their migration to the cloud and does not tend to procure using SaaS or similar low-friction approaches. They tend not to use much open source and instead by software from large IT vendors or have custom solutions written for them.</p>
+            <p><u>Technology choices:</u> This persona will most likely be using many legacy IT systems, will generally be early in their migration to the cloud and does not tend to procure using SaaS or similar low-friction approaches. They tend not to
+                use much open source and instead by software from large IT vendors or have custom solutions written for them.</p>
 
-<p><u>Common challenges:</u> This persona is likely to want an end-to-end platform of some kind that offers lots of hand holding, starting with business intelligence, analytics and data warehousing. The biggest challenge this persona faces is connecting IT with the business so that “Excel users” can consume data produced by data infrastructure engineers. <a href="https://blog.getdbt.com/analytics-engineering-for-everyone/">Here</a> is a great post from dbt that digs into this problem. It is probably too early to be worrying about ML :-)</p>
+            <p><u>Common challenges:</u> This persona is likely to want an end-to-end platform of some kind that offers lots of hand holding, starting with business intelligence, analytics and data warehousing. The biggest challenge this persona faces is
+                connecting IT with the business so that “Excel users” can consume data produced by data infrastructure engineers. <a href="https://blog.getdbt.com/analytics-engineering-for-everyone/">Here</a> is a great post from dbt that digs into this
+                problem. It is probably too early to be worrying about ML :-)</p>
 
-<p><u>Talent requirements:</u> Little provided internally. Instead, they will depend on external development agencies or large technology consultancies.</p>
+            <p><u>Talent requirements:</u> Little provided internally. Instead, they will depend on external development agencies or large technology consultancies.</p>
 
-<p><u>Setup of ML organisation:</u> Pretty much nonexistent.</p>
+            <p><u>Setup of ML organisation:</u> Pretty much nonexistent.</p>
 
-<h3>Bonus section: A list of helpful ML and data tools</h3>
-<p>The ecosystem of ML and data infrastructure tooling is evolving quickly. To help you bootstrap your search,here is a selected list of solution providers and open source offerings tackling specific parts of the ML value chain:</p>
+            <h3>Bonus section: A list of helpful ML and data tools</h3>
+            <p>The ecosystem of ML and data infrastructure tooling is evolving quickly. To help you bootstrap your search,here is a selected list of solution providers and open source offerings tackling specific parts of the ML value chain:</p>
 
-<li><u>End-to-end platforms:</u> <a href="https://www.Datarobot.com">DataRobot</a>, <a href="https://www.polyaxon.com">Polyaxon</a>, <a href="https://www.MLflow.org">MLflow</a> (open source), <a href="https://www.Peltarion.com">Peltarion</a>, <a href="https://www.petuum.com">Petuum</a>, <a href="https://www.dominodatalab.com">Domino Data Lab</a>, BigHead (open source), <a href="https://cloud.google.com/ai-platform/">Google’s AI Platform</a>, <a href="https://www.spell.run">Spell</a>, MSFT Azure, <a href="https://aws.amazon.com/sagemaker/">AWS Sagemaker</a>, <a href="https://www.floydhub.com">Flyodhub</a>, <a href="https://metaflow.org/">Metaflow</a> (open source), <a href="https://valohai.com/">Valohai</a>.</li>
-<li><u>Model deployment platforms:</u> <a href="https://www.Kubeflow.org">Kubeflow</a> (open source), <a href="https://www.Seldon.io">Seldon</a>, <a href="https://www.Algorithmia.com">Algorithmia</a>, <a href="https://www.datmo.com">Datmo</a> (now part of <a href="https://medium.com/datmo/datmo-and-one-concern-join-forces-29d2627ca96d">One Concern</a>), <a href="https://atalaya.io/">Atalaya</a>, <a href="https://www.kubeflow.org/">Kubeflow</a>.</li>
-<li><u>Data science collaboration:</u> <a href="https://www.dataiku.com">Dataiku</a>.</li>
-<li><u>Notebooks:</u> <a href="https://www.deepnote.com">Deepnote</a>, <a href="https://www.neptune.ml">Neptune</a>, <a href="https://www.jupyter.org">Jupyter</a>, <a href="https://colab.research.google.com">Google's Colab</a>.</li>
-<li><u>Data pipeline building:</u> <a href="https://www.pachyderm.com">Pachyderm</a>, <a href="https://airflow.apache.org">Airflow</a>, <a href="https://cloud.google.com/dataflow">Google Dataflow</a>, <a href="https://aws.amazon.com/step-functions/">Amazon step functions</a>, <a href="https://github.com/dagster-io/dagster">Dagster</a>.</li>
-<li><u>ETL:</u> <a href="http://fivetran.com">Fivetran</a>, <a href="http://matillion.com">Matillion (ETL)</a>, <a href="https://www.talend.com/">Talend</a>.</li>
-<li><u>Workflow Orchestration:</u> <a href="https://airflow.apache.org">Airflow (open source)</a>, <a href="https://github.com/spotify/luigi">Luigi</a>.</li>
-<li><u>Distributed programming frameworks (batch):</u> Hadoop, Spark.</li>
-<li><u>Distributed programming frameworks (real time):</u> Spark Streaming, Flink, Kafka streams, .</li>
-<li><u>Version controlling for models and data:</u> <a href="https://wwww.dvc.org">DVC</a>, <a href="https://www.missinglink.ai">MissingLink</a>, <a href="https://www.verta.ai">Verta</a>, <a href="https://www.pachyderm.com">Pachyderm</a>.</li>
-<li><u>Experiment tracking and analysis:</u> <a href="https://www.wandb.com">Weights and Biases</a>, <a href="https://www.comet.ml">Comet</a>, <a href="https://www.missinglink.ai">MissingLink</a></li>
-<li><u>Data labelling:</u> <a href="https://www.scale.com">Scale</a>, <a href="https://www.mturk.com">Mechanical Turk</a>, <a href="https://www.Heartex.ai">Heartex</a>, <a href="https://www.deepen.ai">Deepen</a>, <a href="https://www.labelbox.com">LabelBox</a>, <a href="https://www.superannotate.ai">Superannotate</a>, <a href="https://www.Lionbridge.ai">Lionbridge</a>.</li>
-<li><u>Data quality and metrics monitoring</u>: <a href="http://datakin.com/">Datakin</a>, <a href="http://sodadata.io">Soda Data</a>, Data Gravity, <a href="http://torodata.io">Toro Data</a>, <a href="https://greatexpectations.io/">Great Expectations</a>, <a href="https://www.gethubble.io/">Hubble</a>, <a href="http://transformdata.io/">Transform Data</a>.</li>
-<li><u>Data catalogue:</u> <a href="https://www.dataframe.ai/">Dataframe</a>, <a href="https://github.com/amundsen-io/amundsen">Lyft's Amundsen</a> (open source).</li>
-<li><u>ML task specific end-to-end platforms:</u> <a href="https://www.platform.ai">platform.ai (computer vision)</a>.</li>
-<li><u>Trained model marketplaces:</u> <a href="https://www.runway.ml">Runway</a>.</li>
-<li><u>Distributed training acceleration:</u> <a href="https://www.engineml.com">EngineML</a>, <a href="https://github.com/horovod/horovod">Horovod (open source)</a>.</li>
-<li><u>Model monitoring, auditing, explainability, and bias detection:</u> <a href="https://www.untangle.ai">Untangle</a>, <a href="https://www.fiddler.ai">Fiddler</a>, <a href="https://www.bulletproof.ai/">Bulletproof.ai</a>, <a href="https://www.seldon.io/tech/products/alibi/">Seldon</a>, <a href="http://www.monitorml.com">Monitor.ml</a>, <a href="http://monalabs.io">Mona Labs</a>.</li>
-<li><u>Feature stores:</u> <a href="https://www.tecton.ai/">Tecton</a>, <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-feast-an-open-source-feature-store-for-machine-learning">Google's Feast</a>.</li>
-<br>
-<p>For even more depth, check out <a href="https://github.com/josephmisiti/awesome-machine-learning">this compendium</a> on GitHub.</p>
+            <li><u>End-to-end platforms:</u> <a href="https://www.Datarobot.com">DataRobot</a>, <a href="https://www.polyaxon.com">Polyaxon</a>, <a href="https://www.MLflow.org">MLflow</a> (open source), <a href="https://www.Peltarion.com">Peltarion</a>,
+                <a href="https://www.petuum.com">Petuum</a>, <a href="https://www.dominodatalab.com">Domino Data Lab</a>, BigHead (open source), <a href="https://cloud.google.com/ai-platform/">Google’s AI Platform</a>, <a href="https://www.spell.run">Spell</a>,
+                MSFT Azure, <a href="https://aws.amazon.com/sagemaker/">AWS Sagemaker</a>, <a href="https://www.floydhub.com">Flyodhub</a>, <a href="https://metaflow.org/">Metaflow</a> (open source), <a href="https://valohai.com/">Valohai</a>.</li>
+            <li><u>Model deployment platforms:</u> <a href="https://www.Kubeflow.org">Kubeflow</a> (open source), <a href="https://www.Seldon.io">Seldon</a>, <a href="https://www.Algorithmia.com">Algorithmia</a>, <a href="https://www.datmo.com">Datmo</a>                (now part of <a href="https://medium.com/datmo/datmo-and-one-concern-join-forces-29d2627ca96d">One Concern</a>), <a href="https://atalaya.io/">Atalaya</a>, <a href="https://www.kubeflow.org/">Kubeflow</a>.</li>
+            <li><u>Data science collaboration:</u> <a href="https://www.dataiku.com">Dataiku</a>.</li>
+            <li><u>Notebooks:</u> <a href="https://www.deepnote.com">Deepnote</a>, <a href="https://www.neptune.ml">Neptune</a>, <a href="https://www.jupyter.org">Jupyter</a>, <a href="https://colab.research.google.com">Google's Colab</a>.</li>
+            <li><u>Data pipeline building:</u> <a href="https://www.pachyderm.com">Pachyderm</a>, <a href="https://airflow.apache.org">Airflow</a>, <a href="https://cloud.google.com/dataflow">Google Dataflow</a>, <a href="https://aws.amazon.com/step-functions/">Amazon step functions</a>,
+                <a href="https://github.com/dagster-io/dagster">Dagster</a>.</li>
+            <li><u>ETL:</u> <a href="http://fivetran.com">Fivetran</a>, <a href="http://matillion.com">Matillion (ETL)</a>, <a href="https://www.talend.com/">Talend</a>.</li>
+            <li><u>Workflow Orchestration:</u> <a href="https://airflow.apache.org">Airflow (open source)</a>, <a href="https://github.com/spotify/luigi">Luigi</a>.</li>
+            <li><u>Distributed programming frameworks (batch):</u> Hadoop, Spark.</li>
+            <li><u>Distributed programming frameworks (real time):</u> Spark Streaming, Flink, Kafka streams, .</li>
+            <li><u>Version controlling for models and data:</u> <a href="https://wwww.dvc.org">DVC</a>, <a href="https://www.missinglink.ai">MissingLink</a>, <a href="https://www.verta.ai">Verta</a>, <a href="https://www.pachyderm.com">Pachyderm</a>.</li>
+            <li><u>Experiment tracking and analysis:</u> <a href="https://www.wandb.com">Weights and Biases</a>, <a href="https://www.comet.ml">Comet</a>, <a href="https://www.missinglink.ai">MissingLink</a></li>
+            <li><u>Data labelling:</u> <a href="https://www.scale.com">Scale</a>, <a href="https://www.mturk.com">Mechanical Turk</a>, <a href="https://www.Heartex.ai">Heartex</a>, <a href="https://www.deepen.ai">Deepen</a>, <a href="https://www.labelbox.com">LabelBox</a>,
+                <a href="https://www.superannotate.ai">Superannotate</a>, <a href="https://www.Lionbridge.ai">Lionbridge</a>.</li>
+            <li><u>Data quality and metrics monitoring</u>: <a href="http://datakin.com/">Datakin</a>, <a href="http://sodadata.io">Soda Data</a>, Data Gravity, <a href="http://torodata.io">Toro Data</a>, <a href="https://greatexpectations.io/">Great Expectations</a>,
+                <a href="https://www.gethubble.io/">Hubble</a>, <a href="http://transformdata.io/">Transform Data</a>.</li>
+            <li><u>Data catalogue:</u> <a href="https://www.dataframe.ai/">Dataframe</a>, <a href="https://github.com/amundsen-io/amundsen">Lyft's Amundsen</a> (open source).</li>
+            <li><u>ML task specific end-to-end platforms:</u> <a href="https://www.platform.ai">platform.ai (computer vision)</a>.</li>
+            <li><u>Trained model marketplaces:</u> <a href="https://www.runway.ml">Runway</a>.</li>
+            <li><u>Distributed training acceleration:</u> <a href="https://www.engineml.com">EngineML</a>, <a href="https://github.com/horovod/horovod">Horovod (open source)</a>.</li>
+            <li><u>Model monitoring, auditing, explainability, and bias detection:</u> <a href="https://www.untangle.ai">Untangle</a>, <a href="https://www.fiddler.ai">Fiddler</a>, <a href="https://www.bulletproof.ai/">Bulletproof.ai</a>, <a href="https://www.seldon.io/tech/products/alibi/">Seldon</a>,
+                <a href="http://www.monitorml.com">Monitor.ml</a>, <a href="http://monalabs.io">Mona Labs</a>.</li>
+            <li><u>Feature stores:</u> <a href="https://www.tecton.ai/">Tecton</a>, <a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-feast-an-open-source-feature-store-for-machine-learning">Google's Feast</a>.</li>
+            <br>
+            <p>For even more depth, check out <a href="https://github.com/josephmisiti/awesome-machine-learning">this compendium</a> on GitHub.</p>
 
-<p>Special thanks to <a href="https://uk.linkedin.com/in/hendrik-brackmann-b2b5477a">Hendrik Brackmann</a> and <a href="https://muellerfreitag.com">Moritz Müller-Freitag</a> for critical review and input on this piece.</p>
+            <p>Special thanks to <a href="https://uk.linkedin.com/in/hendrik-brackmann-b2b5477a">Hendrik Brackmann</a> and <a href="https://muellerfreitag.com">Moritz Müller-Freitag</a> for critical review and input on this piece.</p>
 
 
-      <footer class="site-footer">
-        <span class="site-footer-credits">
+            <footer class="site-footer">
+                <span class="site-footer-credits">
           &copy; 2021 Air Street Capital LLP, all rights reserved. 
           <p>Air Street Capital LLP (OC424177) (FRN 805476) is an Appointed Representative (AR) of Met Facilities LLP, which is authorized and regulated by the Financial Conduct Authority (FRN 587084). <a href="https://www.twitter.com/airstreet"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/"><u>LinkedIn</u></a> | <a href="https://www.airstreet.com/risks"><u>Information about risks</u></a></p>
       </footer>
