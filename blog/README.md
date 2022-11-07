@@ -15,8 +15,8 @@ Our mission is to advance education and research in artificial intelligence for 
 ## London.AI: www.london.ai
 A vibrant community of AI practitioners from large technology companies, startups and academic institutions. 
 
-## AI Newsletter: https://newsletter.airstreet.com
-A market intelligence newsletter followed by 12k subscribers. It covers AI in the technology industry, research lab and venture capital market.
+## AI Newsletter: https://nathanbenaich.substack.com/
+A market intelligence newsletter followed by 14k subscribers. It covers AI in the technology industry, research lab and venture capital market.
 
 ## State of AI Report: www.stateof.ai
 The State of AI Report analyses the most interesting developments in AI. We aim to trigger an informed conversation about the state of AI and its implication for the future. The Report is produced by AI investors Nathan Benaich and Ian Hogarth.
