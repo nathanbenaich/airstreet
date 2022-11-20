@@ -167,6 +167,20 @@ div.portfolio ul li a {
     margin-bottom: 24px;
 }
 
+.container ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+    }
+
+.container li {
+        padding: 2px 2px;
+        text-align: left;
+    }
+
 
 /* Centered text */
 
