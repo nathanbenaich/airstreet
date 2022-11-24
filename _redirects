@@ -6,3 +6,6 @@ https://www.airstreet.vc/* https://www.airstreet.com/:splat 301!
 
 # Redirect default Netlify subdomain to primary domain
 https://optimistic-jones-547d5b.netlify.com/* https://www.airstreet.com/:splat 301!
+
+# Redirect newsletter to substack
+https://newsletter.airstreet.com/* https://nathanbenaich.substack.com/:splat 301!
