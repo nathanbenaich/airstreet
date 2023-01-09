@@ -17,6 +17,10 @@ body {
     font-size: 18px;
 }
 
+a {
+    text-decoration-line: underline;
+}
+
 .section {
     height: 100vh;
 }
