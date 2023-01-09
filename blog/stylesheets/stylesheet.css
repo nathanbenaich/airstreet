@@ -11,6 +11,16 @@ body {
     color: #565b5e;
 }
 
+/* FOR THE ANNOUNCEMENT BAR HEADER */
+
+.announcement {
+    background-color: #FFFFFF !important;
+    position: center;
+    text-align: center;
+    padding: 10px 5px;
+    top: 0px;
+    font-size: 18px;
+}
 
 /* color used to be 606c71 */
 
