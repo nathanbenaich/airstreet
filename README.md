@@ -1,2 +1,6 @@
-# Air Street Capital homepage
-Air Street Capital is a venture capital firm investing in AI-first technology and life science companies. We're a team of experienced investors, engineering leaders, entrepreneurs and AI researchers from the World's most innovative technology companies and research institutions. You can find us working in London, San Francisco, Paris and Berlin.
+# Air Street Capital
+>_ Air Street Capital is a venture capital firm investing in AI-first technology and life science companies.
+
+>_ We invest as early as possible and enjoy iterating through product, market and technology strategy from day 1.
+
+>_ Our common goal is to create enduring companies that make a lasting impact on their markets.
