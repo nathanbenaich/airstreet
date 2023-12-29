@@ -224,9 +224,15 @@
 
       <footer class="site-footer">
         <span class="site-footer-credits">
-          &copy; 2023 Air Street Capital Management Ltd., all rights reserved. 
-          <p><a href="https://www.twitter.com/airstreet" target="_blank"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/" target="_blank"><u>LinkedIn</u></a></p>
+          &copy; <span id="year"></span> Air Street Capital Management Ltd., all rights reserved. 
+          <p><a href="https://www.twitter.com/airstreet"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/"><u>LinkedIn</u></a></p>
       </footer>
     </section>
+    <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+<!-- snippet to make sure the footer year prints current year and doesn't need updating -->
+
   </body>
 </html>

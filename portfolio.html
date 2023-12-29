@@ -188,7 +188,7 @@
                     <div class="container">
                         <div class="content has-text-centered">
                             <p>
-                                &copy; 2023 Air Street Capital Management Ltd., all rights reserved.</p>
+                                &copy; <span id="year"></span> Air Street Capital Management Ltd., all rights reserved.</p>
                         </div>
                     </div>
                 </footer>
@@ -199,6 +199,12 @@
                         </div>
                     </div>
                 </footer>
+
+<!-- snippet to make sure the footer year prints current year and doesn't need updating -->
+
+    <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 
     </section>
 </body>
