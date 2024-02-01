@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGXNM2XG5R"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FGXNM2XG5R');
+    </script>
+    
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Corporation",
+            "name": "Air Street Capital",
+            "logo": "https://github.com/nathanbenaich/airstreet/raw/master/Air%20Street%20Capital%20logo%20(blue).png",
+            "description": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies",
+            },
+            "founder": {
+                "@type": "Person",
+                "name": ["Nathan Benaich"]
+            },
+            "url": "http://www.airstreet.com/",
+            "knowsAbout": ["machine learning", "deep technology", "deep learning", "early stage startups", "artificial intelilgence", "reinforcement learning", "enterprise software", "SaaS", "software-as-a-service", "fundraising", "venture capital", "generative ai", "spinouts"],
+            "legalName": "Air Street Capital Management Ltd.",
+            "slogan": "Air Street Capital is a venture capital firm investing in AI-first technology and life science companies"
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>The State of State of AI Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta name="description" content="Air Street Capital is a venture capital firm investing in AI-first technology and life science companies.">
+    <meta name="keywords" content="venture capital, investing, technology, VC, investment, funding, point nine capital, air street capital, artificial intelligence, machine learning, deep learning, intelligent systems, research, startups, life science, biology, chemistry, biotechnology, computer vision, natural language processing, SaaS, early-stage startup, VC funding, defense">
+    <link rel="icon" href="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAVtAAAAJDYzNTBjMDFjLWE4Y2ItNDI2NC04ZmE3LTRiZWJiZWNhOWJkNA.jpg" type="image/jpg" sizes="32x32">
+    <meta name="author" content="Air Street Capital">
+
+    <!-- for Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- changed this to summary_large_image to have a large share picture -->
+    <meta name="twitter:site" content="@airstreet" />
+    <meta name="twitter:creator" content="@airstreet" />
+    <meta property="twitter:title" content="The State of the State of AI Report" />
+    <meta property="twitter:description" content="A 5 year retrospective on AI progress" />
+    <meta property="twitter:image" content="https://www.airstreet.com/blog/soai5y/SOAI5y.png" />
+
+    <!-- for linkedin -->
+    <meta property="og:url" content="https://www.airstreet.com/blog/state-of-ai-report-5-years" />
+    <meta property="og:title" content="The State of the State of AI Report" />
+    <meta property="og:description" content="A 5 year retrospective on AI progress"
+    />
+    <meta property="og:image" content="https://www.airstreet.com/blog/soai5y/SOAI5y.png">
+    <meta property="og:type" content="article" />
+
+    <!-- Added to have cool social share buttons -->
+    <!-- Bulma-Social -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+    <!-- Google schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Nathan Benaich",
+            "affiliation": {
+                "@type": "Corporation",
+                "name": "Air Street Capital"
+            },
+            "alumniOf": {
+                "@type": "Corporation",
+                "name": "Point Nine Capital"
+            },
+            "colleagues": {
+                "@type": "Person",
+                "name": ["Paula Pastor Castano"]
+            },
+            "hasOccupation": {
+                "@type": "Occupation",
+                "description": "Venture capital investor"
+            },
+            "knowsAbout": ["State of AI Report", "generative ai", "techbio", "artificial intelligence", "deep learning", "machine learning", "reinforcement learning", "supervised learning", "startups", "venture capital", "State of AI", "investing", "early stage investing", "SaaS", "software-as-a-service", "spinouts"],
+            "description": "Nathan Benaich is the Founder of Air Street Capital, a venture capital firm investing in startups using artificial intelligence to build products for consumers and enterprises",
+            "url": "https://www.nathanbenaich.com"
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <section class="page-header">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class='card equal-height logo-container'>
+                    <div class='card-image'>
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                                <div class="container">
+                                    <a href="/">
+                                        <img class="logo" alt="Air Street logo" src='logo.png'>
+                                    </a>
+                                    <div class="project-tagline"><b>Air Street Press</b></div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
+            <a href="/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
+            <a href="/team" class="button is-white is-outlined"> 👋 Team</a>
+            <a href="https://nathanbenaich.substack.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
+            <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
+            <a href="/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
+    </section>
+
+    <section class="main-content">
+        <h2>
+            <a id="about-me" class="anchor" href="#blog" aria-hidden="true"><span class="octicon octicon-link"></span></a>The State of State of AI Report</h2>
+
+        <p><i>Published by Nathan Benaich on 1 February 2024.</i></p>
+
+        <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/state-of-ai-report-5-years/&text=Welcome+to+the+State+of+@stateofaireport:+a+5-year+retrospective+on+AI+progress+since+2018."
+            target="_blank">
+            <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+        </a>
+
+        <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/state-of-ai-report-5-years/&title=Welcome+to+the+State+of+State+of+AI+Report:+a+5-year+retrospective+on+AI+progress+since+2018."
+            target="_blank">
+            <span class="icon">
+                <i class="fab fa-linkedin"></i>
+              </span>
+        </a>
+
+        <h3>Introduction</h3>
+
+        <p>
+        The State of AI Report is our comprehensive round-up of the most important developments of the year in AI research, industry, safety, and politics. I started co-producing the report in 2018 with fellow investor Ian Hogarth. After he took on a role in leading the UK Government’s AI Safety Taskforce, it was a Team Air Street production in 2023. 
+        </p>
+
+
+
+        <p>
+        The report is driven by the belief that if you want to be part of the AI community, then you have to be an active contributor. Dedicated researchers and practitioners don’t usually have the time to follow breakthroughs in every discipline or use case, so our aim is to provide an opinionated analysis  to serve as a practical field guide.
+        </p>
+
+
+
+        <p>
+        Looking back over the past five years, the report serves as a historical document. It shows both how the capabilities of the field have advanced at a dizzying pace, as well as the impact this has had on industry and politics.
+        </p>
+
+
+
+        <p>
+        You can find all the past reports on the State of AI Report <a href="https://www.stateof.ai/" target="_blank">website</a>, but to mark five years since our first edition, we’ve gone back through 934 slides (without LLM assistance), and compiled some of the major storylines and where our predictions did (and didn’t) hit the mark.
+        </p>
+
+
+
+
+        <h3>The highlights</h3>
+
+        <p>
+        Charting a half-decade overnight success: from transfer learning to the scaling of transformers into large language models (LLMs).
+        </p>
+
+
+
+        <p>
+        In our early reports, the research sections were dominated by reinforcement learning as DeepMind took an ax to seemingly every gaming benchmark it could find. This started with Go, then StarCraft II, then Quake II Arena Capture the Flag, followed by OpenAI entering the ring to crush Dota 2. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/1.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <p>
+        Having started its life in games, DeepMind didn’t stay in the simulated world alone for long. In just a few years, they’d moved from StarCraft to controlling the core of a nuclear reactor.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/2.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Nevertheless, the generative AI boom won’t have come as a surprise to loyal State of AI readers. We may not have been calling them LLMs, but the precursors to the current generation of models were starting to show impressive results as early as 2018. 
+        </p>
+
+        <p>
+        Back then, what we called transfer learning was enabling models trained on one natural language processing (NLP) task to work great on other NLP tasks by virtue of learning generally useful representations. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/3.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        It was soon clear that attention was indeed all you needed, and by 2020, transformers had surged from passing mention status to the MVP of the research section.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/4.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        As a result, NLP was essentially ‘solved’ by 2021…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/5.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        OpenAI realized you could represent your data as a sequence of tokens, so a transformer could learn it, driving impressive results in image completion.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/6.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        So transformers then expanded from vision into several other domains such as audio and 3D point clouds.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/7.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        It also quickly became apparent that OpenAI was putting the pedal to the model scaling metal after seeing early success with GPT-2 (<i>“Language Models are Unsupervised Multitask Learners”, 2019</i>), leaving the rest of the field playing catch-up with GPT-3 (<i>“Language Models are Few-Shot Learners”, 2020</i>):
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/8.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        This was crucial, as we’d seen evidence of the power of scaling laws as far back as 2015:
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/9.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        From the first days of the report, we were tracking research showing the clear connection between compute, model size and data scale, and ultimate model performance.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/10.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        This prompted concerns about model training costs running into the millions of dollars for multi-billion parameter models…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/11.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        …before the industry shrugged its shoulders and scaled even more aggressively, while governments slowly began to get out their cheque books. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/12.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        As LLMs became larger and more powerful, the impact of prompting on model performance became more apparent. We were learning how to coax them into generating desired behaviors…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/13.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        This only deepened as we entered the era of rapid and consistent updates to LLMs.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/14.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        As scale drove model performance, we began to see an interesting trend from 2022 onwards: models began to exhibit capabilities that had not been explicitly programmed by their developers. This was termed “emergence”. And while it is exciting from a capabilities point of view, this phenomenon led to understandable safety fears.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/15.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        In terms of other modalities, we started to chart the leaps forward in image generation, which were still a long way from reaching public consciousness in 2019.
+        </p>
+
+        <p>
+        This initially started with Generative Adversarial Networks…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/16.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Powered by transformers, diffusion models were able to surpass GANs, drawing on their more stable training and superior ability to model the full image distribution in an ordered, step-by-step denoising process. This unlocked stable diffusion and the summer 2022 boom in image generation techniques.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/17.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        We’ve also seen parallel moves forward in scene recognition and world modeling. In the early days of the report, AI’s ability to analyze and describe scenes left something to be desired. Labs were countering this by attempting to develop a common sense world model of objects and behaviors.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/18.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Labeled videos directly depict causal relationships (e.g. how pushing or lifting affect objects) or how objects interact and relate to each other in space and time. This helps form generalized concepts of objects, properties, and dynamics, sometimes termed “intuitive physics”
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/19.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        OpenAI effectively ‘solved’ this challenge in two stages. 
+        </p>
+
+        <p>
+        CLIP used 400M image-text pairs - orders of magnitude more than any previous model - and was trained via self-supervised learning to predict which text matched an image without manual annotations.This was also in OpenAI’s more open era and the model was open sourced. GPT-4V now is able to analyze image inputs provided by a user to a high degree of accuracy, as the next frontier in large models becomes multimodality.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/20.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        In the "agentic world", we saw the emergence of models like Dreamer, DreamerV2, DreamerV3, and PlaNet. They represented a shift towards model-based reinforcement learning, where agents not only learn a policy but also construct a world model that can be used for planning and decision-making. This allows the creation of agents that can generalize from past experience to achieve goals in complex environments. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/21.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        This had obvious applications in self-driving, where the ability to predict future states is valuable for safety, efficiency, and anomaly detection. Wayve found it was possible to drive significant improvements in speed and steering.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/22.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Wayve then went on to build a powerful generative world-model, with impressive generalization abilities.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/23.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <h3>Large-scale AI progress was only possible because fierce competition between labs drove progress</h3>
+
+        <p>
+        When we first started to produce the report, AI research sometimes felt like a one-horse race, with Google and DeepMind sweeping all before them. Our first report referenced just one paper from OpenAI, while Microsoft was the only other corporate research lab to make it into the league tables.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/24.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        However, an increasingly aggressive talent war played out as other labs began to significantly up their output. Good for industry, less good for university faculties.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/25.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        As the LLM boom began to pick up steam, a diffusion that many had previously dubbed impossible began to take shape. As research groups found that more and more massive online scraping unlocked better performance, they began to make the investment. They also had the advantage of pre-training and fine-tuning being separate steps, meaning they could pick up a pre-trained base model and fine-tune it themselves.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/26.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        We also saw a boom in open source, which the push towards closedness from Big Tech for <s>commercial</s> safety reasons has done nothing to slow down.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/27.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>Competition didn’t just produce fundamental research, but useful tools</h3>
+
+        <p>
+        ML frameworks stripped out the need for researchers to spend their time stitching together low-level linear algebra and gradient calculations, enabling quick prototyping and iteration.
+        </p>
+
+        <p>
+        In the report’s first installment, Google’s TensorFlow appeared to be the master of all it surveyed…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/28.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        But this lead was transient, with Meta’s PyTorch Python-native design, flexibility, and ease-of-use meant that within a couple of years, it had become the most popular framework by far. So far, no one has successfully challenged it.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/29.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        But a new challenger is picking up steam in JAX, which has been used for both Grok and Gemini. We highlighted the potential of this framework back in 2021:
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/30.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>AI accelerates foundational scientific research</h3>
+
+        <p>
+        As a biologist by training, the pace of progress in AI for science has been dizzying. Our first report in 2018, for example, didn’t have huge amounts to say on fundamental scientific breakthroughs driven by the use of AI, but this started to change pretty quickly in 2020.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/31.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        We saw deep learning-based computer vision begin to retool traditional image analysis methods in microscopy - pioneered in the industrial setting by our friends at Recursion.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/32.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        While Ali Madani, who would go on to found <a href="https://www.profluent.bio/" target="_blank">Profluent</a> several years later, was ahead of the curve, in using LLMs for de novo protein design - this was an extension of the CodeGen (code generation) models he helped develop at Salesforce Research. Indeed, code turns out to be code - whether for silicon or biological computers. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/33.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Start-ups forged ahead on these applications, traditional pharma stayed on the sidelines. Early experiments in AI-powered drug discovery had yielded disappointing results and AI was largely on the sidelines of the Covid response. However, big pharma entered the arena properly in 2023.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/34.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Progress wasn’t limited to biology, the volume of research across a range of scientific disciplines employing AI has increased steeply over the past few years.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/35.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>Real-world applications accelerate rapidly</h3>
+
+
+        <p>
+        The use case for AI in the real (consumer) world that grabbed everyone's attention was self-driving. For years, many in the ecosystem would claim fast progress, then lament the lack of results on public roads, and then almost lose hope. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/36.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/37.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Today, things are starting to change… 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/38.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Unfortunately, within a fortnight of the 2023 report being published, a Cruise vehicle was involved in a serious accident in San Francisco, resulting in the company <a href="https://www.wired.com/story/cruise-robotaxi-self-driving-permit-revoked-california/" target="blank">losing</a> its license to operate. Despite progress, the industry still faces an uphill battle.
+        </p>
+
+        <p>
+        Back in the digital world, 2020 saw the first attempts to build workflow tools based on LLMs. The first results that focused on code generation and language understanding were significant steps forward, but not yet earth-shattering…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/39.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        And early forays into code generation could generate snippets of code reliably, but little more.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/40.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        … and none of us predicted the sheer intensity of the disruption to incumbents that started to unfold within a couple of years.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/41.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        The challenge for these tools will be longer-term traction, something future State of AI editions will no doubt be tracking. So far, the jury’s out. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/42.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>Defense, a previously untouchable application, is seeing disruption take off in earnest</h3>
+
+        <p>
+        In the early days of the report, defense was a taboo subject in much of the AI community. Early ventures from big tech sparked employee backlashes and western governments were slow to grasp its significance.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/43.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        As China’s investments in capabilities increased sharply, western governments began to react and unveil dedicated defense AI investment packages. By this stage, Anduril had raised a $450M Series D and Palantir had IPO-ed, while big tech had resumed working on defense (very quietly). 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/44.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Following Russia’s invasion of Ukraine, investors (largely in the US) plowed record sums of money into defense tech companies and governments established dedicated investment vehicles. However, as a sector where governments are the only legitimate customer, the meeting of new technology and old processes has run into difficulties.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/45.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>The transition from the lab to the real world has been enabled by growing volumes of private capital</h3>
+
+        <p>
+        The boom in AI venture funding was picking up steam by the time we started writing the report. The Covid pandemic did nothing to slow this down.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/46.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Acceleration in progress and low interest rates fuelled investment in 2021, to the benefit of foundation model challengers.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/47.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        As the macro picture worsened, generative AI held the market up like Atlas.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/48.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>None of this would’ve been possible without hardware and there’s been one clear winner</h3>
+
+        <p>
+        Our first report documented the remarkable rise of NVIDIA as the deep learning revolution got underway…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/49.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        …but back then, the race appeared competitive, with a range of start-ups focusing on AI-specific chips.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/50.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        That said, as NVIDIA plowed on with R&D dedicated to this new wave of compute - as it has done several times in its history - and Big Tech explored developing its own hardware, we quickly concluded these start-ups faced an uphill battle. NVIDIA installed CUDA, its GPU programming framework, and its GPUs were too great to unseat. We repeatedly predicted the demise of some of these start-ups. While there have been downrounds, the consolidation we anticipated in 2021-2023 has not happened … yet.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/50.9.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        As labs fought tooth-and-nail for every GPU they could lay their hands on, we began tracking HPC clusters.
+        </p>
+
+
+        <center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">🤖Launching a new section of the <a href="https://twitter.com/stateofaireport?ref_src=twsrc%5Etfw">@stateofaireport</a>:<a href="https://t.co/ZO85ybNm1X">https://t.co/ZO85ybNm1X</a><br><br>We&#39;re tracking and live updating the size of public, private and national HPC clusters. <br><br>Compute is a key substrate driving AI progress. Ping us with any GPU count updates!<br><br>Check it out:</p>&mdash; Nathan Benaich (@nathanbenaich) <a href="https://twitter.com/nathanbenaich/status/1594371199475277826?ref_src=twsrc%5Etfw">November 20, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+
+
+        <p>
+        By 2023, with compute fully established as the “new oil”, start-ups wielding their clusters in their marketing material:
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/51.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        That said, NVIDIA didn’t get its way on everything. In 2020, NVIDIA planned to acquire Arm, a leading provider of processor IP. 
+        </p>
+
+        <p>
+        Amid fears that the UK would lose a crown jewel and that Arm would become part of the intensifying US/China trade war, we predicted that the acquisition would not complete. We were vindicated, with NVIDIA first announcing a delay, before abandoning the deal altogether.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/52.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>Politics: moving from a subplot to the main story arc</h3>
+
+
+        <p>
+        AI had already seen its Sputnik Moment with the AlphaGo/Lee Sedol challenge match in 2016 and governments were taking note. 
+        </p>
+
+
+        <p>
+        The report documented the emergence of the first national AI strategies in 2018 and 2019, before the tsunami that followed in later years. At the same time, Ian was documenting the trend in more detail in his well-received <a href="https://www.ianhogarth.com/blog/2018/6/13/ai-nationalism" target="_blank">essay</a> on AI Nationalism. With the exception of China’s, these largely lacked ambition. China had pledged a single $2.1 billion on a single line item, whereas the UK’s AI Sector Deal was worth £603 million. Some things never change. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/53.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        By this point, the US had blocked a handful of semiconductor acquisitions by Chinese companies, but these seemed to be a minor part of a broader trade war. We predicted that this would escalate quickly and start to involve the US’s allies…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/54.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        … but it took us a few years to be proven right.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/55.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>After years of neglect, the safety debate comes to life</h3>
+
+        <p>
+        Until 2022, the report didn’t have a dedicated safety section. This reflected how, beyond a small cadre of dedicated researchers, the industry was by and large uninterested in these questions.
+        </p>
+
+        <p>
+        When we started the report, we were very much in the era of internal ethics boards, which often didn’t inspire much confidence internally, let alone externally. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/56.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        The focus of these debates was also different, with the conversation dominated by important challenges, like automated decision making and algorithmic bias.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/57.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        We had started to track the concern among researchers that AI labs had been focusing on capabilities while treating alignment as something as an after-thought. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/58.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        When we published our estimated alignment headcounts, our inbox made it clear that we’d managed to upset a few tech companies. That said, none of them wanted to provide us with an accurate higher number…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/59.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Safety then became ‘the’ conversation in 2023, as an increasingly acrimonious dispute broke out amongst prominent figures in the AI world about existential risk. 
+        </p>
+
+        <p>
+        While we still don’t know for sure, it appears that some of these issues were at the heart of the chaotic boardroom politics at OpenAI towards the end of the year.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/60.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>Concern about AI and elections deepens</h3>
+
+
+        <p>
+        One application with obvious political implications is video generation. Our first report charted early improvements in AI-generated synthetic video, but only a handful of people took the idea seriously 6 years ago.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/61.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        One exception was the team behind Synthesia, who anticipated the wave back in 2017 and became a surprise GenAI smash-hit.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/62.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        While there has been understandable concern about the potential of this technology to be misused in a political context, efforts so far have been patchy. Raw video generation capabilities might be impressive, but manipulating them effectively is much harder, especially versus more traditional misinformation techniques. That said, 2023’s report predicts that there will be a spike in usage in the run up to the 2024 US Presidential election, prompting political and regulatory fall-out.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/63.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>The EU emerges as a first-mover on AI regulation</h3>
+
+
+        <p>
+        These kinds of AI risks are central to some of the calls for regulation. High on the ‘success’ of the GDPR, the EU moved early on AI regulation, drafting the AI Act over the course of 2019-2020 and introducing it in April 2021. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/64.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Illustrating the challenge of static legislation in the face of fast-changing technology, frantic last minute rewrites were required as the boom in LLMs took off. This prompted a series of chaotic negotiations in December, the fall-out of which is still being resolved.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/65.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3>And some things fell by the wayside</h3>
+
+
+        <p>
+        We’ve been interested in the potential of AI as a driver of progress in material sciences. While there have been some interesting results, it hasn’t captured the imagination in the same way as other potential use cases.
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/66.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        People were excited about AutoML for architecture search, but it turns out that one general architecture, the transformer, with great data is what you need. 
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/67.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        Similarly, the first edition of the report had a significant section on automation, but a few years on, it feels little has changed. Drastic warnings about the coming ‘jobocalypse’, reassurance about technology creating new jobs, and then little real-world evidence suggesting much change. 
+        </p>
+
+
+        <p>
+        Compare 2018…
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/68.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p>
+        …with 2023
+        </p>
+
+        <div class="container-figure has-text-centered">
+            <div class='card-figure equal-height figure-container'>
+                <div class='card-image'>
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <figure class='image'><img class="figure" src='soai5y/69.png'>
+                            </figure>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h3><b>What’s next for us?</b></h3>
+
+
+        <p>
+        The State of AI Report season is one of the most energizing times of the year. We get to document all the awesome work the community’s been doing, while forcing ourselves to think about what’s ahead. It wouldn’t be possible without our reviewers, the companies that contribute data, or the team that helps me produce it. And of course, thank you to the community for giving us so much to report on. See you in October 2024 for the next installment. 
+        </p>
+
+
+        <center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">getting ready for <a href="https://twitter.com/stateofaireport?ref_src=twsrc%5Etfw">@stateofaireport</a> 2024 <a href="https://t.co/3uKJTeEzX8">pic.twitter.com/3uKJTeEzX8</a></p>&mdash; Nathan Benaich (@nathanbenaich) <a href="https://twitter.com/nathanbenaich/status/1714017638278447204?ref_src=twsrc%5Etfw">October 16, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+
+
+
+
+
+<!-- snippet to make sure the footer year prints current year and doesn't need updating -->
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">
+          &copy; <span id="year"></span> Air Street Capital Management Ltd., all rights reserved. 
+          <p><a href="https://www.twitter.com/airstreet"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/"><u>LinkedIn</u></a></p>
+
+      </footer>
+    </section>
+
+    <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+<!-- snippet to make sure the footer year prints current year and doesn't need updating -->
+
+  </body>
+</html>
