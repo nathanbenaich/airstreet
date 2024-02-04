@@ -8,6 +8,6 @@ https://www.airstreet.vc/* https://www.airstreet.com/:splat 301!
 https://optimistic-jones-547d5b.netlify.com/* https://www.airstreet.com/:splat 301!
 
 # Redirect blog to press.substack.com
-https://www.airstreet.com/blog/* https://press.airstreet.com/p:splat 301!
-https://airstreet.com/blog/* https://press.airstreet.com/p:splat 301!
-https://newsletter.airstreet.com/blog/* https://press.airstreet.com/p:splat 301!
+https://www.airstreet.com/blog/* https://press.airstreet.com/p/:splat 301!
+https://airstreet.com/blog/* https://press.airstreet.com/p/:splat 301!
+https://newsletter.airstreet.com/blog/* https://press.airstreet.com/p/:splat 301!
