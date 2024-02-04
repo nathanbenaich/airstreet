@@ -11,7 +11,3 @@ https://optimistic-jones-547d5b.netlify.com/* https://www.airstreet.com/:splat 3
 https://www.airstreet.com/blog/* https://press.airstreet.com/:splat 301!
 https://airstreet.com/blog/* https://press.airstreet.com/:splat 301!
 https://newsletter.airstreet.com/blog/* https://press.airstreet.com/:splat 301!
-
-# Redirect specific blog pages to press.substack.com
-https://press.airstreet.com/p/our-2023-year-in-review*
-https://www.airstreet.com/blog/* https://press.airstreet.com/p/our-2023-year-in-review 301!
