@@ -1,5 +1,5 @@
 # Air Street Capital
->_ Air Street Capital is a venture capital firm investing in AI-first technology and life science companies.
+>_ Air Street Capital is a venture capital firm investing in AI-first companies.
 
 >_ We invest as early as possible and enjoy iterating through product, market and technology strategy from day 1.
 
