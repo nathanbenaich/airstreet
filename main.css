@@ -1,3 +1,26 @@
+/* Increase padding for button container on mobile */
+@media (max-width: 768px) {
+  .button-container {
+    padding: 1px;
+  }
+}
+
+/* Increase spacing between buttons */
+.button {
+  margin: 3px;
+  padding: px px;
+}
+
+/* Additional mobile-specific adjustments */
+@media (max-width: 768px) {
+  .button {
+    margin: 3px;
+    padding: px px;
+    width: calc(% - 30px); /* Make buttons take up half the width minus margins */
+    display: inline-block;
+  }
+}
+
 html {
     background-color: #010061ff !important;
 }
