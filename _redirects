@@ -11,3 +11,8 @@ https://optimistic-jones-547d5b.netlify.com/* https://www.airstreet.com/:splat 3
 https://www.airstreet.com/blog/* https://press.airstreet.com/p/:splat 301!
 https://airstreet.com/blog/* https://press.airstreet.com/p/:splat 301!
 https://newsletter.airstreet.com/blog/* https://press.airstreet.com/p/:splat 301!
+
+# Redirect shop to merch.airstreet.com
+https://www.airstreet.com/shop/* https://merch.airstreet.com:splat 301!
+https://www.airstreet.com/shop/eu#!/* https://merch.airstreet.com:splat 301!
+https://www.airstreet.com/shop/us#!/* https://merch.airstreet.com:splat 301!
