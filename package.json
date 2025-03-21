@@ -1,0 +1,22 @@
+{
+  "name": "airstreet-website",
+  "version": "1.0.0",
+  "description": "Airstreet website",
+  "scripts": {
+    "dev": "http-server -p 3000",
+    "build": "npm run update-headers && npm run minify-css && npm run optimize-images && npm run generate-sitemap && npm run generate-icons && npm run generate-og-image",
+    "update-headers": "node scripts/update-headers.js",
+    "minify-css": "cleancss -o dist/main.min.css main.css",
+    "optimize-images": "sharp -i images/* -o dist/images/ resize 1920 1080 fit inside",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "generate-icons": "node scripts/generate-pwa-icons.js",
+    "generate-og-image": "node scripts/generate-og-image.js"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "sharp": "^0.33.2"
+  }
+} 

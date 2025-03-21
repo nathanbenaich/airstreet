@@ -1,30 +1,210 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-<url>
-  <loc>https://www.airstreet.com/portfolio</loc>
-</url>
-<url>
-  <loc>https://www.airstreet.com/team</loc>
-</url>
-<url>
-  <loc>https://press.airstreet.com</loc>
-</url>
-<url>
-  <loc>https://merch.airstreet.com</loc>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://www.airstreet.com/26.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/404.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/500.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/FT.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/audio.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/berlinai.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/bio.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/community.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/content231933t2q00j.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/defense.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/events.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/fellowships.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/focus12109509jnk.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/fortune.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/fullstack.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/header.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/intel.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/londonai.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/merch.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/moat.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/munichai.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/newsletter.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/nycai.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/parisai.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/portfolio.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/slack.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/soai.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/spinout.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/spinouts.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/summit.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/team.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/teamOLD.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.airstreet.com/zurichai.html</loc>
+        <lastmod>2025-03-21T20:53:33.433Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
-
-<!--
-
-<url>
-  <loc>https://www.airstreet.com/newsletter</loc>
-</url>
-<url>
-  <loc>https://www.stateof.ai/</loc>
-</url>
-<url>
-  <loc>https://www.airstreet.com/</loc>
-</url>
-
--->
-

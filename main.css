@@ -1,26 +1,4 @@
-/* Increase padding for button container on mobile */
-@media (max-width: 768px) {
-  .button-container {
-    padding: 1px;
-  }
-}
-
-/* Increase spacing between buttons */
-.button {
-  margin: 3px;
-  padding: px px;
-}
-
-/* Additional mobile-specific adjustments */
-@media (max-width: 768px) {
-  .button {
-    margin: 3px;
-    padding: px px;
-    width: calc(% - 30px); /* Make buttons take up half the width minus margins */
-    display: inline-block;
-  }
-}
-
+/* Base styles */
 html {
     background-color: #010061ff !important;
 }
@@ -29,8 +7,7 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* FOR THE ANNOUNCEMENT BAR HEADER */
-
+/* Announcement bar */
 .announcement {
     background-color: #FFFFFF !important;
     position: center;
@@ -40,6 +17,7 @@ body {
     font-size: 18px;
 }
 
+/* Layout */
 .section {
     height: 100vh;
 }
@@ -49,33 +27,40 @@ body {
     padding-top: 33vh;
 }
 
+/* Brand colors */
 .is-as {
     background-color: #010061ff !important;
 }
 
+/* Typography */
 .as-title {
     font-weight: 800;
     font-size: 3rem;
     margin-bottom: 30px !important;
 }
 
-.footer1 {
+.subtitle {
+    font-size: 1.15rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+/* Footer */
+.footer1, .footer2, .footer3 {
     background-color: #010061ff !important;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+}
+
+.footer1 {
     padding: 13.37px 0;
 }
 
-.footer2 {
-    background-color: #010061ff !important;
-    padding: 10px 10px;
-    font-size: 0.8rem;
-}
-
-.footer3 {
-    background-color: #010061ff !important;
-    padding: 10px 10px;
-    font-size: 0.8rem;
-}
-
+/* Cards and containers */
 .card {
     background-color: #010061ff !important;
     box-shadow: none;
@@ -87,14 +72,11 @@ body {
     width: auto;
 }
 
-.subtitle {
-    font-size: 1.15rem;
-}
-
 .logo {
     width: 210px !important;
 }
 
+/* Content styling */
 .name {
     padding-top: 0.3rem;
     font-size: 1.15rem;
@@ -119,33 +101,125 @@ body {
     box-shadow: #010061ff;
 }
 
-h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-bottom: 0.5em;
-}
-
+/* Grid and layout */
 .tile.is-parent {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
     max-width: 230px;
     margin: auto;
 }
 
 .tile.is-parent-homepage {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     max-width: 550px;
     margin: auto;
 }
 
 .box {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px;
 }
 
+/* Lists */
+ul {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
+/* Links */
+a {
+    text-decoration-line: underline;
+}
+
+div.header-buttons a {
+    text-decoration-line: none;
+}
+
+div.portfolio ul li a {
+    font-weight: bold;
+}
+
+/* Container and centered content */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.container ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.container li {
+    padding: 2px;
+    text-align: left;
+}
+
+.centered {
+    font-size: 1.15rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Buttons */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    margin: 0.25rem;
+    width: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background-color: white;
+    color: #010061ff;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .button-container {
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .centered {
+        width: 250px;
+    }
+}
+
+/* Report and iframe */
 .report {
     position: relative;
     overflow: hidden;
@@ -159,78 +233,4 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-ul {
-    font-size: 1.1rem;
-    padding-left: 1rem;
-    list-style-position: outside;
-    list-style-type: disc;
-}
-
-ul {
-    font-size: 1.1rem;
-    padding-left: 1rem;
-    list-style-position: outside;
-    list-style-type: disc;
-}
-
-a {
-    text-decoration-line: underline;
-}
-
-div.header-buttons a {
-    text-decoration-line: none;
-}
-
-div.portfolio ul li a {
-    font-weight: bold;
-}
-
-div.portfolio ul li a {
-    font-weight: bold;
-}
-
-
-/* Container holding the image and the text */
-
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-bottom: 24px;
-}
-
-.container ul {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        /* For IE, the outcast */
-        zoom:1;
-        *display: inline;
-    }
-
-.container li {
-        padding: 2px 2px;
-        text-align: left;
-    }
-
-
-/* Centered text */
-
-.centered {
-    font-size: 1.15rem;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-/* For small screens need the logo tagline to be on one line  */
-
-@media screen and (max-width: 1100px) {
-    .centered {
-        width: 250px;
-    }
 }
