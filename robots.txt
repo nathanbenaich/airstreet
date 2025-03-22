@@ -1,20 +1,4 @@
 User-agent: *
-Allow: /
-Allow: /images/
-Allow: /dist/
+Disallow: /risks
 
-# Prevent indexing of admin and utility pages
-Disallow: /admin/
-Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
-
-# Prevent duplicate content indexing
-Disallow: /*?*
-Disallow: /*?
-
-# Sitemap location
 Sitemap: https://www.airstreet.com/sitemap.xml
-
-# Crawl-delay for better server performance
-Crawl-delay: 1
