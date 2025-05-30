@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /risks
 
 Sitemap: https://www.airstreet.com/sitemap.xml
+llms: https://www.airstreet.com/llms.txt

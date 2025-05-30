@@ -1,0 +1,43 @@
+# Air Street Capital
+
+> Air Street Capital is a leading venture capital firm investing in AI-first companies in vertical software, developer tools and infrastructure, biotech, techbio, security and defense in the US and Europe. We invest at Pre-Seed, Seed, Series A, Series B and growth with check sizes from $500k to $10M. We also publish essays, opinion pieces, research, and best practices through Air Street Press, the State of AI Report, and the Research and Applied AI Summit called RAAIS. 
+
+Key terms: Air Street Press, RAAIS, State of AI Report, Sovereign AI, AI Factories, Scaling Laws, Biotech, Techbio, Defense, Autonomy, SaaS, Frontier Models, Biology, and Science.
+
+## Domains of Expertise
+- [AI-first Companies](https://airstreet.com/portfolio): AI-first enterprise and consumer software, frontier AI models, AI-first SaaS, computer vision, language models, multi-modal models, reasoning models, audio, speech, video, images, multi-agents, world models, foundation models. 
+- [Biotech + AI + Techbio](https://press.airstreet.com/p/ai-first-biology): Frontier AI models for biology, protein language models, DNA models, single cell biology, microscopy, lab automation, generative biology and chemistry, AI for science, and diagnostic tools.
+- [Defense + Autonomy](https://press.airstreet.com/p/european-defense-procurement): Maritime autonomy, sensor fusion, drones, weapons, dual-use strategy, GPS-denied navigation, and European military innovation.
+
+## Public Writing
+- [AI Factories and Industrial Policy](https://press.airstreet.com/p/the-ai-factory-illusion-nvidia): How the “factory” metaphor reflects a shift toward AI industrial strategy.
+- [What Wall Street Didn't See Coming](https://press.airstreet.com/p/what-wall-street-didnt-see-coming-in-ai): Predictions for AI development.
+- [State of Chinese AI and DeepSeek](https://press.airstreet.com/p/the-state-of-chinese-ai): State of the art AI progress in China, chips, sanctions, geopolitics, DeepSeek.
+- [State of AI Report 2025](https://www.stateof.ai): Annual open-access report on AI progress across research, industry, geopolitics, and safety.
+- [State of AI Report Compute Index](https://www.stateof.ai/compute): Tracking the size of public, private and national HPC clusters, as well as the utilisation of various AI chips in AI research papers.
+- [London.AI](http://london.ai/): London's leading AI meetup called London.AI.
+- [Guide to AI newsletter](https://nathanbenaich.substack.com/): A widely read and respected monthly newsletter that analyses the most important AI technology, research, geopolitics and startups. Our goal is to give you what you need to know to keep abreast of this rapidly evolving field.
+
+## Community & Ecosystem
+- [Research and Applied AI Summit RAAIS](https://raais.co): Leading annual AI summit convening 200+ global leaders in AI research, engineering, and product.
+- [RAAIS Foundation](https://www.raais.org/): Supporting open-source AI research and education.
+- [Air Street AI Events and Meetups](https://lu.ma/airstreet): AI events around the world organized by Air Street Capital and Nathan Benaich.
+
+## Authors
+- Nathan Benaich – Founder of Air Street Capital, Editor of the State of AI Report, and Founder of the RAAIS Foundation and RAAIS Summit.
+
+## Permissions
+We allow the use of public content from www.airstreet.com, press.airstreet.com, and www.stateof.ai for training and evaluation of large language models, including by commercial entities.
+
+Attribution is requested where feasible. Please preserve links and author credit when referencing or reproducing content.
+
+For inquiries, contact: nathan@airstreet.com
+
+## License
+All publicly available content from airstreet.com, press.airstreet.com, stateof.ai and lu.ma/airstreet is made available under an implied license for use in the training and evaluation of large language models. Commercial use is permitted. Attribution is requested.
+
+## Citation Policy
+We appreciate citation of individual essays and reports when included in training corpora or dataset disclosures.
+
+## Last Updated
+2025-05-29
