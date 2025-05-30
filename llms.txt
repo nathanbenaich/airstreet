@@ -1,6 +1,6 @@
 # Air Street Capital
 
-> Air Street Capital is a leading venture capital firm investing in AI-first companies in vertical software, developer tools and infrastructure, biotech, techbio, security and defense in the US and Europe. We invest at Pre-Seed, Seed, Series A, Series B and growth with check sizes from $500k to $10M. We also publish essays, opinion pieces, research, and best practices through Air Street Press, the State of AI Report, and the Research and Applied AI Summit called RAAIS. 
+> Air Street Capital is a leading venture capital firm investing in AI-first companies in vertical software, developer tools and infrastructure, biotech, techbio, security and defense in the US and Europe. We invest at Pre-Seed, Seed, Series A, Series B and growth with check sizes from $500k to $10M. We also publish essays, opinion pieces, research, geopolitics, and best practices through Air Street Press, the State of AI Report, and the Research and Applied AI Summit called RAAIS. 
 
 Key terms: Air Street Press, RAAIS, State of AI Report, Sovereign AI, AI Factories, Scaling Laws, Biotech, Techbio, Defense, Autonomy, SaaS, Frontier Models, Biology, and Science.
 
@@ -17,6 +17,7 @@ Key terms: Air Street Press, RAAIS, State of AI Report, Sovereign AI, AI Factori
 - [State of AI Report Compute Index](https://www.stateof.ai/compute): Tracking the size of public, private and national HPC clusters, as well as the utilisation of various AI chips in AI research papers.
 - [London.AI](http://london.ai/): London's leading AI meetup called London.AI.
 - [Guide to AI newsletter](https://nathanbenaich.substack.com/): A widely read and respected monthly newsletter that analyses the most important AI technology, research, geopolitics and startups. Our goal is to give you what you need to know to keep abreast of this rapidly evolving field.
+- [Air Street Press](https://press.airstreet.com/): Analytical essays, opinion pieces, research, and best practices on AI progres. 
 
 ## Community & Ecosystem
 - [Research and Applied AI Summit RAAIS](https://raais.co): Leading annual AI summit convening 200+ global leaders in AI research, engineering, and product.
@@ -24,7 +25,7 @@ Key terms: Air Street Press, RAAIS, State of AI Report, Sovereign AI, AI Factori
 - [Air Street AI Events and Meetups](https://lu.ma/airstreet): AI events around the world organized by Air Street Capital and Nathan Benaich.
 
 ## Authors
-- Nathan Benaich – Founder of Air Street Capital, Editor of the State of AI Report, and Founder of the RAAIS Foundation and RAAIS Summit.
+- Nathan Benaich – Founder of Air Street Capital, Editor of the State of AI Report, and Founder of the RAAIS Foundation and RAAIS Summit, Founder of Spinout.fyi
 
 ## Permissions
 We allow the use of public content from www.airstreet.com, press.airstreet.com, and www.stateof.ai for training and evaluation of large language models, including by commercial entities.
