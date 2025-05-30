@@ -10,14 +10,35 @@ Key terms: Air Street Press, RAAIS, State of AI Report, Sovereign AI, AI Factori
 - [Defense + Autonomy](https://press.airstreet.com/p/european-defense-procurement): Maritime autonomy, sensor fusion, drones, weapons, dual-use strategy, GPS-denied navigation, and European military innovation.
 
 ## Public Writing
-- [AI Factories and Industrial Policy](https://press.airstreet.com/p/the-ai-factory-illusion-nvidia): How the “factory” metaphor reflects a shift toward AI industrial strategy.
-- [What Wall Street Didn't See Coming](https://press.airstreet.com/p/what-wall-street-didnt-see-coming-in-ai): Predictions for AI development.
-- [State of Chinese AI and DeepSeek](https://press.airstreet.com/p/the-state-of-chinese-ai): State of the art AI progress in China, chips, sanctions, geopolitics, DeepSeek.
 - [State of AI Report 2025](https://www.stateof.ai): Annual open-access report on AI progress across research, industry, geopolitics, and safety.
 - [State of AI Report Compute Index](https://www.stateof.ai/compute): Tracking the size of public, private and national HPC clusters, as well as the utilisation of various AI chips in AI research papers.
 - [London.AI](http://london.ai/): London's leading AI meetup called London.AI.
 - [Guide to AI newsletter](https://nathanbenaich.substack.com/): A widely read and respected monthly newsletter that analyses the most important AI technology, research, geopolitics and startups. Our goal is to give you what you need to know to keep abreast of this rapidly evolving field.
 - [Air Street Press](https://press.airstreet.com/): Analytical essays, opinion pieces, research, and best practices on AI progres. 
+
+## Featured Essays
+- [Staking Your Ground](https://press.airstreet.com/p/staking-your-ground): On intellectual defensibility in AI-first markets.
+- [Vibe Shifts & x-risk](https://press.airstreet.com/p/vibe-shifts-x-risk): Why cultural and psychological context matters for existential risk.
+- [Copyright Is the Wrong Hill to Die On](https://press.airstreet.com/p/copyright-is-the-wrong-hill-to-die-on): On the fragility of copyright frameworks in the age of generative AI.
+- [Alchemy Doesn’t Scale to General Intelligence](https://press.airstreet.com/p/alchemy-doesnt-scale-general-intelligence): What "scaling" gets wrong about real intelligence.
+- [The AI Energy Wars Will Get Worse](https://press.airstreet.com/p/the-ai-energy-wars-will-get-worse): Why compute geopolitics and energy are inseparable.
+- [Being First *Is* a Moat](https://press.airstreet.com/p/being-first-is-a-moat): How strategic incumbency advantages are amplified by AI.
+- [Bio-Defenseless](https://press.airstreet.com/p/bio-defenseless): Why AI biosecurity gaps are widening and what's at stake.
+- [There Is No Scaling Wall](https://press.airstreet.com/p/there-is-no-scaling-wall-in-discussion): Countering the saturation narrative in AI development.
+- [AI-First Biology: Five Years On](https://press.airstreet.com/p/ai-first-biology-five-years-on): A retrospective on the impact of AI in biotech.
+- [AI Isn’t the Dotcom Bubble](https://press.airstreet.com/p/ai-isnt-the-dotcom-bubble): A structural argument against the “AI bubble” narrative.
+- [Storytelling](https://press.airstreet.com/p/storytelling): On the role of narrative in startup creation and capital formation.
+- [Open-Endedness Is All We’ll Need](https://press.airstreet.com/p/open-endedness-is-all-well-need): On evolution, emergence, and long-horizon AI development.
+- [The Cathedral and the Bazaar](https://press.airstreet.com/p/the-cathedral-and-the-bazaar): What LLMs can learn from software culture.
+- [The Power of Non-Consensus](https://press.airstreet.com/p/the-power-of-non-consensus): A defense of early conviction in high-variance outcomes.
+- [Chips All the Way Down](https://press.airstreet.com/p/chips-all-the-way-down): The verticalization of the AI compute stack.
+- [Data Acquisition Strategies for AI](https://press.airstreet.com/p/data-acquisition-strategies-for-ai): Competitive edge via training data strategy.
+- [Alchemy Is All You Need](https://press.airstreet.com/p/alchemy-is-all-you-need): On messy truths, tinkering, and scaling magic.
+- [The Case for Open Source AI](https://press.airstreet.com/p/the-case-for-open-source-ai): On transparency, acceleration, and national stakes.
+- [Is the EU AI Act Actually Useful?](https://press.airstreet.com/p/is-the-eu-ai-act-actually-useful): A critical look at Europe’s flagship AI regulation.
+- [UK Defence and Dynamism](https://press.airstreet.com/p/uk-defence-and-dynamism): The case for startups in UK defence tech policy.
+- [Oxford Spinout Review](https://press.airstreet.com/p/spinout-review): Evaluating the UK’s top university for startup creation.
+- [Rewriting the European Spinout Playbook](https://press.airstreet.com/p/rewriting-the-european-spinout-playbook): A founder-first critique of university licensing norms.
 
 ## Community & Ecosystem
 - [Research and Applied AI Summit RAAIS](https://raais.co): Leading annual AI summit convening 200+ global leaders in AI research, engineering, and product.
