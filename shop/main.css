@@ -10,11 +10,10 @@ body {
 
 .announcement {
     background-color: #FFFFFF !important;
-    position: fixed;
+    position: center;
     text-align: center;
     padding: 10px 5px;
     top: 0px;
-    width: 100%;
     font-size: 18px;
 }
 
@@ -61,7 +60,7 @@ a {
 .card {
     background-color: #010061ff !important;
     box-shadow: none;
-    box-sizing: border-box;
+    box-sizing: 256px 256px;
 }
 
 .image {
@@ -80,14 +79,14 @@ a {
 .name {
     padding-top: 0.3rem;
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 1rem;
     color: #000000;
     font-size-adjust: 100%;
 }
 
 .role {
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 1rem;
     color: #000000;
 }
 
@@ -98,7 +97,7 @@ a {
 
 .box2 {
     background-color: #010061ff;
-    box-shadow: 0 0 10px #010061ff;
+    box-shadow: #010061ff;
 }
 
 h3 {
