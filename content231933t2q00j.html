@@ -87,6 +87,15 @@
                 </div>
             </div>
         </div> -->
+
+
+<!-- ANNOUNCEMENT BAR -->
+
+        <div class="announcement">
+            <p><b>👋 Take the</b> <u><a href="https://airstreet.typeform.com/survey">State of AI Report Survey!</a></u>
+            </p>
+        </div>
+        
     <section class="hero is-info is-as is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -104,103 +113,47 @@
                         </nav>
                     </div>
                 </div>
-                <!--
-              <h1 class="title as-title">
-                AIR STREET CAPITAL
-              </h1>
-              -->
 
                 <div class="header-buttons">
-                    <a href="https://www.airstreet.com/team" class="button is-white is-outlined"> 👋 Team</a>
-                    <a href="https://www.airstreet.com/focus" class="button is-white is-outlined"> 🔎 Focus</a>
-                    <a href="https://www.airstreet.com/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
-                    <a href="https://www.airstreet.com/contentl3kj1l3nr1" class="button is-white is-outlined"> 🤓 Content</a>
-                    <a href="https://www.airstreet.com/community/" class="button is-white is-outlined"> 🌱 Community</a>
-                    <!-- 
-                    <a href="http://newsletter.airstreet.com/" class="button is-white is-outlined"> ✉️ AI newsletter</a>
-                    <a href="https://www.stateof.ai/" class="button is-white is-outlined"> 📖 State of AI</a>
-                     -->
+                    <a href="/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
+                    <a href="/team" class="button is-white is-outlined"> 🤓 Team</a>
+                    <a href="https://press.airstreet.com" class="button is-white is-outlined"> 📰 Air Street Press</a>
+                    <a href="https://lu.ma/airstreet" class="button is-white is-outlined"> 🎟️ Events</a>
+                    <a href="https://merch.airstreet.com/" class="button is-white is-outlined"> 🛍️ Merch</a>
+                    <a href="https://www.stateof.ai/" class="button is-white is-outlined"> 👾 State of AI Report</a>
                     <br></br>
                 </div>
-                <div class="container has-text-left">
 
-                    <br>
-
-                    <!-- CARDS START -->
-
-                    <div class="tile is-ancestor">
-                        <div class="tile is-parent">
-                            <a href="https://www.stateof.ai">
-                                <article class="tile is-child box">
-                                    <figure class="image is-16by9">
-                                        <img src="report.png">
-                                    </figure>
-                                    <p class="name"><a href="https://www.stateof.ai"><u>The definitive industry AI report</u></a></p>
-                                    <p class="role">Industry, research, talent and geopolitics</p>
-                                </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <a href="http://newsletter.airstreet.com">
-                                <article class="tile is-child box">
-                                    <figure class="image is-16by9">
-                                        <img src="newsletter.png">
-                                    </figure>
-                                    <p class="name"><a href="http://newsletter.airstreet.com"><u>A monthly AI industry analysis</u></a></p>
-                                    <p class="role">Join >12,000 newsletter subscribers</p>
-                                </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <a href="https://www.airstreet.com/blog">
-                                <article class="tile is-child box">
-                                    <figure class="image is-16by9">
-                                        <img src="blog.png">
-                                    </figure>
-                                    <p class="name"><a href="https://www.airstreet.com/blog"><u>Best practices to beat the odds</u></a></p>
-                                    <p class="role">Learnings on the AI startup playbook</p>
-                                </article>
-                        </div>
-                        <div class="tile is-parent">
-                            <a href="https://www.youtube.com/channel/UCL78WE5txuSu94gY5qrvU8w">
-                                <article class="tile is-child box">
-                                    <figure class="image is-16by9">
-                                        <img src="watch-raais.png">
-                                    </figure>
-                                    <p class="name"><a href="https://www.youtube.com/channel/UCL78WE5txuSu94gY5qrvU8w"><u>Watch RAAIS conference talks</u></a></p>
-                                    <p class="role">45+ talks from AI-first companies</p>
-                                </article>
-                        </div>
-                    </div>
-
-                    <!-- CARDS END -->
-
-                    <br>
+                <div class="container has-text-centered">
+                    <h2 class="subtitle as-subtitle">
+                    👌 Nice find! Redirecting 👻
+                    </h2>
                 </div>
+
                 <footer class="footer1">
                     <div class="container">
                         <div class="content has-text-centered">
                             <p>
-                                &copy; 2021 Air Street Capital LLP, all rights reserved.</p>
-                        </div>
-                    </div>
-                </footer>
-                <footer class="footer2">
-                    <div class="container">
-                        <div class="content has-text-centered">
-                            <p>
-                                Air Street Capital LLP (OC424177) (FRN 805476) is an Appointed Representative (AR) of Met Facilities LLP, which is authorized and regulated by the Financial Conduct Authority (FRN 587084).
-                            </p>
+                                &copy; <span id="year"></span> Air Street Capital Management Ltd., all rights reserved.</p>
                         </div>
                     </div>
                 </footer>
                 <footer class="footer3">
                     <div class="container">
                         <div class="content has-text-centered">
-                            <p><a href="https://www.twitter.com/airstreet"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/"><u>LinkedIn</u></a> | <a href="https://www.airstreet.com/risks"><u>Information about risks</u></a></p>
+                            <p><a href="https://www.twitter.com/airstreet"><u>Twitter</u></a> | <a href="https://www.linkedin.com/company/airstreetcapital/"><u>LinkedIn</u></a></p>
                         </div>
                     </div>
                 </footer>
 
+<!-- snippet to make sure the footer year prints current year and doesn't need updating -->
+
+    <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
     </section>
 </body>
+
 
 </html>
