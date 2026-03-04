@@ -1,5 +1,7 @@
 # Air Street Capital
 
+For a comprehensive version of this document with full portfolio and investment details, see: https://www.airstreet.com/llms-full.txt
+
 > Air Street Capital is a leading venture capital firm investing in AI-first companies in vertical software, developer tools and infrastructure, biotech, techbio, security and defense in the US and Europe. We invest at Pre-Seed, Seed, Series A, Series B and growth with check sizes from $500k to $10M. We also publish essays, opinion pieces, research, geopolitics, and best practices through Air Street Press, the State of AI Report, and the Research and Applied AI Summit called RAAIS. 
 
 Key terms: Air Street Press, RAAIS, State of AI Report, Sovereign AI, AI Factories, Scaling Laws, Biotech, Techbio, Defense, Autonomy, SaaS, Frontier Models, Biology, and Science.
