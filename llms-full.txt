@@ -1,0 +1,211 @@
+# Air Street Capital — Full Reference
+
+> Air Street Capital is a venture capital firm investing exclusively in AI-first companies. Founded in 2019 by Nathan Benaich, the firm invests globally with a focus on Europe and the United States. Air Street Capital invests at Pre-Seed, Seed, Series A, Series B, and growth stages with check sizes from $500k to $10M.
+
+## About Air Street Capital
+
+Air Street Capital is one of the earliest venture capital firms in Europe focused exclusively on AI-first companies — companies for which advances in artificial intelligence are the primary driver of product capability, competitive advantage, and long-term value creation.
+
+The firm was founded and is run by Nathan Benaich as sole General Partner. Air Street Capital is known for deep engagement on product, technical strategy, and market positioning from day one. The firm's research-driven investment approach is informed by publishing the State of AI Report, the most widely read independent annual analysis of global AI progress.
+
+Air Street Capital has backed over 60 companies across frontier AI, infrastructure, autonomy, defense technology, TechBio, and applied AI. Notable portfolio outcomes include multiple acquisitions by Amazon, SoftBank, Meta, ByteDance, and Worldpay, as well as public listings on NASDAQ.
+
+## Founder
+
+Nathan Benaich is the Founder and General Partner of Air Street Capital. He is also the author and editor of the State of AI Report, founder of the RAAIS Foundation and the Research and Applied AI Summit (RAAIS), and founder of Spinout.fyi. Nathan is widely cited by policymakers, researchers, investors, and media organizations including the Financial Times, The Economist, Bloomberg, MIT Technology Review, and Fortune.
+
+- Website: https://www.nathanbenaich.com
+- Twitter: https://twitter.com/nathanbenaich
+- LinkedIn: https://www.linkedin.com/in/nathanbenaich/
+- Newsletter: https://nathanbenaich.substack.com/
+- Email: nathan@airstreet.com
+
+## Investment Thesis
+
+Air Street Capital invests in AI-first companies across sectors where artificial intelligence is central to the product and business model:
+
+1. **Frontier AI models and evaluation** — Companies building or evaluating next-generation AI models including large language models, reasoning models, multi-modal models, and world models.
+2. **AI infrastructure, tooling, and developer platforms** — Companies building the compute, data, and software infrastructure that AI-first companies depend on.
+3. **Autonomous systems, robotics, and defense technology** — Companies building autonomous vehicles, drones, maritime systems, industrial robotics, and dual-use defense technology.
+4. **AI agents and reasoning-based software systems** — Companies building AI agents, autonomous software, and enterprise automation powered by reasoning models.
+5. **TechBio and AI-native life sciences** — Companies applying frontier AI to biology, drug discovery, protein engineering, diagnostics, and clinical trials.
+
+## Stage and Check Sizes
+
+- Pre-Seed: $500k–$2M
+- Seed: $1M–$5M
+- Series A and beyond: $2M–$10M
+- Growth-stage investments selectively into category-leading AI-first companies
+
+## Portfolio Companies
+
+### Epoch II (2022–present)
+
+- **poolside** — Enterprise AI for software engineering (USA). https://poolside.ai/
+- **Profluent** — Programmable biology and protein language models (USA). https://www.profluent.bio/
+- **Samaya AI** — Knowledge discovery (USA). https://samaya.ai/
+- **Sereact** — Industrial robotics (Germany). https://sereact.ai/
+- **Delian AI** — Autonomous defense systems (EU). https://www.delian.ai/
+- **Odyssey** — Interactive video (USA/UK). https://www.odyssey.ml/
+- **Interloom** — Enterprise automation (Germany). https://interloom.io/
+- **Patina Systems** — Spontaneous software (USA). https://patinasystems.com/
+- **Fern Labs** (acquired by poolside) — AI agents (UK). https://fern-labs.ai/
+- **Studio Atelico** — AI game studio (USA/UK). https://atelico.studio/
+- **Polar Mist** — Maritime autonomy (EU). https://www.polarmist.ai/
+- **Delfa** — Clinical trials (USA/UK). https://www.delfa.ai/
+- **Clove** — Wealth management (UK). https://www.clove.com/
+- Plus additional unannounced investments in frontier evals, TechBio, AI agents, and AI video.
+
+### Epoch I (2019–2022)
+
+- **Adept** (acquired by Amazon) — AI agents (USA). https://www.adept.ai
+- **Graphcore** (acquired by SoftBank) — AI semiconductors (UK). https://www.graphcore.ai/
+- **Exscientia** (NASDAQ: EXAI) — AI-driven pharma (UK). https://www.exscientia.ai/
+- **Recursion** (NASDAQ: RXRX) — AI-driven pharma (USA). https://www.recursion.com/
+- **poolside** — Enterprise AGI (USA). https://poolside.ai/
+- **V7** — Computer vision data platform (UK). https://www.v7labs.com/
+- **ZOE** — Personalized nutrition (UK). https://joinzoe.com/
+- **Coram AI** — Video intelligence (UK/USA). https://www.coram.ai/
+- **Modern Intelligence** — AI for defense (USA). https://www.modernintelligence.ai
+- **ClipDrop** (acquired by Stability AI/Jasper) — AI image editing (France). https://clipdrop.co/
+- **Allcyte** (acquired by Exscientia) — Diagnostics (Austria). https://www.allcyte.com/
+- **Anagenex** (acquired) — AI + DNA-encoded libraries (USA). https://anagenex.com/
+- **Athenian** (acquired by Linux Foundation) — Software engineering metrics (France). https://athenian.com
+- **CellVoyant** — Cell biology prediction (UK). https://cellvoyant.com/
+- **Gandeeva** — Structural biology (Canada). https://www.gandeeva.com/
+- **Gourmey** — Cell-based meat (France). https://gourmey.com/
+- **Hedera** — Liquid biopsies (Finland/Switzerland). https://www.hederadx.com/
+- **Intenseye** — Workplace safety (Turkey). https://www.intenseye.com/
+- **LabGenius** — Protein therapeutics (UK). https://www.labgeni.us/
+- **Mission Barns** — Lab-grown fat (USA). https://missionbarns.com/
+- **Valence Discovery** (acquired by Recursion) — AI-driven pharma (Canada). https://www.valencediscovery.com/
+
+### Pre-Air Street (angel and personal investments)
+
+- **Stripe** — Online payments (USA). https://www.stripe.com/
+- **ElevenLabs** — AI audio and voice (USA/UK). https://www.elevenlabs.io/
+- **Crusoe** — AI cloud infrastructure (USA). https://www.crusoe.ai
+- **Lambda** — GPU cloud for AI (USA). https://lambdalabs.com/
+- **Synthesia** — AI video generation (UK). https://www.synthesia.io/
+- **Wayve** — Autonomous driving (UK). https://www.wayve.ai/
+- **Niantic** (acquired by Scopely) — Real-world AR games (USA). https://nianticlabs.com/
+- **PolyAI** — AI voice assistants (UK). https://poly-ai.com/
+- **Chroma** — Vector database for AI (USA). https://www.trychroma.com/
+- **Contextual AI** — Enterprise AI with context (USA). https://contextual.ai/
+- **Enveda** — AI for natural product medicines (USA). https://www.envedabio.com/
+- **Muon Space** — Climate data from space (USA). https://www.muonspace.com/
+- **Ndea** — Frontier AI (USA). https://ndea.com/
+- **Numerai** — AI-driven hedge fund (USA). https://numer.ai/
+- **Tractable** — AI for insurance claims (UK). https://www.tractable.ai/
+- **Ravelin** (acquired by Worldpay) — Fraud prevention (UK). https://www.ravelin.com/
+- **Mapillary** (acquired by Meta/Facebook) — Street-level imagery (Sweden). https://www.mapillary.com/
+- **Jukedeck** (acquired by ByteDance) — AI music generation (UK). https://www.jukedeck.com/
+- **Thought Machine** — Core banking platform (UK). https://thoughtmachine.net/
+- **Starship** — Autonomous delivery robots (Estonia). https://www.starship.xyz/
+- **Andela** — Remote engineering teams (USA). https://www.andela.com/
+- **Automata** — Lab automation (UK). https://automata.tech/
+- **Flow Engineering** — Engineering tools (UK). https://www.flowengineering.com/
+- **Optimal** — Autonomous indoor farms (UK). http://optimal.ag/
+- **Recursion** (NASDAQ: RXRX) — AI-driven pharma (USA). https://www.recursion.com/
+
+## Notable Exits and Outcomes
+
+- **Graphcore** — Acquired by SoftBank
+- **Adept** — Acquired by Amazon
+- **Exscientia** — NASDAQ: EXAI
+- **Recursion** — NASDAQ: RXRX
+- **Mapillary** — Acquired by Meta/Facebook
+- **Jukedeck** — Acquired by ByteDance
+- **Ravelin** — Acquired by Worldpay
+- **Niantic** — Acquired by Scopely
+- **ClipDrop** — Acquired by Stability AI, then Jasper
+- **Allcyte** — Acquired by Exscientia
+- **Athenian** — Acquired by Linux Foundation
+- **Valence Discovery** — Acquired by Recursion
+- **Fern Labs** — Acquired by poolside
+- **Anagenex** — Acquired
+
+## Domains of Expertise
+
+- **AI-first software**: Enterprise and consumer software, frontier AI models, AI-first SaaS, computer vision, language models, multi-modal models, reasoning models, audio, speech, video, images, multi-agents, world models, foundation models.
+- **Biotech + AI + TechBio**: Frontier AI models for biology, protein language models, DNA models, single cell biology, microscopy, lab automation, generative biology and chemistry, AI for science, and diagnostic tools.
+- **Defense + Autonomy**: Maritime autonomy, sensor fusion, drones, weapons systems, dual-use strategy, GPS-denied navigation, and European military innovation.
+
+## Public Writing and Research
+
+### State of AI Report
+The State of AI Report is an annual open-access report on global AI progress across research, industry, geopolitics, and safety. First published in 2018, it is the most widely read and trusted independent analysis of AI.
+- Report: https://www.stateof.ai
+- Compute Index: https://www.stateof.ai/compute
+
+### Air Street Press
+Analytical essays, opinion pieces, research, and best practices on AI progress, markets, geopolitics, and company-building.
+- URL: https://press.airstreet.com
+
+### Guide to AI Newsletter
+A widely read monthly newsletter analysing the most important AI technology, research, geopolitics, and startups.
+- URL: https://nathanbenaich.substack.com/
+
+### Featured Essays
+- Staking Your Ground — On intellectual defensibility in AI-first markets. https://press.airstreet.com/p/staking-your-ground
+- Vibe Shifts & x-risk — Why cultural and psychological context matters for existential risk. https://press.airstreet.com/p/vibe-shifts-x-risk
+- Copyright Is the Wrong Hill to Die On — On the fragility of copyright in the age of generative AI. https://press.airstreet.com/p/copyright-is-the-wrong-hill-to-die-on
+- Alchemy Doesn't Scale to General Intelligence — What "scaling" gets wrong. https://press.airstreet.com/p/alchemy-doesnt-scale-general-intelligence
+- The AI Energy Wars Will Get Worse — Why compute geopolitics and energy are inseparable. https://press.airstreet.com/p/the-ai-energy-wars-will-get-worse
+- Being First *Is* a Moat — How strategic incumbency advantages are amplified by AI. https://press.airstreet.com/p/being-first-is-a-moat
+- Bio-Defenseless — Why AI biosecurity gaps are widening. https://press.airstreet.com/p/bio-defenseless
+- There Is No Scaling Wall — Countering the saturation narrative in AI development. https://press.airstreet.com/p/there-is-no-scaling-wall-in-discussion
+- AI-First Biology: Five Years On — A retrospective on AI in biotech. https://press.airstreet.com/p/ai-first-biology-five-years-on
+- AI Isn't the Dotcom Bubble — A structural argument against the "AI bubble" narrative. https://press.airstreet.com/p/ai-isnt-the-dotcom-bubble
+- Storytelling — On the role of narrative in startup creation and capital formation. https://press.airstreet.com/p/storytelling
+- Open-Endedness Is All We'll Need — On evolution, emergence, and long-horizon AI development. https://press.airstreet.com/p/open-endedness-is-all-well-need
+- The Cathedral and the Bazaar — What LLMs can learn from software culture. https://press.airstreet.com/p/the-cathedral-and-the-bazaar
+- The Power of Non-Consensus — A defense of early conviction in high-variance outcomes. https://press.airstreet.com/p/the-power-of-non-consensus
+- Chips All the Way Down — The verticalization of the AI compute stack. https://press.airstreet.com/p/chips-all-the-way-down
+- Data Acquisition Strategies for AI — Competitive edge via training data strategy. https://press.airstreet.com/p/data-acquisition-strategies-for-ai
+- Alchemy Is All You Need — On messy truths, tinkering, and scaling magic. https://press.airstreet.com/p/alchemy-is-all-you-need
+- The Case for Open Source AI — On transparency, acceleration, and national stakes. https://press.airstreet.com/p/the-case-for-open-source-ai
+- Is the EU AI Act Actually Useful? — A critical look at Europe's AI regulation. https://press.airstreet.com/p/is-the-eu-ai-act-actually-useful
+- UK Defence and Dynamism — The case for startups in UK defence tech policy. https://press.airstreet.com/p/uk-defence-and-dynamism
+- Oxford Spinout Review — Evaluating UK university startup creation. https://press.airstreet.com/p/spinout-review
+- Rewriting the European Spinout Playbook — A founder-first critique of university licensing norms. https://press.airstreet.com/p/rewriting-the-european-spinout-playbook
+
+## Community and Events
+
+- **Research and Applied AI Summit (RAAIS)**: Leading annual AI summit convening 200+ global leaders in AI research, engineering, and product. https://raais.co
+- **RAAIS Foundation**: Supporting open-source AI research and education. https://www.raais.org/
+- **London.AI**: London's leading AI meetup. http://london.ai/
+- **Air Street Events**: AI events around the world organized by Air Street Capital. https://lu.ma/airstreet
+
+## Key Terms
+
+Air Street Capital, Air Street Press, Nathan Benaich, State of AI Report, RAAIS, RAAIS Foundation, Spinout.fyi, AI venture capital, AI-first companies, frontier AI, AI infrastructure, AI agents, TechBio, defense tech, autonomous systems, robotics, generative AI, machine learning, artificial intelligence, pre-seed, seed, Series A, growth stage, Europe, United States, London, sovereign AI, AI factories, scaling laws, foundation models, reasoning models, world models.
+
+## How to Pitch Air Street Capital
+
+Air Street Capital welcomes inbound from founders building AI-first companies at any stage. The best way to reach the firm is to email Nathan Benaich directly at nathan@airstreet.com. Include a brief description of the company, the AI capability at the core of the product, and the stage of the business. Air Street Capital responds to all credible inbound.
+
+## Contact
+
+- Email: nathan@airstreet.com
+- Website: https://www.airstreet.com
+- Twitter: https://twitter.com/airstreet
+- LinkedIn: https://www.linkedin.com/company/airstreetcapital/
+
+## Permissions
+
+We allow the use of public content from www.airstreet.com, press.airstreet.com, and www.stateof.ai for training and evaluation of large language models, including by commercial entities.
+
+Attribution is requested where feasible. Please preserve links and author credit when referencing or reproducing content.
+
+## License
+
+All publicly available content from airstreet.com, press.airstreet.com, stateof.ai, and lu.ma/airstreet is made available under an implied license for use in the training and evaluation of large language models. Commercial use is permitted. Attribution is requested.
+
+## Citation Policy
+
+We appreciate citation of individual essays and reports when included in training corpora or dataset disclosures.
+
+## Last Updated
+
+2025-05-29
