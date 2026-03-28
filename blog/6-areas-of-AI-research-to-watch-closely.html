@@ -58,13 +58,13 @@
     <title>Air Street Capital blog: 6 areas of AI research to watch closely</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha384-pdapHxIh7EYuwy6K7iE41uXVxGCXY0sAjBzaElYGJUrzwodck3Lx6IE2lA0rFREo" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha384-pPttEvTHTuUJ9L2kCoMnNqCRcaMPMVMsWVO+RLaaaYDmfSP5//dP6eKRusbPcqhZ" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha384-O2GsbeS5rYQ72SmBXWL+lDu67AGTu0ageCnidKcNJa8133eUgYoLccjQYYWkuj+Q" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
@@ -83,9 +83,9 @@
     <meta property="og:type" content="article" />
     <!-- Added to have cool social share buttons -->
     <!-- Bulma-Social -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" integrity="sha384-uc9IcxwCxQT25D+QDU203FBzFbCQkzV+ao18iaPTxMnSjN7Nm37xEwCVLmC1jEzw" crossorigin="anonymous">
     <!-- Font Awesome 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
 
     <!-- Google schema -->
@@ -162,8 +162,8 @@
             <a href="/blog" class="button is-white is-outlined"> 🏡 Blog home</a>
             <a href="/portfolio" class="button is-white is-outlined"> 🦄 Portfolio</a>
             <a href="/team" class="button is-white is-outlined"> 👋 Team</a>
-            <a href="https://nathanbenaich.substack.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank"> ✉️ Newsletter</a>
-            <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
+            <a href="https://nathanbenaich.substack.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog/" class="button is-white is-outlined" target="_blank" rel="noopener noreferrer"> ✉️ Newsletter</a>
+            <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-blog" class="button is-white is-outlined" target="_blank" rel="noopener noreferrer"> 📖 State of AI</a>
             <a href="/shop" class="button is-white is-outlined"> 🛍️ Merch</a>
         </div>
 
@@ -178,14 +178,14 @@
 
 
         <a class="button is-normal is-twitter" style="text-decoration: none;" href="https://twitter.com/intent/tweet?url=https://www.airstreet.com/blog/6-areas-of-ai-research-to-watch/&text=6+areas+of+AI+research+to+watch+closely+by+%40nathanbenaich+at+%40airstreet"
-            target="_blank">
+            target="_blank" rel="noopener noreferrer">
             <span class="icon">
                 <i class="fab fa-twitter"></i>
               </span>
         </a>
 
         <a class="button is-normal is-linkedin" style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.airstreet.com/blog/6-areas-of-ai-research-to-watch/&title=6+areas+of+AI+research+to+watch+closely+by+%40nathanbenaich+at+%40airstreet"
-            target="_blank">
+            target="_blank" rel="noopener noreferrer">
             <span class="icon">
                 <i class="fab fa-linkedin"></i>
               </span>
@@ -335,7 +335,7 @@
     </section>
 
     <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
 <!-- snippet to make sure the footer year prints current year and doesn't need updating -->

@@ -81,7 +81,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha384-O2GsbeS5rYQ72SmBXWL+lDu67AGTu0ageCnidKcNJa8133eUgYoLccjQYYWkuj+Q" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable version">
     <!-- Twitter and LinkedIn share card to update each time -->
@@ -142,8 +142,8 @@
                     <a href="/team" class="button is-white is-outlined"> 🤓 Team</a>
                     <a href="https://press.airstreet.com" class="button is-white is-outlined"> 📰 Air Street Press</a>
                     <!--
-                    <a href="https://nathanbenaich.substack.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-home" class="button is-white is-outlined" target="_blank"> ✉️ Guide to AI</a>
-                    <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-home" class="button is-white is-outlined" target="_blank"> 📖 State of AI</a>
+                    <a href="https://nathanbenaich.substack.com/?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-home" class="button is-white is-outlined" target="_blank" rel="noopener noreferrer"> ✉️ Guide to AI</a>
+                    <a href="https://www.stateof.ai//?utm_source=airstreet-web&utm_medium=website&utm_campaign=airstreet-home" class="button is-white is-outlined" target="_blank" rel="noopener noreferrer"> 📖 State of AI</a>
                     -->
                     <a href="https://lu.ma/airstreet" class="button is-white is-outlined"> 🎟️ Events</a>
                     <a href="https://merch.airstreet.com/" class="button is-white is-outlined"> 🛍️ Merch</a>
@@ -197,7 +197,7 @@
 <!-- snippet to make sure the footer year prints current year and doesn't need updating -->
 
     <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
     </section>
