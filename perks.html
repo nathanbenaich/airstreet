@@ -80,9 +80,10 @@
            padding: 2rem 0 1.5rem; }
 .pk-logo { flex: none; line-height: 0; }
 .pk-logo img { width: 64px; height: 64px; border-radius: 14px; display: block; }
-/* Title and strapline sit on one baseline, wrapping only if there is no room. */
-.pk-titles { min-width: 0; display: flex; align-items: baseline; flex-wrap: wrap;
-             column-gap: .65rem; row-gap: .1rem; }
+/* flex:1 1 0 lets this shrink instead of wrapping, so the logo and /perks
+   always share the first line and only the strapline drops. */
+.pk-titles { flex: 1 1 0; min-width: 0; display: flex; align-items: baseline;
+             flex-wrap: wrap; column-gap: .65rem; row-gap: .1rem; }
 .pk-head h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -.015em; line-height: 1.1;
               margin: 0; padding: 0; color: var(--ink); }
 .pk-head h1 .pk-slash { color: var(--value); }
@@ -140,10 +141,11 @@
 .pk-request { border-color: var(--value); cursor: pointer; }
 .pk-request:hover { background: var(--value); color: var(--navy); }
 
-/* Intros are a different offer from a credit programme, so they get their own
-   colour rather than borrowing the amber that means "claimable credits". */
-.pk-intro { background: var(--tag-bg); color: var(--tag); border-color: var(--tag); }
-.pk-intro:hover { background: var(--tag); color: var(--navy); }
+/* Intros use the same amber as Request access. An earlier periwinkle version
+   sat right next to the periwinkle category tag, so the call to action read as
+   just another label. One colour for "you can act on this" is clearer than
+   colour-coding the kind of offer, which the label text already says. */
+.pk-intro { background: var(--wait-bg); color: var(--value); border-color: var(--value); }
 
 /* Amber is reserved for credits you can actually claim today. Programs we are
    still chasing show the same figure in muted ink so the eye is not misled. */
@@ -169,7 +171,9 @@
 }
 .pk-row > summary::-webkit-details-marker { display: none; }
 .pk-row > summary:hover { background: var(--well); }
-.pk-name { display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
+/* Centred, not baseline: the category tag has padding, so aligning on the
+   text baseline pushed it below the vendor name and the status pill. */
+.pk-name { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap;
            font-weight: 700; font-size: 1.02rem; }
 .pk-what { color: var(--ink-2); font-size: .92rem; }
 .pk-caret { font-family: var(--mono); color: var(--ink-3); font-size: .8rem;
@@ -308,10 +312,12 @@
         gap: .3rem .6rem;
         padding: .85rem .1rem;
     }
-    .pk-name   { grid-area: name; font-size: 1rem; }
+    /* All three centre on the first line, so the vendor name, its category tag
+       and the status pill share one horizontal axis. */
+    .pk-name   { grid-area: name; font-size: 1rem; align-self: center; }
     .pk-what   { grid-area: what; font-size: .95rem; }
-    .pk-caret  { grid-area: caret; align-self: start; padding-top: .2rem; }
-    .pk-row > summary > .pk-pill { grid-area: status; align-self: start; }
+    .pk-caret  { grid-area: caret; align-self: center; }
+    .pk-row > summary > .pk-pill { grid-area: status; align-self: center; }
 
     .pk-body,
     .pk-suggest { padding: 1rem .9rem 1.2rem; }
@@ -350,7 +356,6 @@
 
 <form name="perk-interest" data-netlify="true" netlify-honeypot="bot-field" hidden>
     <input type="text" name="perk">
-    <input type="text" name="company">
     <input type="email" name="email">
     <input type="text" name="note">
     <input type="text" name="bot-field">
@@ -402,7 +407,6 @@
         <div class="pk-suggest" id="pk-suggest" hidden>
             <form class="pk-interest-form" id="pk-suggest-form">
                 <input type="text" name="note" placeholder="What perk should we go and get?" required>
-                <input type="text" name="company" placeholder="Company" required>
                 <input type="email" name="email" placeholder="Your email" required>
                 <button type="submit" class="pk-btn pk-btn-value">Send</button>
             </form>
@@ -567,14 +571,15 @@ var PERKS = [
   },
 
   {
-    name: "Microsoft for Startups",
+    /* Kept short so the category tag stays on the name's line on a phone. */
+    name: "Microsoft",
     category: "Models",
     status: "requesting",
     value: "$200,000",
     unit: "Azure credits",
     amount: 0,
     what: [
-      "Azure credits plus access to 11,000 models through Azure AI Foundry, GitHub Enterprise, and Visual Studio Enterprise. Granted against a partner code issued per fund."
+      "Microsoft for Startups: Azure credits plus access to 11,000 models through Azure AI Foundry, GitHub Enterprise, and Visual Studio Enterprise. Granted against a partner code issued per fund."
     ]
   },
 
@@ -721,10 +726,11 @@ var PERKS = [
     return '<div class="pk-interest" data-perk="' + esc + '">'
          + '<button type="button" class="pk-btn pk-btn-value pk-interest-open">' + cta + "</button>"
          + '<form class="pk-interest-form">'
-         + '<input type="text" name="company" placeholder="Company" required>'
          + '<input type="email" name="email" placeholder="Your email" required>'
-         + '<input type="text" name="note" placeholder="What you would use it for (optional)">'
-         + '<button type="submit" class="pk-btn pk-btn-value">Send</button>'
+         + '<input type="text" name="note" placeholder="'
+         + (isIntro ? "Who you want to talk to, and what for" : "What you would use it for")
+         + '">'
+         + '<button type="submit" class="pk-btn pk-btn-value">' + cta + "</button>"
          + "</form>"
          + '<p class="pk-interest-done" hidden>Interest registered. We will email you when it lands.</p>'
          + '<p class="pk-interest-err" hidden></p>'
@@ -743,7 +749,7 @@ var PERKS = [
 
       openBtn.addEventListener("click", function () {
         box.classList.add("is-open");
-        form.querySelector('input[name="company"]').focus();
+        form.querySelector('input[name="email"]').focus();
       });
 
       form.addEventListener("submit", function (ev) {
@@ -751,7 +757,6 @@ var PERKS = [
         var data = {
           "form-name": "perk-interest",
           perk: perk,
-          company: form.company.value.trim(),
           email: form.email.value.trim(),
           note: form.note.value.trim()
         };
@@ -828,9 +833,11 @@ var PERKS = [
     if (p.note) { right += "<p>" + p.note + "</p>"; }
     if (p.status !== "live") { right += interestHTML(p); }
 
+    /* Only the live rows get a heading. On the others the column is just a
+       note and a button, which a heading did not help explain. */
     if (right) {
-      var rightTitle = p.status === "live" ? "How to redeem" : "What you can do now";
-      body += "<div><h4>" + rightTitle + "</h4>" + right + "</div>";
+      var heading = p.status === "live" ? "<h4>How to redeem</h4>" : "";
+      body += "<div>" + heading + right + "</div>";
     }
 
     return '<details class="pk-row">'
@@ -917,7 +924,6 @@ var PERKS = [
     submitForm({
       "form-name": "perk-interest",
       perk: "SUGGESTION",
-      company: suggestForm.company.value.trim(),
       email: suggestForm.email.value.trim(),
       note: suggestForm.note.value.trim()
     }, function () {
