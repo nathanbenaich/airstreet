@@ -255,38 +255,64 @@
 
 /* --- password gate --- */
 
-/* Matches the dealflow.airstreet.com gate so the two internal tools feel like
-   one product: badge logo, wordmark as a heading, stacked full-width field
-   and solid amber button. */
+/* ==========================================================================
+   LOGIN GATE
+   Ported verbatim from dealflow.airstreet.com so the two internal tools are
+   the same screen. Note this block deliberately does NOT use the perks page
+   palette or PT Sans: dealflow uses #ff9900 and the system font stack, and
+   matching it matters more here than internal consistency with the list.
+   ========================================================================== */
+
 .pk-gate {
-    position: fixed; inset: 0; z-index: 999; background: #010061;
-    display: flex; align-items: center; justify-content: center; padding: 24px 16px;
-    font-family: 'PT Sans', sans-serif;
+    position: fixed; inset: 0; z-index: 9999; background: #010061;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    overflow-y: auto; padding: 24px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-.pk-gate-inner { width: 90%; max-width: 420px; text-align: center; padding: 8px 32px; }
-.pk-gate-inner img { width: 72px; height: 72px; border-radius: 16px; margin: 0 auto 18px;
-                     display: block; box-shadow: 0 8px 32px rgba(0,0,0,.3); }
-.pk-gate-inner h2 { font-size: 30px; line-height: 1.1; color: #fff; font-weight: 700;
-                    margin: 0 0 6px; padding: 0; }
-.pk-gate-inner p { font-size: 15px; color: rgba(255,255,255,.5); margin: 0 0 24px; }
-.pk-gate form { display: block; }
-.pk-gate input {
-    width: 100%; background: rgba(255,255,255,.08);
-    border: 1px solid rgba(255,255,255,.15); border-radius: 12px;
-    padding: 14px 16px; margin-bottom: 12px; color: #fff; font-size: 16px;
-    font-family: 'PT Sans', sans-serif; transition: border-color .2s;
+.pk-gate-box { background: transparent; border-radius: 12px; padding: 40px;
+               text-align: center; max-width: 420px; width: 90%; }
+.pk-gate-box img { width: 80px; height: 80px; border-radius: 18px; margin-bottom: 28px;
+                   box-shadow: 0 8px 32px rgba(0,0,0,.3); }
+.pk-gate-box h2 { font-size: 32px; color: #fff; margin: 0 0 6px; padding: 0;
+                  font-weight: 700; letter-spacing: 0; }
+.pk-gate-box p { font-size: 15px; color: rgba(255,255,255,.5); margin: 0 0 36px; }
+.pk-gate form { width: 100%; }
+.pk-gate-inputwrap {
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
+    border-radius: 12px; padding: 4px 4px 4px 16px; margin-bottom: 14px;
+    transition: border-color .2s;
 }
+.pk-gate-inputwrap:focus-within { border-color: #ff9900; }
+.pk-gate input { flex: 1; width: 100%; padding: 10px 0; background: none; border: none;
+                 font-size: 16px; outline: none; color: #fff; font-family: inherit; }
 .pk-gate input::placeholder { color: rgba(255,255,255,.35); }
-.pk-gate input:focus { outline: none; border-color: #F5A524; }
-.pk-gate button {
-    width: 100%; padding: 14px; background: #F5A524; color: #010061;
-    border: none; border-radius: 12px; font-family: 'PT Sans', sans-serif;
-    font-size: 15px; font-weight: 700; cursor: pointer; transition: background .2s;
+.pk-gate button { width: 100%; padding: 14px; background: #ff9900; color: #000;
+                  border: none; border-radius: 12px; font-size: 15px; font-weight: 600;
+                  cursor: pointer; transition: background .2s; font-family: inherit; }
+.pk-gate button:hover { background: #e68a00; }
+.pk-gate-err { color: #ff6b6b; font-size: 13px; margin-top: 8px; min-height: 1.2em; }
+.pk-gate-footer { margin-top: 56px; font-size: 12px; color: rgba(255,255,255,.3); }
+.pk-gate-footer a { display: inline-flex; align-items: center; min-height: 34px;
+                    padding: 0 2px; color: #ff9900; text-decoration: none; opacity: .7; }
+
+/* Not in the dealflow original. At 32px the wordmark wraps onto two lines on
+   a phone, which looks broken. Tighter box padding and smaller type keep it
+   on one line. */
+@media (max-width: 430px) {
+    .pk-gate-box { padding: 40px 20px; }
+    .pk-gate-box h2 { font-size: 26px; }
 }
-.pk-gate button:hover { background: #e0940f; }
-.pk-gate-err { color: #FF6B6B; font-size: 13px; margin-top: 10px; min-height: 1.2em; }
-.pk-gate-footer { margin-top: 48px; font-size: 12px; color: rgba(255,255,255,.3); }
-.pk-gate-footer a { color: #F5A524; text-decoration: none; opacity: .7; }
+
+@media (max-height: 560px) {
+    .pk-gate { justify-content: flex-start; padding: 12px 16px; }
+    .pk-gate-box { padding: 8px 32px; }
+    .pk-gate-box img { width: 44px !important; height: 44px !important;
+                       border-radius: 10px !important; margin-bottom: 10px !important; }
+    .pk-gate-box h2 { font-size: 26px; line-height: 1.1; }
+    .pk-gate-box p { margin-bottom: 14px; }
+    .pk-gate-footer { margin-top: 12px !important; padding-bottom: 6px; }
+}
 
 /* --------------------------------------------------------------------------
    MOBILE
@@ -384,19 +410,22 @@
      ========================================================================== -->
 
 <div class="pk-gate" id="pk-gate">
-    <div class="pk-gate-inner">
+    <div class="pk-gate-box">
         <img alt="" src="logo.png">
         <h2>Air Street Capital</h2>
         <p>Perks</p>
         <form id="pk-gate-form">
-            <input type="password" id="pk-gate-input" placeholder="Enter password" autocomplete="current-password" aria-label="Password">
+            <div class="pk-gate-inputwrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                <input type="password" id="pk-gate-input" placeholder="Enter password" autocomplete="current-password" aria-label="Password">
+            </div>
             <button type="submit">Continue</button>
+            <div class="pk-gate-err" id="pk-gate-err" role="status"></div>
         </form>
-        <div class="pk-gate-err" id="pk-gate-err" role="status"></div>
-        <div class="pk-gate-footer">
-            &copy; <span id="pk-gate-year"></span> Air Street Capital Management Ltd. &middot;
-            <a href="https://www.airstreet.com">airstreet.com</a>
-        </div>
+    </div>
+    <div class="pk-gate-footer">
+        &copy; <span id="pk-gate-year"></span> Air Street Capital Management Ltd. &middot;
+        <a href="https://www.airstreet.com">airstreet.com</a>
     </div>
 </div>
 
