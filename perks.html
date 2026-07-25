@@ -255,24 +255,38 @@
 
 /* --- password gate --- */
 
+/* Matches the dealflow.airstreet.com gate so the two internal tools feel like
+   one product: badge logo, wordmark as a heading, stacked full-width field
+   and solid amber button. */
 .pk-gate {
     position: fixed; inset: 0; z-index: 999; background: #010061;
-    display: flex; align-items: center; justify-content: center; padding: 1.5rem;
+    display: flex; align-items: center; justify-content: center; padding: 24px 16px;
+    font-family: 'PT Sans', sans-serif;
 }
-.pk-gate-inner { width: 100%; max-width: 340px; text-align: center; }
-.pk-gate-inner img { width: 170px; height: auto; margin-bottom: 2rem; }
-.pk-gate-inner p { color: #A5AAD6; font-size: .92rem; margin-bottom: 1.25rem; }
-.pk-gate form { display: flex; gap: .5rem; }
+.pk-gate-inner { width: 90%; max-width: 420px; text-align: center; padding: 8px 32px; }
+.pk-gate-inner img { width: 72px; height: 72px; border-radius: 16px; margin: 0 auto 18px;
+                     display: block; box-shadow: 0 8px 32px rgba(0,0,0,.3); }
+.pk-gate-inner h2 { font-size: 30px; line-height: 1.1; color: #fff; font-weight: 700;
+                    margin: 0 0 6px; padding: 0; }
+.pk-gate-inner p { font-size: 15px; color: rgba(255,255,255,.5); margin: 0 0 24px; }
+.pk-gate form { display: block; }
 .pk-gate input {
-    flex: 1; background: #00003A; border: 1px solid rgba(239,240,248,.30); color: #EFF0F8;
-    padding: .6rem .75rem; font-family: ui-monospace, Menlo, monospace; font-size: .95rem;
+    width: 100%; background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 12px; color: #fff; font-size: 16px;
+    font-family: 'PT Sans', sans-serif; transition: border-color .2s;
 }
-.pk-gate input:focus { outline: 2px solid #F5A524; outline-offset: 1px; }
+.pk-gate input::placeholder { color: rgba(255,255,255,.35); }
+.pk-gate input:focus { outline: none; border-color: #F5A524; }
 .pk-gate button {
-    border: 1px solid #F5A524; background: transparent; color: #F5A524;
-    padding: .6rem 1rem; font-family: 'PT Sans', sans-serif; font-size: .95rem; cursor: pointer;
+    width: 100%; padding: 14px; background: #F5A524; color: #010061;
+    border: none; border-radius: 12px; font-family: 'PT Sans', sans-serif;
+    font-size: 15px; font-weight: 700; cursor: pointer; transition: background .2s;
 }
-.pk-gate-err { color: #F5A524; font-size: .85rem; margin-top: .9rem; min-height: 1.2em; }
+.pk-gate button:hover { background: #e0940f; }
+.pk-gate-err { color: #FF6B6B; font-size: 13px; margin-top: 10px; min-height: 1.2em; }
+.pk-gate-footer { margin-top: 48px; font-size: 12px; color: rgba(255,255,255,.3); }
+.pk-gate-footer a { color: #F5A524; text-decoration: none; opacity: .7; }
 
 /* --------------------------------------------------------------------------
    MOBILE
@@ -371,13 +385,18 @@
 
 <div class="pk-gate" id="pk-gate">
     <div class="pk-gate-inner">
-        <img alt="Air Street Capital" src="logo.png">
-        <p>Perks for Air Street portfolio companies.</p>
+        <img alt="" src="logo.png">
+        <h2>Air Street Capital</h2>
+        <p>Perks</p>
         <form id="pk-gate-form">
-            <input type="password" id="pk-gate-input" placeholder="Password" autocomplete="current-password" aria-label="Password">
-            <button type="submit">Enter</button>
+            <input type="password" id="pk-gate-input" placeholder="Enter password" autocomplete="current-password" aria-label="Password">
+            <button type="submit">Continue</button>
         </form>
         <div class="pk-gate-err" id="pk-gate-err" role="status"></div>
+        <div class="pk-gate-footer">
+            &copy; <span id="pk-gate-year"></span> Air Street Capital Management Ltd. &middot;
+            <a href="https://www.airstreet.com">airstreet.com</a>
+        </div>
     </div>
 </div>
 
@@ -609,6 +628,8 @@ var PERKS = [
      these were declared further down they would still be undefined at that
      point, so every filter would fail and the list would render empty. */
   var activeCategory = "All";
+
+  document.getElementById("pk-gate-year").textContent = new Date().getFullYear();
 
   var gate      = document.getElementById("pk-gate");
   var gateForm  = document.getElementById("pk-gate-form");
