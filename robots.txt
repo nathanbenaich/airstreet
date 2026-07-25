@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /risks
+Disallow: /perks
 
 Sitemap: https://www.airstreet.com/sitemap.xml
