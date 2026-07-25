@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FGXNM2XG5R"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FGXNM2XG5R');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This page is for portfolio companies only. Keep it out of search. -->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <title>Perks | Air Street Capital</title>
+    <meta name="description" content="Credits and programs for Air Street Capital portfolio companies.">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" integrity="sha384-O2GsbeS5rYQ72SmBXWL+lDu67AGTu0ageCnidKcNJa8133eUgYoLccjQYYWkuj+Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+<style>
+/* ==========================================================================
+   PERKS PAGE
+   Everything on this page is namespaced .pk-* so it cannot collide with
+   Bulma or with main.css. Colours come off the live site palette.
+   ========================================================================== */
+
+.pk {
+    --navy:    #010061;
+    --well:    #00003A;
+    --ink:     #EFF0F8;
+    --ink-2:   #A5AAD6;
+    --ink-3:   #757BB0;
+    --rule:    rgba(239,240,248,.16);
+    --rule-2:  rgba(239,240,248,.30);
+    --value:   #F5A524;
+    --tag:     #8B93E8;
+    --tag-bg:  rgba(139,147,232,.15);
+    --ok:      #58D6A8;
+    --ok-bg:   rgba(88,214,168,.14);
+    --wait-bg: rgba(245,165,36,.13);
+    --mono:    ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+
+    background: var(--navy);
+    color: var(--ink);
+    font-family: 'PT Sans', sans-serif;
+    min-height: 100vh;
+    padding: 0 0 4rem;
+}
+
+.pk-wrap { max-width: 1000px; margin: 0 auto; padding: 0 1.25rem; }
+
+/* Bulma 0.6.2 does not set the border-box inherit rule, so form controls
+   computed to content-box and width:100% pushed them past their container. */
+.pk, .pk *, .pk *::before, .pk *::after { box-sizing: border-box; }
+
+.pk a { color: inherit; }
+.pk :focus-visible { outline: 2px solid var(--value); outline-offset: 2px; }
+
+/* Any explicit display rule beats the UA stylesheet's [hidden], so anything
+   toggled with the hidden attribute needs this to actually stay hidden. */
+.pk [hidden] { display: none !important; }
+
+/* --- masthead --- */
+
+/* Logo, title, and total all sit on one line. Logo treatment matches the
+   dealflow app: square crop, softly rounded. */
+.pk-head { display: flex; align-items: center; gap: 1rem;
+           padding: 2rem 0 1.5rem; }
+.pk-logo { flex: none; line-height: 0; }
+.pk-logo img { width: 64px; height: 64px; border-radius: 14px; display: block; }
+/* Title and strapline sit on one baseline, wrapping only if there is no room. */
+.pk-titles { min-width: 0; display: flex; align-items: baseline; flex-wrap: wrap;
+             column-gap: .65rem; row-gap: .1rem; }
+.pk-head h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -.015em; line-height: 1.1;
+              margin: 0; padding: 0; color: var(--ink); }
+.pk-head h1 .pk-slash { color: var(--value); }
+.pk-head p { color: var(--ink-3); font-size: .88rem; margin: 0; }
+/* Label uses the same uppercase mono as the chips and pills. The figure sits
+   just above the row amounts so it reads as the headline number without
+   competing with the /perks heading. */
+.pk-total { font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+            text-transform: uppercase; color: var(--ink-3);
+            text-align: right; margin-left: auto; flex: none; }
+.pk-total b { display: block; color: var(--value); font-size: 1.15rem; font-weight: 700;
+              font-variant-numeric: tabular-nums; letter-spacing: 0; text-transform: none;
+              margin-top: .15rem; }
+
+/* --- filters --- */
+
+.pk-btn {
+    border: 1px solid var(--rule-2); background: transparent; color: var(--ink);
+    padding: .55rem .85rem; font-family: 'PT Sans', sans-serif; font-size: .88rem;
+    cursor: pointer; text-decoration: none; display: inline-block;
+}
+.pk-btn:hover { border-color: var(--rule-2); background: var(--well); }
+.pk-btn-value { border-color: var(--value); color: var(--value); }
+
+.pk-chips { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: 1.5rem; }
+/* Same typographic treatment as .pk-pill so the filters and the category tags
+   read as one system. Slightly taller padding purely for the tap target. */
+.pk-chip {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+    text-transform: uppercase; white-space: nowrap;
+    padding: .34rem .55rem; border: 1px solid var(--rule);
+    color: var(--ink-2); background: transparent; cursor: pointer;
+}
+.pk-chip:hover { border-color: var(--rule-2); color: var(--ink); }
+.pk-chip[aria-pressed="true"] { border-color: var(--value); color: var(--value); }
+.pk-chip .pk-n { color: var(--ink-3); margin-left: .4rem; }
+
+/* --- pills, values, codes --- */
+
+/* The transparent border keeps flat pills the same height as the bordered
+   button ones, so a Live row and a Request access row line up. */
+.pk-pill {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase;
+    padding: .16rem .45rem; white-space: nowrap; border: 1px solid transparent;
+    display: inline-block; line-height: 1.45;
+}
+.pk-live { background: var(--ok-bg); color: var(--ok); }
+.pk-wait { background: var(--wait-bg); color: var(--value); }
+.pk-cat  { background: var(--tag-bg); color: var(--tag); }
+.pk-done { background: var(--tag-bg); color: var(--tag); }
+
+/* On perks we do not have yet, the pill is the call to action rather than a
+   status label: it opens the row and drops the founder straight into the
+   interest form. Bordered so it reads as pressable next to the flat pills. */
+.pk-request { border-color: var(--value); cursor: pointer; }
+.pk-request:hover { background: var(--value); color: var(--navy); }
+
+/* Intros are a different offer from a credit programme, so they get their own
+   colour rather than borrowing the amber that means "claimable credits". */
+.pk-intro { background: var(--tag-bg); color: var(--tag); border-color: var(--tag); }
+.pk-intro:hover { background: var(--tag); color: var(--navy); }
+
+/* Amber is reserved for credits you can actually claim today. Programs we are
+   still chasing show the same figure in muted ink so the eye is not misled. */
+.pk-amt { font-family: var(--mono); font-variant-numeric: tabular-nums;
+          color: var(--value); font-weight: 700; }
+.pk-amt-soon { color: var(--ink-3); font-weight: 400; }
+
+.pk-code {
+    font-family: var(--mono); font-size: .82rem; background: var(--navy);
+    border: 1px solid var(--rule); padding: .18rem .45rem; letter-spacing: .04em;
+    word-break: break-all;
+}
+.pk-copyline { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; margin: .5rem 0; }
+
+/* --- the console list --- */
+
+.pk-list { border-top: 1px solid var(--rule-2); }
+.pk-row { border-bottom: 1px solid var(--rule); }
+.pk-row > summary {
+    display: grid;
+    grid-template-columns: minmax(150px, 1.4fr) minmax(140px, 1.3fr) minmax(92px, auto) 1.2rem;
+    gap: 1rem; align-items: center; padding: .85rem .25rem; cursor: pointer; list-style: none;
+}
+.pk-row > summary::-webkit-details-marker { display: none; }
+.pk-row > summary:hover { background: var(--well); }
+.pk-name { display: flex; align-items: baseline; gap: .5rem; flex-wrap: wrap;
+           font-weight: 700; font-size: 1.02rem; }
+.pk-what { color: var(--ink-2); font-size: .92rem; }
+.pk-caret { font-family: var(--mono); color: var(--ink-3); font-size: .8rem;
+            transition: transform .15s ease; text-align: right; }
+.pk-row[open] .pk-caret { transform: rotate(90deg); }
+
+.pk-body {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5rem; background: var(--well); padding: 1.1rem 1rem 1.4rem;
+}
+.pk-body h4 {
+    font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--ink-3); margin: 0 0 .5rem; padding: 0; font-weight: 400;
+}
+.pk-body p { font-size: .92rem; color: var(--ink-2); margin: 0 0 .6rem; }
+.pk-body p:last-child { margin-bottom: 0; }
+/* A default <ol> indents the whole list, which left the steps as the only
+   thing in the panel not flush with the headings. Counter markers hang in the
+   left gutter instead, so the numbers sit flush and the text keeps its own
+   alignment even when a step wraps. */
+.pk-body ol {
+    list-style: none; counter-reset: pk-step;
+    margin: 0 0 .6rem; padding-left: 1.5rem;
+    font-size: .92rem; color: var(--ink-2);
+}
+.pk-body ol li {
+    counter-increment: pk-step; position: relative;
+    font-size: .92rem; margin-bottom: .3rem;
+}
+/* Inherit the font-size and line-height so the marker shares a baseline with
+   the first line of the step rather than riding above it. */
+.pk-body ol li::before {
+    content: counter(pk-step) ".";
+    position: absolute; left: -1.5rem; top: 0;
+    font-family: var(--mono); font-size: inherit; line-height: inherit;
+    color: var(--ink-3);
+}
+.pk-body strong { color: var(--ink); }
+.pk-body a { color: var(--value); }
+
+.pk-verified { font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+               text-transform: uppercase; color: var(--ink-3);
+               margin: 1.6rem 0 0; }
+
+/* --- express interest (shown on "Requesting" perks only) --- */
+
+.pk-interest { margin-top: .9rem; }
+.pk-interest-lede { font-size: .9rem; color: var(--ink-2); margin: 0 0 .6rem; }
+.pk-interest-form { display: none; flex-direction: column; gap: .45rem; margin-top: .2rem; }
+.pk-interest.is-open .pk-interest-form { display: flex; }
+.pk-interest.is-open .pk-interest-open { display: none; }
+.pk-interest-form input {
+    background: var(--navy); border: 1px solid var(--rule); color: var(--ink);
+    padding: .45rem .6rem; font-family: 'PT Sans', sans-serif; font-size: .88rem; width: 100%;
+}
+.pk-interest-form input::placeholder { color: var(--ink-3); }
+.pk-interest-form input:focus { outline: 2px solid var(--value); outline-offset: -1px; }
+.pk-interest-form button { align-self: flex-start; }
+.pk-interest-done {
+    font-size: .9rem; color: var(--ok); margin: .5rem 0 0;
+    display: flex; align-items: baseline; gap: .4rem;
+}
+.pk-interest-err { font-size: .85rem; color: var(--value); margin: .5rem 0 0; }
+
+/* --- suggest a perk (sits under the search row) --- */
+
+/* Deliberately identical to .pk-body so the fields line up with the in-row
+   interest forms. No border, since .pk-body does not have one. */
+.pk-suggest { background: var(--well); padding: 1.1rem 1rem 1.4rem; margin-top: .8rem; }
+.pk-suggest .pk-interest-form { display: flex; }
+
+.pk-empty { padding: 2.5rem .25rem; color: var(--ink-3); font-size: .95rem; }
+
+/* --- footer note + suggest --- */
+
+.pk-foot { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.pk-note { color: var(--ink-3); font-size: .88rem; max-width: 62ch; margin: 0 0 .9rem; }
+.pk-note a { color: var(--value); }
+
+/* --- password gate --- */
+
+.pk-gate {
+    position: fixed; inset: 0; z-index: 999; background: #010061;
+    display: flex; align-items: center; justify-content: center; padding: 1.5rem;
+}
+.pk-gate-inner { width: 100%; max-width: 340px; text-align: center; }
+.pk-gate-inner img { width: 170px; height: auto; margin-bottom: 2rem; }
+.pk-gate-inner p { color: #A5AAD6; font-size: .92rem; margin-bottom: 1.25rem; }
+.pk-gate form { display: flex; gap: .5rem; }
+.pk-gate input {
+    flex: 1; background: #00003A; border: 1px solid rgba(239,240,248,.30); color: #EFF0F8;
+    padding: .6rem .75rem; font-family: ui-monospace, Menlo, monospace; font-size: .95rem;
+}
+.pk-gate input:focus { outline: 2px solid #F5A524; outline-offset: 1px; }
+.pk-gate button {
+    border: 1px solid #F5A524; background: transparent; color: #F5A524;
+    padding: .6rem 1rem; font-family: 'PT Sans', sans-serif; font-size: .95rem; cursor: pointer;
+}
+.pk-gate-err { color: #F5A524; font-size: .85rem; margin-top: .9rem; min-height: 1.2em; }
+
+/* --------------------------------------------------------------------------
+   MOBILE
+   The credit amount and the Live / Requesting state are the two things a
+   founder is scanning for, so neither is ever hidden. Instead the row
+   restacks: name and status on the first line, amount on the second.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .pk-wrap { padding: 0 1rem; }
+
+    /* Logo and title stay on one line, the total wraps to its own. */
+    .pk-head { flex-wrap: wrap; padding: 1.25rem 0 1.1rem; gap: .8rem; }
+    .pk-logo img { width: 56px; height: 56px; border-radius: 12px; }
+    .pk-head h1 { font-size: 1.35rem; }
+    .pk-total {
+        margin-left: 0; text-align: left; flex-basis: 100%;
+        display: flex; align-items: baseline; gap: .5rem;
+    }
+    .pk-total b { display: inline; font-size: 1.1rem; margin-top: 0; }
+
+    .pk-foot .pk-btn { width: 100%; text-align: center; }
+
+    /* Chips scroll sideways rather than stacking into three ragged lines. */
+    .pk-chips {
+        flex-wrap: nowrap; overflow-x: auto; margin-bottom: 1.2rem;
+        padding-bottom: .3rem; -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .pk-chips::-webkit-scrollbar { display: none; }
+    .pk-chip { flex: none; padding: .45rem .6rem; }
+
+    .pk-row > summary {
+        grid-template-columns: 1fr auto auto;
+        grid-template-areas: "name status caret" "what what what";
+        gap: .3rem .6rem;
+        padding: .85rem .1rem;
+    }
+    .pk-name   { grid-area: name; font-size: 1rem; }
+    .pk-what   { grid-area: what; font-size: .95rem; }
+    .pk-caret  { grid-area: caret; align-self: start; padding-top: .2rem; }
+    .pk-row > summary > .pk-pill { grid-area: status; align-self: start; }
+
+    .pk-body,
+    .pk-suggest { padding: 1rem .9rem 1.2rem; }
+    .pk-body { gap: 1.2rem; grid-template-columns: 1fr; }
+
+    .pk-code { font-size: .78rem; }
+    .pk-copyline { gap: .4rem; }
+
+    .pk-interest-form button, .pk-interest-open { width: 100%; text-align: center; }
+
+    .pk-gate-inner img { width: 132px; margin-bottom: 1.5rem; }
+    .pk-gate input { font-size: 16px; }
+}
+
+/* Very narrow phones: let the category tag drop rather than wrap the name. */
+@media (max-width: 380px) {
+    .pk-name .pk-cat { display: none; }
+    .pk-gate form { flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pk * { transition: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ==========================================================================
+     NETLIFY FORM DETECTION
+     Netlify's build bot scans the static HTML for forms. The real form is
+     rendered by JavaScript, so this hidden copy is what registers it.
+     Submissions land in Netlify > Forms > perk-interest, where you can read,
+     export, and set up an email notification. Do not delete this block.
+     ========================================================================== -->
+
+<form name="perk-interest" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="perk">
+    <input type="text" name="company">
+    <input type="email" name="email">
+    <input type="text" name="note">
+    <input type="text" name="bot-field">
+</form>
+
+<!-- ==========================================================================
+     PASSWORD GATE
+     Change the password on the line marked below. This keeps the page out of
+     search results and out of casual hands. It is NOT real security: anyone
+     who views the page source can read both the password and the contents.
+     For a genuine lock, turn on Netlify's site password protection instead.
+     ========================================================================== -->
+
+<div class="pk-gate" id="pk-gate">
+    <div class="pk-gate-inner">
+        <img alt="Air Street Capital" src="logo.png">
+        <p>Perks for Air Street portfolio companies.</p>
+        <form id="pk-gate-form">
+            <input type="password" id="pk-gate-input" placeholder="Password" autocomplete="current-password" aria-label="Password">
+            <button type="submit">Enter</button>
+        </form>
+        <div class="pk-gate-err" id="pk-gate-err" role="status"></div>
+    </div>
+</div>
+
+<div class="pk" id="pk-app" hidden>
+<div class="pk-wrap">
+
+    <div class="pk-head">
+        <a class="pk-logo" href="/" aria-label="Air Street Capital home">
+            <img alt="Air Street Capital" src="logo.png">
+        </a>
+        <div class="pk-titles">
+            <h1><span class="pk-slash">/</span>perks</h1>
+            <p>Credits for Air Street portfolio companies.</p>
+        </div>
+        <div class="pk-total">
+            available today
+            <b id="pk-total-figure">&mdash;</b>
+        </div>
+    </div>
+
+    <div class="pk-chips" id="pk-chips"></div>
+
+    <div class="pk-list" id="pk-list"></div>
+
+    <div class="pk-foot">
+        <button type="button" class="pk-btn" id="pk-suggest-open">Suggest a perk</button>
+        <div class="pk-suggest" id="pk-suggest" hidden>
+            <form class="pk-interest-form" id="pk-suggest-form">
+                <input type="text" name="note" placeholder="What perk should we go and get?" required>
+                <input type="text" name="company" placeholder="Company" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <button type="submit" class="pk-btn pk-btn-value">Send</button>
+            </form>
+            <p class="pk-interest-done" id="pk-suggest-done" hidden>Got it. Thanks.</p>
+            <p class="pk-interest-err" id="pk-suggest-err" hidden></p>
+        </div>
+        <p class="pk-verified" id="pk-verified"></p>
+    </div>
+
+</div>
+</div>
+
+<script>
+/* ==========================================================================
+   1. PASSWORD. Change this line to change the password.
+   ========================================================================== */
+
+var PERKS_PASSWORD = "gpt6pro";
+
+/* Shown once at the foot of the page. Update it when you re-check the list. */
+var LAST_VERIFIED = "25 July 2026";
+
+/* ==========================================================================
+   2. THE PERKS. To add one, copy a block and edit it. Fields:
+
+      name      vendor name
+      category  one of the categories in CATEGORIES below
+      status    "live"       = we have this today, shows a Live pill
+                "requesting" = not secured yet. Shows a "Request access" pill
+                               that registers the founder's interest, so you
+                               can see which programs are worth chasing.
+                "intro"      = not a credit programme, a relationship. Shows
+                               an "Ask for an intro" pill in a different colour.
+      value     the headline figure shown in the row, e.g. "$15,000"
+      unit      the words after the figure, e.g. "GPU credits"
+      amount    number counted into the "available today" total.
+                Use 0 for anything that is not a live dollar amount.
+      what      array of paragraphs describing the program
+      steps     array of numbered redemption steps (optional)
+      note      paragraph shown under the steps (optional)
+      code      { label: "...", value: "..." } renders a copy button (optional)
+   ========================================================================== */
+
+var CATEGORIES = ["Compute", "Models", "Data", "Money & ops"];
+
+var PERKS = [
+
+  {
+    name: "Modal",
+    category: "Compute",
+    status: "live",
+    value: "$15,000",
+    unit: "GPU credits",
+    amount: 15000,
+    what: [
+      "Serverless GPU and CPU execution for AI workloads. Scale from zero to thousands of GPUs in seconds without managing clusters, reservations, or ops.",
+      "The program also includes a private Slack channel with Modal's team and a handful of other hand-selected startups.",
+      "<strong>Eligibility:</strong> any Air Street portfolio company.<br><strong>Turnaround:</strong> about one week."
+    ],
+    steps: [
+      "Sign up for Modal and create a <strong>shared workspace</strong>",
+      "Apply for credits at <a href=\"https://modal.com/startups\">modal.com/startups</a>",
+      "Select <strong>Air Street Capital</strong> in the investor dropdown",
+      "Attach proof of funding: our portfolio page, Crunchbase, or a press link"
+    ],
+    note: "Questions go to <a href=\"mailto:startups@modal.com\">startups@modal.com</a>."
+  },
+
+  {
+    name: "Anthropic",
+    category: "Models",
+    status: "live",
+    value: "$20,000",
+    unit: "Claude API credits",
+    amount: 20000,
+    what: [
+      "Air Street is a formal Anthropic partner. Portfolio companies get <strong>$20,000</strong> in API credits, usable across the API, Claude Code, and the SDK.",
+      "You also get bumped straight to <strong>tier 4</strong> rate limits, priority support from a dedicated account owner, and a support alias that skips the general queue."
+    ],
+    steps: [
+      "Apply through the Air Street offer link below",
+      "Nathan may be asked to confirm you are a portfolio company, which usually takes a day"
+    ],
+    /* Omit `label` to render the bare value with no prefix. */
+    code: {
+      value: "https://claude.com/offers?offer_code=11c29557-8b28-4b5a-b58e-35b488bab060"
+    },
+    note: "For credit questions, technical support, or an intro to the Anthropic Startups team, email <strong>portfolio+airstreet@anthropic.com</strong>. It reaches them with Air Street context already attached."
+  },
+
+  {
+    name: "AWS Activate",
+    category: "Compute",
+    status: "live",
+    value: "$100,000",
+    unit: "credits, 2 years",
+    amount: 100000,
+    what: [
+      "Promotional AWS credits valid for two years, plus Activate Console access, AWS Startup Lofts, and one-to-one sessions with a Solutions Architect or Business Developer.",
+      "<strong>One redemption per company.</strong> If you have already claimed Activate credits through another investor or accelerator, you cannot claim again."
+    ],
+    steps: [
+      "Go to <a href=\"https://aws.amazon.com/startups/credits\">aws.amazon.com/startups/credits</a>",
+      "Enter the Air Street org ID below in your AWS Console"
+    ],
+    /* TODO Nathan: this org ID is from Oct 2023 and Activate's tiers have
+       changed since. Confirm with AWS before relying on the number above. */
+    code: { label: "Org ID", value: "0aYPL" },
+    note: "If the ID has expired, ping us and we will get you a current one."
+  },
+
+  {
+    name: "GPU capacity",
+    category: "Compute",
+    status: "intro",
+    value: "",
+    unit: "Lambda, Crusoe, Nebius, Oracle OCI, Fluidstack",
+    amount: 0,
+    what: [
+      "Air Street has direct relationships at Lambda, Crusoe, Nebius, Oracle OCI, and Fluidstack.",
+      "If you are sizing a training run, negotiating a reservation, or need capacity at short notice, we can get you to the right person rather than the sales queue. Useful for pricing leverage as well as availability."
+    ]
+  },
+
+  {
+    name: "Google Cloud",
+    category: "Compute",
+    status: "requesting",
+    value: "$350,000",
+    unit: "credits",
+    amount: 0,
+    what: [
+      "We have the relationship and are asking for fund-level terms plus a dedicated contact for portfolio companies."
+    ],
+    note: "In the meantime, Google's public startup program already runs to $350,000 for AI startups with no investor requirement, so apply direct. Ping us if a warm intro to the Google team would help."
+  },
+
+  {
+    name: "OpenAI",
+    category: "Models",
+    status: "requesting",
+    value: "$5,000",
+    unit: "API credits",
+    amount: 0,
+    what: [
+      "Fund-level referral codes for this program exist at other funds and carry an instant usage-tier upgrade plus three months of ChatGPT Business. We are asking for the Air Street code."
+    ],
+    note: "In the meantime, ping us. There are warm routes into the OpenAI Startups team, and into Health &amp; Life Sciences specifically."
+  },
+
+  {
+    name: "Cloudflare",
+    category: "Compute",
+    status: "requesting",
+    value: "$250,000",
+    unit: "credits, 1 year",
+    amount: 0,
+    what: [
+      "Edge compute, storage, databases, and security. Standard startup program available through VC referral, which we are in the process of setting up.",
+      "<strong>Eligibility when live:</strong> founded within the last five years, between $50,000 and $5,000,000 raised, not already a Cloudflare contract customer."
+    ]
+  },
+
+  {
+    name: "Microsoft for Startups",
+    category: "Models",
+    status: "requesting",
+    value: "$200,000",
+    unit: "Azure credits",
+    amount: 0,
+    what: [
+      "Azure credits plus access to 11,000 models through Azure AI Foundry, GitHub Enterprise, and Visual Studio Enterprise. Granted against a partner code issued per fund."
+    ]
+  },
+
+  {
+    name: "Stripe",
+    category: "Money & ops",
+    status: "requesting",
+    value: "$15,000",
+    unit: "fee credits",
+    amount: 0,
+    what: [
+      "Either $15,000 in fee credits across Payments, Connect, Billing, Tax, and Sigma, or waived fees on your first $500,000 in card volume. Delivered as a fund-specific landing page."
+    ]
+  }
+
+];
+
+/* ==========================================================================
+   3. Rendering. You should not need to touch anything below this line.
+   ========================================================================== */
+
+(function () {
+  "use strict";
+
+  /* State must be initialised before anything can call render(). The
+     sessionStorage check below unlocks immediately on a repeat visit, and if
+     these were declared further down they would still be undefined at that
+     point, so every filter would fail and the list would render empty. */
+  var activeCategory = "All";
+
+  var gate      = document.getElementById("pk-gate");
+  var gateForm  = document.getElementById("pk-gate-form");
+  var gateInput = document.getElementById("pk-gate-input");
+  var gateErr   = document.getElementById("pk-gate-err");
+  var app       = document.getElementById("pk-app");
+
+  function unlock() {
+    gate.hidden = true;
+    gate.style.display = "none";
+    app.hidden = false;
+    render();
+  }
+
+  try {
+    if (window.sessionStorage && sessionStorage.getItem("pk-ok") === "1") { unlock(); }
+  } catch (e) { /* private browsing, fall through to the prompt */ }
+
+  gateForm.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    if (gateInput.value === PERKS_PASSWORD) {
+      try { sessionStorage.setItem("pk-ok", "1"); } catch (e) {}
+      unlock();
+    } else {
+      gateErr.textContent = "That password is not right. Ask Nathan.";
+      gateInput.value = "";
+      gateInput.focus();
+    }
+  });
+
+  if (!gate.hidden) { gateInput.focus(); }
+
+  /* ---------- helpers ---------- */
+
+  function money(n) {
+    return "$" + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function liveTotal() {
+    return PERKS.reduce(function (sum, p) {
+      return sum + (p.status === "live" ? (p.amount || 0) : 0);
+    }, 0);
+  }
+
+  function countIn(cat) {
+    if (cat === "All") { return PERKS.length; }
+    return PERKS.filter(function (p) { return p.category === cat; }).length;
+  }
+
+  function matches(p) {
+    return activeCategory === "All" || p.category === activeCategory;
+  }
+
+  /* ---------- render ---------- */
+
+  function renderChips() {
+    var host = document.getElementById("pk-chips");
+    var cats = ["All"].concat(CATEGORIES);
+    host.innerHTML = "";
+    cats.forEach(function (cat) {
+      var n = countIn(cat);
+      if (n === 0 && cat !== "All") { return; }
+      var b = document.createElement("button");
+      b.className = "pk-chip";
+      b.type = "button";
+      b.setAttribute("aria-pressed", cat === activeCategory ? "true" : "false");
+      b.innerHTML = cat + '<span class="pk-n">' + n + "</span>";
+      b.addEventListener("click", function () {
+        activeCategory = cat;
+        render();
+      });
+      host.appendChild(b);
+    });
+  }
+
+  /* ---------- form submission ----------
+     Netlify Forms is the primary route because it gives a submissions list
+     you can read and export under Netlify > Forms > perk-interest. If form
+     detection is not enabled the POST fails and onFail runs, so a founder is
+     never left staring at a dead button. */
+
+  function submitForm(data, onDone, onFail) {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(data).toString()
+    }).then(function (res) {
+      if (res.ok) { onDone(); } else { throw new Error("form not enabled"); }
+    }).catch(onFail);
+  }
+
+  /* ---------- express interest ---------- */
+
+  function interestKey(p) { return "pk-interest-" + p.name; }
+
+  function alreadyAsked(p) {
+    try { return localStorage.getItem(interestKey(p)) === "1"; }
+    catch (e) { return false; }
+  }
+
+  function interestHTML(p) {
+    var esc = p.name.replace(/"/g, "&quot;");
+    var isIntro = p.status === "intro";
+
+    if (alreadyAsked(p)) {
+      return '<div class="pk-interest"><p class="pk-interest-done">'
+           + (isIntro
+              ? "Noted. We will get you to the right person."
+              : "Interest registered. We will email you when it lands.")
+           + "</p></div>";
+    }
+
+    var cta = isIntro ? "Ask for an intro" : "Express interest";
+
+    return '<div class="pk-interest" data-perk="' + esc + '">'
+         + '<button type="button" class="pk-btn pk-btn-value pk-interest-open">' + cta + "</button>"
+         + '<form class="pk-interest-form">'
+         + '<input type="text" name="company" placeholder="Company" required>'
+         + '<input type="email" name="email" placeholder="Your email" required>'
+         + '<input type="text" name="note" placeholder="What you would use it for (optional)">'
+         + '<button type="submit" class="pk-btn pk-btn-value">Send</button>'
+         + "</form>"
+         + '<p class="pk-interest-done" hidden>Interest registered. We will email you when it lands.</p>'
+         + '<p class="pk-interest-err" hidden></p>'
+         + "</div>";
+  }
+
+  function wireInterest(host) {
+    Array.prototype.forEach.call(host.querySelectorAll(".pk-interest"), function (box) {
+      var perk = box.getAttribute("data-perk");
+      if (!perk) { return; }
+
+      var openBtn = box.querySelector(".pk-interest-open");
+      var form    = box.querySelector(".pk-interest-form");
+      var done    = box.querySelector(".pk-interest-done");
+      var err     = box.querySelector(".pk-interest-err");
+
+      openBtn.addEventListener("click", function () {
+        box.classList.add("is-open");
+        form.querySelector('input[name="company"]').focus();
+      });
+
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        var data = {
+          "form-name": "perk-interest",
+          perk: perk,
+          company: form.company.value.trim(),
+          email: form.email.value.trim(),
+          note: form.note.value.trim()
+        };
+
+        var succeed = function () {
+          try { localStorage.setItem(interestKey({ name: perk }), "1"); } catch (e) {}
+          box.classList.remove("is-open");
+          openBtn.hidden = true;
+          form.hidden = true;
+          done.hidden = false;
+
+          /* Flip the row's pill so the state is visible when it is collapsed. */
+          var row = box.closest("details");
+          var pill = row && row.querySelector(".pk-request");
+          if (pill) {
+            var span = document.createElement("span");
+            span.className = "pk-pill pk-done";
+            span.textContent = pill.classList.contains("pk-intro")
+              ? "Intro asked" : "Requested";
+            pill.parentNode.replaceChild(span, pill);
+          }
+        };
+
+        submitForm(data, succeed, function () {
+          err.hidden = false;
+          err.textContent = "That did not go through. Try again in a moment, or just ping us.";
+        });
+      });
+    });
+  }
+
+  function rowHTML(p) {
+    var statusPill;
+    if (p.status === "live") {
+      statusPill = '<span class="pk-pill pk-live">Live</span>';
+    } else if (alreadyAsked(p)) {
+      statusPill = '<span class="pk-pill pk-done">' +
+        (p.status === "intro" ? "Intro asked" : "Requested") + "</span>";
+    } else if (p.status === "intro") {
+      statusPill = '<button type="button" class="pk-pill pk-intro pk-request">Ask for an intro</button>';
+    } else {
+      statusPill = '<button type="button" class="pk-pill pk-wait pk-request">Request access</button>';
+    }
+
+    var amtClass = p.status === "live" ? "pk-amt" : "pk-amt pk-amt-soon";
+    var valueCell = p.value
+      ? '<span class="' + amtClass + '">' + p.value + "</span> " + (p.unit || "")
+      : (p.unit || "");
+
+    var body = "";
+
+    body += '<div><h4>What it is</h4>';
+    (p.what || []).forEach(function (para) { body += "<p>" + para + "</p>"; });
+    body += "</div>";
+
+    /* Right column. Only rendered if it has something in it, otherwise a perk
+       with no steps and no note left a heading floating over empty space. */
+    var right = "";
+
+    if (p.steps && p.steps.length) {
+      right += "<ol>";
+      p.steps.forEach(function (s) { right += "<li>" + s + "</li>"; });
+      right += "</ol>";
+    }
+    if (p.code) {
+      right += '<div class="pk-copyline">'
+             + '<span class="pk-code">'
+             + (p.code.label ? p.code.label + ": " : "") + p.code.value + "</span>"
+             + '<button type="button" class="pk-btn pk-btn-value pk-copy" '
+             + 'data-copy="' + p.code.value.replace(/"/g, "&quot;") + '" '
+             + 'style="padding:.25rem .55rem;font-size:.78rem">Copy</button>'
+             + "</div>";
+    }
+    if (p.note) { right += "<p>" + p.note + "</p>"; }
+    if (p.status !== "live") { right += interestHTML(p); }
+
+    if (right) {
+      var rightTitle = p.status === "live" ? "How to redeem" : "What you can do now";
+      body += "<div><h4>" + rightTitle + "</h4>" + right + "</div>";
+    }
+
+    return '<details class="pk-row">'
+         + "<summary>"
+         + '<span class="pk-name">' + p.name
+         + ' <span class="pk-pill pk-cat">' + p.category + "</span></span>"
+         + '<span class="pk-what">' + valueCell + "</span>"
+         + statusPill
+         + '<span class="pk-caret">&#9656;</span>'
+         + "</summary>"
+         + '<div class="pk-body">' + body + "</div>"
+         + "</details>";
+  }
+
+  function renderList() {
+    var host = document.getElementById("pk-list");
+    var shown = PERKS.filter(matches);
+
+    if (!shown.length) {
+      host.innerHTML = '<p class="pk-empty">Nothing matches that. '
+                     + 'Use <strong>Suggest a perk</strong> above and we will see if we can get it.</p>';
+      return;
+    }
+
+    host.innerHTML = shown.map(rowHTML).join("");
+
+    Array.prototype.forEach.call(host.querySelectorAll(".pk-copy"), function (btn) {
+      btn.addEventListener("click", function () {
+        var text = btn.getAttribute("data-copy");
+        var done = function () {
+          var original = btn.textContent;
+          btn.textContent = "Copied";
+          setTimeout(function () { btn.textContent = original; }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () {});
+        }
+      });
+    });
+
+    /* The "Request access" pill is a shortcut: open the row, reveal the
+       interest form, and put the cursor in it. stopPropagation is needed
+       because a click inside <summary> would otherwise toggle the row shut
+       again when it is already open. */
+    Array.prototype.forEach.call(host.querySelectorAll(".pk-request"), function (btn) {
+      btn.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
+        var row = btn.closest("details");
+        row.open = true;
+        var box = row.querySelector(".pk-interest");
+        if (!box) { return; }
+        box.classList.add("is-open");
+        var field = box.querySelector('input[name="company"]');
+        if (field) { field.focus({ preventScroll: true }); }
+        box.scrollIntoView({ block: "nearest" });
+      });
+    });
+
+    wireInterest(host);
+  }
+
+  function render() {
+    document.getElementById("pk-total-figure").textContent = money(liveTotal());
+    document.getElementById("pk-verified").textContent = "Last verified " + LAST_VERIFIED;
+    renderChips();
+    renderList();
+  }
+
+  /* ---------- suggest a perk ---------- */
+
+  var suggestBox  = document.getElementById("pk-suggest");
+  var suggestForm = document.getElementById("pk-suggest-form");
+  var suggestDone = document.getElementById("pk-suggest-done");
+  var suggestErr  = document.getElementById("pk-suggest-err");
+
+  document.getElementById("pk-suggest-open").addEventListener("click", function () {
+    suggestBox.hidden = !suggestBox.hidden;
+    if (!suggestBox.hidden) { suggestForm.note.focus(); }
+  });
+
+  suggestForm.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    submitForm({
+      "form-name": "perk-interest",
+      perk: "SUGGESTION",
+      company: suggestForm.company.value.trim(),
+      email: suggestForm.email.value.trim(),
+      note: suggestForm.note.value.trim()
+    }, function () {
+      suggestForm.hidden = true;
+      suggestDone.hidden = false;
+    }, function () {
+      suggestErr.hidden = false;
+      suggestErr.textContent = "That did not go through. Try again in a moment, or just ping us.";
+    });
+  });
+
+}());
+</script>
+
+</body>
+</html>
