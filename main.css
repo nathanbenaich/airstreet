@@ -1,22 +1,11 @@
-/* Increase padding for button container on mobile */
-@media (max-width: 768px) {
-  .button-container {
-    padding: 1px;
-  }
-}
-
 /* Increase spacing between buttons */
 .button {
   margin: 3px;
-  padding: px px;
 }
 
-/* Additional mobile-specific adjustments */
 @media (max-width: 768px) {
   .button {
     margin: 3px;
-    padding: px px;
-    width: calc(% - 30px); /* Make buttons take up half the width minus margins */
     display: inline-block;
   }
 }
@@ -33,7 +22,6 @@ body {
 
 .announcement {
     background-color: #FFFFFF !important;
-    position: center;
     text-align: center;
     padding: 10px 5px;
     top: 0px;
@@ -79,7 +67,6 @@ body {
 .card {
     background-color: #010061ff !important;
     box-shadow: none;
-    box-sizing: 256px 256px;
 }
 
 .image {
@@ -98,14 +85,11 @@ body {
 .name {
     padding-top: 0.3rem;
     font-size: 1.15rem;
-    font-weight: 1rem;
     color: #000000;
-    font-size-adjust: 100%;
 }
 
 .role {
     font-size: 1.05rem;
-    font-weight: 1rem;
     color: #000000;
 }
 
@@ -116,7 +100,7 @@ body {
 
 .box2 {
     background-color: #010061ff;
-    box-shadow: #010061ff;
+    box-shadow: none;
 }
 
 h1, h3 {
@@ -168,23 +152,12 @@ ul {
     list-style-type: disc;
 }
 
-ul {
-    font-size: 1.1rem;
-    padding-left: 1rem;
-    list-style-position: outside;
-    list-style-type: disc;
-}
-
 a {
     text-decoration-line: underline;
 }
 
 div.header-buttons a {
     text-decoration-line: none;
-}
-
-div.portfolio ul li a {
-    font-weight: bold;
 }
 
 div.portfolio ul li a {
@@ -232,5 +205,269 @@ div.portfolio ul li a {
 @media screen and (max-width: 1100px) {
     .centered {
         width: 250px;
+    }
+}
+
+
+/* Homepage intro card: the three `>_` lines otherwise sit flush against each
+   other, because nothing gives <p> a bottom margin outside Bulma's .content. */
+.home-intro {
+    padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.home-intro p {
+    margin-bottom: 0.7rem;
+}
+
+.home-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   LONG-FORM ARTICLE PAGES
+   Opt in with a single class="longform" on the element wrapping the article
+   body. Self-contained: it supplies its own card, column width and margins, so
+   it works whether the wrapper is a Bulma .tile/.box or a plain .container.
+   Everything is scoped to .longform so no other page sharing main.css moves.
+   Must stay at the end of the file: several rules deliberately override the
+   centered .container / .box defaults above at equal specificity.
+   ========================================================================== */
+
+.longform {
+    max-width: 720px;
+    margin: 2.5rem auto 3.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.06);
+    text-align: left;
+    padding: 2.25rem 2.5rem 2.5rem;
+    border-radius: 6px;
+    color: #2c2c33;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    /* Long URLs and run-together strings must not push the card past its
+       column on narrow screens. */
+    overflow-wrap: break-word;
+}
+
+.longform h1,
+.longform h2,
+.longform h3 {
+    text-align: left;
+    padding-bottom: 0;
+    color: #010061;
+}
+
+.longform h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.25rem;
+}
+
+.longform h2 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+    margin: 2.75rem 0 0.75rem;
+}
+
+.longform h3 {
+    font-size: 1.0625rem;
+    line-height: 1.4;
+    margin: 1.75rem 0 0.4rem;
+    color: #1a1a2e;
+}
+
+/* Defensive: pages authored with Bulma's .title/.subtitle helpers sit inside
+   `.hero.is-info`, which paints titles white at (0,3,0) — invisible on the
+   card. These selectors reach (0,3,1) so the card can never swallow a heading,
+   and they hold every long-form page on one type scale. */
+.hero .longform h1.title,
+.hero .longform h1.subtitle {
+    font-size: 2rem;
+    margin: 0 0 1.25rem;
+    color: #010061;
+}
+
+.hero .longform h2.title,
+.hero .longform h2.subtitle {
+    font-size: 1.375rem;
+    margin: 2.75rem 0 0.75rem;
+    color: #010061;
+}
+
+.hero .longform h3.title,
+.hero .longform h3.subtitle {
+    font-size: 1.0625rem;
+    margin: 1.75rem 0 0.4rem;
+    color: #1a1a2e;
+}
+
+/* Same trap for body text: .hero.is-info sets a white color that would make
+   ordinary copy vanish against the white card. */
+.hero .longform,
+.hero .longform p,
+.hero .longform li {
+    color: #2c2c33;
+}
+
+.longform p {
+    text-align: left;
+    margin: 0 0 1.15rem;
+}
+
+.longform .lead {
+    font-size: 1.1875rem;
+    line-height: 1.55;
+    color: #1a1a2e;
+    margin-bottom: 1.35rem;
+}
+
+.longform ul,
+.longform ol {
+    display: block;
+    text-align: left;
+    font-size: inherit;
+    margin: 0 0 1.15rem;
+    padding-left: 1.5rem;
+    list-style-position: outside;
+}
+
+.longform ul {
+    list-style-type: disc;
+}
+
+.longform ol {
+    list-style-type: decimal;
+}
+
+.longform li {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0.4rem;
+}
+
+.longform li:last-child {
+    margin-bottom: 0;
+}
+
+.longform li > ul,
+.longform li > ol {
+    margin: 0.4rem 0 0;
+}
+
+.longform hr {
+    height: 1px;
+    background-color: #e7e7ef;
+    border: 0;
+    margin: 2rem 0;
+}
+
+.longform table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 1.15rem;
+    font-size: 0.9375rem;
+}
+
+.longform th,
+.longform td {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e7e7ef;
+    vertical-align: top;
+}
+
+.longform th {
+    font-weight: 700;
+    color: #010061;
+}
+
+.longform blockquote {
+    margin: 0 0 1.15rem;
+    padding: 0.25rem 0 0.25rem 1.1rem;
+    border-left: 3px solid #d8d8e6;
+    color: #4a4a58;
+}
+
+/* Long articles can carry wide tables; never let the page scroll sideways.
+   `.hero.is-fullheight` turns .hero-body into a flex container, and a flex item
+   defaults to min-width:auto — so without these the table's min-content width
+   pushes the whole card past the viewport instead of scrolling inside it. */
+.hero-body > .container:has(.longform) {
+    min-width: 0;
+}
+
+.longform {
+    min-width: 0;
+}
+
+.longform .table-scroll {
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 0 0 1.15rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Scroll the table rather than crushing columns to a few characters. */
+.longform .table-scroll table {
+    min-width: 34rem;
+    margin-bottom: 0;
+}
+
+.longform a {
+    color: #010061;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(1, 0, 97, 0.4);
+}
+
+.longform a:hover {
+    color: #3a34c8;
+    text-decoration-color: currentColor;
+}
+
+/* Question + answer pairs under "Frequently asked questions" */
+.longform .faq-item {
+    border-top: 1px solid #e7e7ef;
+    padding-top: 1.15rem;
+    margin-top: 1.15rem;
+}
+
+.longform .faq-item h3 {
+    margin-top: 0;
+}
+
+.longform .faq-item p:last-child {
+    margin-bottom: 0;
+}
+
+.longform .closing {
+    margin-top: 2.25rem;
+}
+
+.longform > *:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .longform {
+        margin: 1.75rem auto 2.5rem;
+        padding: 1.5rem 1.25rem 1.75rem;
+        font-size: 1rem;
+    }
+
+    .longform h1 {
+        font-size: 1.625rem;
+    }
+
+    .longform h2 {
+        font-size: 1.1875rem;
+        margin-top: 2.25rem;
+    }
+
+    .longform .lead {
+        font-size: 1.0625rem;
     }
 }
