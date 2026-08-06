@@ -41,7 +41,7 @@ Air Street Capital invests in AI-first companies across sectors where artificial
 
 ### Epoch II (2022–present)
 
-- **poolside** — Enterprise AI for software engineering (USA). https://poolside.ai/
+- **Poolside** — Enterprise AI for software engineering (USA). https://poolside.ai/
 - **Profluent** — Programmable biology and protein language models (USA). https://www.profluent.bio/
 - **Samaya AI** — Knowledge discovery (USA). https://samaya.ai/
 - **Sereact** — Industrial robotics (Germany). https://sereact.ai/
@@ -49,7 +49,7 @@ Air Street Capital invests in AI-first companies across sectors where artificial
 - **Odyssey** — Interactive video (USA/UK). https://www.odyssey.ml/
 - **Interloom** — Enterprise automation (Germany). https://interloom.io/
 - **Patina Systems** — Spontaneous software (USA). https://patinasystems.com/
-- **Fern Labs** (acquired by poolside) — AI agents (UK). https://fern-labs.ai/
+- **Fern Labs** (acquired by Poolside) — AI agents (UK). https://fern-labs.ai/
 - **Studio Atelico** — AI game studio (USA/UK). https://atelico.studio/
 - **Polar Mist** — Maritime autonomy (EU). https://www.polarmist.ai/
 - **Delfa** — Clinical trials (USA/UK). https://www.delfa.ai/
@@ -62,7 +62,7 @@ Air Street Capital invests in AI-first companies across sectors where artificial
 - **Graphcore** (acquired by SoftBank) — AI semiconductors (UK). https://www.graphcore.ai/
 - **Exscientia** (NASDAQ: EXAI) — AI-driven pharma (UK). https://www.exscientia.ai/
 - **Recursion** (NASDAQ: RXRX) — AI-driven pharma (USA). https://www.recursion.com/
-- **poolside** — Enterprise AGI (USA). https://poolside.ai/
+- **Poolside** — Enterprise AGI (USA). https://poolside.ai/
 - **V7** — Computer vision data platform (UK). https://www.v7labs.com/
 - **ZOE** — Personalized nutrition (UK). https://joinzoe.com/
 - **Coram AI** — Video intelligence (UK/USA). https://www.coram.ai/
@@ -122,7 +122,7 @@ Air Street Capital invests in AI-first companies across sectors where artificial
 - **Allcyte** — Acquired by Exscientia
 - **Athenian** — Acquired by Linux Foundation
 - **Valence Discovery** — Acquired by Recursion
-- **Fern Labs** — Acquired by poolside
+- **Fern Labs** — Acquired by Poolside
 - **Anagenex** — Acquired
 
 ## Domains of Expertise
