@@ -57,3 +57,35 @@ typings/
 # dotenv environment variables file
 .env
 
+
+# --- Credentials and local state (added 2026-08-14, security audit) ---
+# Environment files
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Private keys, certificates, keystores
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+*.jks
+*.keystore
+*.ppk
+id_rsa
+id_ed25519
+
+# Credential files
+credentials*.json
+service-account*.json
+service_account*.json
+secrets*.json
+.netrc
+.npmrc
+
+# Agent and editor local state
+.claude/settings.local.json
+.DS_Store
+Thumbs.db
