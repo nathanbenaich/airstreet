@@ -166,8 +166,8 @@
 .pk-row { border-bottom: 1px solid var(--rule); }
 .pk-row > summary {
     display: grid;
-    /* Reserve the same status width in every row so descriptions line up. */
-    grid-template-columns: minmax(150px, 1.4fr) minmax(140px, 1.3fr) 8.5rem 1.2rem;
+    /* Give descriptions most of the row and keep status widths consistent. */
+    grid-template-columns: minmax(170px, 1fr) minmax(0, 2.4fr) 8.5rem 1.2rem;
     gap: 1rem; align-items: center; padding: .85rem .25rem; cursor: pointer; list-style: none;
 }
 .pk-row > summary::-webkit-details-marker { display: none; }
