@@ -166,7 +166,8 @@
 .pk-row { border-bottom: 1px solid var(--rule); }
 .pk-row > summary {
     display: grid;
-    grid-template-columns: minmax(150px, 1.4fr) minmax(140px, 1.3fr) minmax(92px, auto) 1.2rem;
+    /* Reserve the same status width in every row so descriptions line up. */
+    grid-template-columns: minmax(150px, 1.4fr) minmax(140px, 1.3fr) 8.5rem 1.2rem;
     gap: 1rem; align-items: center; padding: .85rem .25rem; cursor: pointer; list-style: none;
 }
 .pk-row > summary::-webkit-details-marker { display: none; }
@@ -175,7 +176,7 @@
    text baseline pushed it below the vendor name and the status pill. */
 .pk-name { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap;
            font-weight: 700; font-size: 1.02rem; }
-.pk-what { color: var(--ink-2); font-size: .92rem; }
+.pk-what { color: var(--ink-2); font-size: .92rem; text-align: left; }
 .pk-caret { font-family: var(--mono); color: var(--ink-3); font-size: .8rem;
             transition: transform .15s ease; text-align: right; }
 .pk-row[open] .pk-caret { transform: rotate(90deg); }
